@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Proptech Scouting Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- ================= Hero ================= -->
+      <header class="hero">
+        <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+        <p class="eyebrow">Oct 25–27, 2026</p>
+        <h1><span class="accent">Proptech</span> <span class="keep-together">Scouting&nbsp;Report</span></h1>
+        <p class="lede">Real estate tech, scouted weekly — what's out there and where we play.</p>
+        <p class="hook">The listing gate just split three ways — and the space between the pipes is <span class="accent">up for grabs.</span></p>
+        <p class="meta-line"><b>11</b> stories · <b>3</b> days · <b>30 sec</b> skim · Editions <b>#10–#12</b></p>
+      </header>
+
+      <!-- ================= Scouting Report ================= -->
+      <section class="scouting" aria-label="Scouting report">
+        <h2 class="section-label">Scouting Report</h2>
+        <div class="scouting-item">
+          <span class="scouting-label">Market map</span>
+          <p><strong>Three pipes splitting</strong> — shared listing databases (MLSs), brokerage groups, and private networks. AI connectors rising. A permission layer deciding who gets in.</p>
+        </div>
+        <div class="scouting-item">
+          <span class="scouting-label">Where we play</span>
+          <p><strong>The gaps between the pipes</strong> — consent, compliance, permissions that travel with the data. No MLS permission needed to start.</p>
+        </div>
+      </section>
+
+      <!-- ================= In one line ================= -->
+      <section class="oneline" aria-label="The short version">
+        <h2 class="section-label">In one line</h2>
+        <p>Brokerages just built their own pipe, permissions are becoming the product — and no Bay Area MLS has joined either. Yet.</p>
+      </section>
+
+      <!-- ================= Toolbar ================= -->
+      <nav class="toolbar" aria-label="Jump to section and filter stories">
+        <div class="toolbar-inner">
+          <div class="toolbar-group">
+            <span class="toolbar-label">Jump</span>
+            <a class="jump" href="#sun">Sun 25</a>
+            <a class="jump" href="#mon">Mon 26</a>
+            <a class="jump" href="#tue">Tue 27</a>
+            <a class="jump" href="#openings">Openings</a>
+            <a class="jump" href="#watch">Dates</a>
+          </div>
+          <div class="toolbar-group">
+            <span class="toolbar-label">Show</span>
+            <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="pipes" aria-pressed="false">Listing pipes</button>
+            <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI connectors</button>
+            <button class="filter-btn" type="button" data-filter="agent" aria-pressed="false">Agent tools</button>
+            <button class="filter-btn" type="button" data-filter="policy" aria-pressed="false">Policy &amp; standards</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ================= Sunday ================= -->
+      <section class="day" id="sun" data-day="">
+        <div class="day-head">
+          <h2>Sunday</h2>
+          <span class="day-date">Oct 25, 2026</span>
+        </div>
+        <div class="cards">
+          <article class="card" data-cat="policy ai">
+            <h3>RESO MCP Profile proposal</h3>
+            <p class="one-line">“MCP is the pipe, RESO is the meaning.” The group that sets real estate data standards received a proposal for five rules for connecting AI assistants to listings, including letting software read usage rights and logging every AI action. The proposal is still pending.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.retrorate.com/blog/real-estate-has-spent-years-standardizing-data" target="_blank" rel="noopener">RetroRate <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="ai">
+            <h3>Yardi Virtuoso Enterprise</h3>
+            <p class="one-line">Yardi launched an AI platform for property management across leasing, finance, operations, compliance, and reporting. It connects to Anthropic’s Claude.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.lucir.lat/news/proptech-yardi-virtuoso-enterprise-20261005.html" target="_blank" rel="noopener">Trade coverage <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="agent ai">
+            <h3>1 Percent Lists AI-search play</h3>
+            <p class="one-line">Discount brokerage 1 Percent Lists Mid-Atlantic teamed up with a search marketing firm to appear in Google’s local map results and in AI-generated answers.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.wcia.com/business/press-releases/ein-presswire/952053651/1-percent-lists-mid-atlantic-partners-with-one-click-seo-to-dominate-google-map-pack-and-next-gen-ai-search-results/" target="_blank" rel="noopener">EIN Presswire <span class="arrow">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="empty-note" data-empty="">No stories in this filter for Sunday.</p>
+      </section>
+
+      <!-- ================= Monday ================= -->
+      <section class="day" id="mon" data-day="">
+        <div class="day-head">
+          <h2>Monday</h2>
+          <span class="day-date">Oct 26, 2026</span>
+        </div>
+        <div class="cards">
+          <article class="card" data-cat="pipes policy">
+            <h3>Open Real Estate launch</h3>
+            <p class="one-line">Keller Williams, AGNT (parent of eXp and NextHome), HomeServices of America, and Real REMAX Group announced a way to enter a listing once and send it to MLSs, home-search sites, and appraisers. The system is still in development. The launch date, vendor, and MLS acceptance are unconfirmed.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.rismedia.com/2026/10/26/breaking-four-brokerage-giants-launch-new-shared-infrastructure-listings/" target="_blank" rel="noopener">RISMedia <span class="arrow">↗</span></a>
+              <a class="src-link" href="https://www.housingwire.com/articles/open-real-estate-data-initiative/" target="_blank" rel="noopener">HousingWire <span class="arrow">↗</span></a>
+              <a class="src-link" href="https://therealdeal.com/texas/2026/10/26/brokerages-challenge-private-listings-with-data-sharing-deal/" target="_blank" rel="noopener">The Real Deal <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="ai agent">
+            <h3>Agent Image SiteAI</h3>
+            <p class="one-line">Shoppers ask questions on an agent’s own site and get answers as branded pages. Agent Image says SiteAI includes fair-housing safeguards.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.realestatenews.com/2026/10/26/conversational-ai-for-agent-websites-ntreis-redata-partner" target="_blank" rel="noopener">Real Estate News <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="agent">
+            <h3>FOREWARN Community Alerts</h3>
+            <p class="one-line">Agents can flag risky phone numbers for peers. FOREWARN says its network reaches 443,000 agents across more than 660 associations and MLSs.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.globenewswire.com/news-release/2026/10/26/3388023/0/en/forewarn-introduces-community-alerts-activating-a-nationwide-agent-network-as-a-real-time-safety-resource.html" target="_blank" rel="noopener">GlobeNewswire <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="policy pipes">
+            <h3>NTREIS adopts reData Export</h3>
+            <p class="one-line">The Dallas–Fort Worth MLS chose a tool that lets it control which listing details to share, how much to send, and who gets them.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.realestatenews.com/2026/10/26/conversational-ai-for-agent-websites-ntreis-redata-partner" target="_blank" rel="noopener">Real Estate News <span class="arrow">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="empty-note" data-empty="">No stories in this filter for Monday.</p>
+      </section>
+
+      <!-- ================= Tuesday ================= -->
+      <section class="day" id="tue" data-day="">
+        <div class="day-head">
+          <h2>Tuesday</h2>
+          <span class="day-date">Oct 27, 2026</span>
+          <span class="today-badge">Edition #12</span>
+        </div>
+        <div class="cards">
+          <article class="card" data-cat="ai agent">
+            <h3>DealNav 3.0</h3>
+            <p class="one-line">A map-based deal tracker brings county property records and ChatGPT or Claude onto one screen. Plans start at $59 per month.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.einpresswire.com/article/951322292/dealnav-3-0-gives-real-estate-deal-teams-county-parcel-data-and-a-direct-line-to-chatgpt-and-claude" target="_blank" rel="noopener">EIN Presswire <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="ai">
+            <h3>DealGround Claude connector</h3>
+            <p class="one-line">DealGround added a Claude connector and expanded its browser extension to help find commercial deals that are off the market.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://news.marketersmedia.com/dealground-launches-claude-connector-and-expanded-browser-extension-to-support-off-market-commercial-real-estate-deal-sourcing/89207501" target="_blank" rel="noopener">MarketersMedia <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="pipes policy">
+            <h3>Open Real Estate, day two</h3>
+            <p class="one-line">The group set a six-month target to open and added Iron Valley as its ninth member. Its “Participant” option limits a listing to member brokerages and rules out public marketing.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.rismedia.com/2026/10/26/breaking-four-brokerage-giants-launch-new-shared-infrastructure-listings/" target="_blank" rel="noopener">RISMedia <span class="arrow">↗</span></a>
+              <a class="src-link" href="https://www.vendoralley.com/2026/10/27/upstream-2-0-not-quite/" target="_blank" rel="noopener">Vendor Alley <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-cat="pipes agent">
+            <h3>Keyes joins HouseCanary’s Google Listings Program</h3>
+            <p class="one-line">Florida’s largest independent brokerage joined the program through My State MLS, putting its listings into Google’s top search results.</p>
+            <div class="src-row">
+              <a class="src-link" href="https://www.prnewswire.com/news-releases/the-keyes-family-of-companies-floridas-largest-independent-brokerage-company-joins-housecanarys-google-listings-program-302920422.html" target="_blank" rel="noopener">PR Newswire <span class="arrow">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="empty-note" data-empty="">No stories in this filter for Tuesday.</p>
+      </section>
+
+      <!-- ================= Openings ================= -->
+      <section class="panel" id="openings">
+        <h2>Openings worth a look</h2>
+        <p class="panel-sub">Four buildable gaps. None need MLS permission to start.</p>
+        <ol class="openings">
+          <li>
+            <span class="n">01</span>
+            <span><strong>Market vs. Participant, as a product</strong> — a plain-language explainer plus a signed consent record.</span>
+          </li>
+          <li>
+            <span class="n">02</span>
+            <span><strong>One listing, three pipes</strong> — an adapter that checks one listing against every pipe’s rules.</span>
+          </li>
+          <li>
+            <span class="n">03</span>
+            <span><strong>Permissions-as-data wrapper</strong> — read the rights, enforce them, log every AI action.</span>
+          </li>
+          <li>
+            <span class="n">04</span>
+            <span><strong>A solo-agent DealNav</strong> — one map, one pipeline, one assistant, solo price.</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ================= Permission watch ================= -->
+      <section class="panel" id="watch">
+        <h2>Permission watch &amp; dates</h2>
+        <ul class="watch-list">
+          <li>
+            <span class="watch-when">Oct 27</span>
+            <span><strong>Tuccori/NAR claims due</strong> — $120.3M fund; final approval hearing Nov 2.</span>
+          </li>
+          <li>
+            <span class="watch-when">Watch</span>
+            <span><strong>Open Real Estate governance</strong> — still all promise; watch the first MLS to accept or refuse.</span>
+          </li>
+          <li>
+            <span class="watch-when">SFARMLS</span>
+            <span><strong>No news this week</strong> — vendor-approval path still unknown; license still from 2015.</span>
+          </li>
+          <li>
+            <span class="watch-when">Standing</span>
+            <span><strong>CVR MLS’s AI ban stands</strong> — Compass v. CRMLS quiet; DC photo-disclosure bill still a proposal.</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        Compiled from Damn JJ’s daily briefings, Oct 25–27, 2026 (editions #10–#12). Several stories rest on vendor releases — treat their numbers as company-claimed. Nothing here is legal advice.
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        var buttons = Array.prototype.slice.call(document.querySelectorAll(".filter-btn"));
+        var days = Array.prototype.slice.call(document.querySelectorAll("[data-day]"));
+
+        function applyFilter(name) {
+          buttons.forEach(function (b) {
+            b.setAttribute("aria-pressed", b.getAttribute("data-filter") === name ? "true" : "false");
+          });
+          days.forEach(function (day) {
+            var visible = 0;
+            day.querySelectorAll(".card").forEach(function (card) {
+              var cats = (card.getAttribute("data-cat") || "").split(" ");
+              var show = name === "all" || cats.indexOf(name) !== -1;
+              card.hidden = !show;
+              if (show) visible++;
+            });
+            var note = day.querySelector("[data-empty]");
+            if (note) note.style.display = visible === 0 ? "block" : "none";
+          });
+        }
+
+        buttons.forEach(function (b) {
+          b.addEventListener("click", function () {
+            applyFilter(b.getAttribute("data-filter"));
+          });
+        });
+      })();
+    </script>
+
+
+</body></html>
