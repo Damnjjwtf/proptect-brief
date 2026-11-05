@@ -286,5 +286,99 @@
       "Record source dates",
       "Test the explainer with a reader"
     ]
+  },
+  {
+    "id": "scouting-2026-10-27",
+    "title": "Proptech Scouting Report, October 25–27, 2026",
+    "edition": "Briefings #10–#12",
+    "scope": "Archived report as of October 27, 2026. Vendor figures are attributed claims. No current access or performance is established.",
+    "stories": [
+      {
+        "title": "RESO MCP Profile proposal",
+        "summary": "“MCP is the pipe, RESO is the meaning.” The group that sets real estate data standards received a proposal for five rules for connecting AI assistants to listings, including letting software read usage rights and logging every AI action. The proposal is still pending.",
+        "sources": [
+          "https://www.retrorate.com/blog/real-estate-has-spent-years-standardizing-data"
+        ]
+      },
+      {
+        "title": "Yardi Virtuoso Enterprise",
+        "summary": "Yardi launched an AI platform for property management across leasing, finance, operations, compliance, and reporting. It connects to Anthropic’s Claude.",
+        "sources": [
+          "https://www.lucir.lat/news/proptech-yardi-virtuoso-enterprise-20261005.html"
+        ]
+      },
+      {
+        "title": "1 Percent Lists AI-search play",
+        "summary": "Discount brokerage 1 Percent Lists Mid-Atlantic teamed up with a search marketing firm to appear in Google’s local map results and in AI-generated answers.",
+        "sources": [
+          "https://www.wcia.com/business/press-releases/ein-presswire/952053651/1-percent-lists-mid-atlantic-partners-with-one-click-seo-to-dominate-google-map-pack-and-next-gen-ai-search-results/"
+        ]
+      },
+      {
+        "title": "Open Real Estate launch",
+        "summary": "Keller Williams, AGNT (parent of eXp and NextHome), HomeServices of America, and Real REMAX Group announced a way to enter a listing once and send it to MLSs, home-search sites, and appraisers. The system is still in development. The launch date, vendor, and MLS acceptance are unconfirmed.",
+        "sources": [
+          "https://www.rismedia.com/2026/10/26/breaking-four-brokerage-giants-launch-new-shared-infrastructure-listings/",
+          "https://www.housingwire.com/articles/open-real-estate-data-initiative/",
+          "https://therealdeal.com/texas/2026/10/26/brokerages-challenge-private-listings-with-data-sharing-deal/"
+        ]
+      },
+      {
+        "title": "Agent Image SiteAI",
+        "summary": "Shoppers ask questions on an agent’s own site and get answers as branded pages. Agent Image says SiteAI includes fair-housing safeguards.",
+        "sources": [
+          "https://www.realestatenews.com/2026/10/26/conversational-ai-for-agent-websites-ntreis-redata-partner"
+        ]
+      },
+      {
+        "title": "FOREWARN Community Alerts",
+        "summary": "Agents can flag risky phone numbers for peers. FOREWARN says its network reaches 443,000 agents across more than 660 associations and MLSs.",
+        "sources": [
+          "https://www.globenewswire.com/news-release/2026/10/26/3388023/0/en/forewarn-introduces-community-alerts-activating-a-nationwide-agent-network-as-a-real-time-safety-resource.html"
+        ]
+      },
+      {
+        "title": "NTREIS adopts reData Export",
+        "summary": "The Dallas–Fort Worth MLS chose a tool that lets it control which listing details to share, how much to send, and who gets them.",
+        "sources": [
+          "https://www.realestatenews.com/2026/10/26/conversational-ai-for-agent-websites-ntreis-redata-partner"
+        ]
+      },
+      {
+        "title": "DealNav 3.0",
+        "summary": "A map-based deal tracker brings county property records and ChatGPT or Claude onto one screen. Plans start at $59 per month.",
+        "sources": [
+          "https://www.einpresswire.com/article/951322292/dealnav-3-0-gives-real-estate-deal-teams-county-parcel-data-and-a-direct-line-to-chatgpt-and-claude"
+        ]
+      },
+      {
+        "title": "DealGround Claude connector",
+        "summary": "DealGround added a Claude connector and expanded its browser extension to help find commercial deals that are off the market.",
+        "sources": [
+          "https://news.marketersmedia.com/dealground-launches-claude-connector-and-expanded-browser-extension-to-support-off-market-commercial-real-estate-deal-sourcing/89207501"
+        ]
+      },
+      {
+        "title": "Open Real Estate, day two",
+        "summary": "The group set a six-month target to open and added Iron Valley as its ninth member. Its “Participant” option limits a listing to member brokerages and rules out public marketing.",
+        "sources": [
+          "https://www.rismedia.com/2026/10/26/breaking-four-brokerage-giants-launch-new-shared-infrastructure-listings/",
+          "https://www.vendoralley.com/2026/10/27/upstream-2-0-not-quite/"
+        ]
+      },
+      {
+        "title": "Keyes joins HouseCanary’s Google Listings Program",
+        "summary": "Florida’s largest independent brokerage joined the program through My State MLS, putting its listings into Google’s top search results.",
+        "sources": [
+          "https://www.prnewswire.com/news-releases/the-keyes-family-of-companies-floridas-largest-independent-brokerage-company-joins-housecanarys-google-listings-program-302920422.html"
+        ]
+      }
+    ],
+    "openings": [
+      "Market vs. Participant, as a product — a plain-language explainer plus a signed consent record.",
+      "One listing, three pipes — an adapter that checks one listing against every pipe’s rules.",
+      "Permissions-as-data wrapper — read the rights, enforce them, log every AI action.",
+      "A solo-agent DealNav — one map, one pipeline, one assistant, solo price."
+    ]
   }
 ]

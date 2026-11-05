@@ -1,6 +1,5 @@
 """Local brief, SQLite memory and source-grounded OpenAI answers. Python 3.10+."""
 import http.cookies
-import base64
 import hashlib
 import hmac
 import time
@@ -17,12 +16,6 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 PUBLIC = Path(__file__).resolve().parent
 WORKSPACE = PUBLIC.parent.parent
-ENV_FILE = WORKSPACE / '.env.local'
-if ENV_FILE.exists():
-    for line in ENV_FILE.read_text().splitlines():
-        if '=' in line and not line.lstrip().startswith('#'):
-            name, value = line.split('=', 1)
-            os.environ.setdefault(name.strip(), value.strip().strip('\"').strip("'"))
 DATA = Path(os.environ.get('BRIEF_DATA_DIR', WORKSPACE / 'work/brief-data'))
 DB = DATA / 'brief.sqlite3'
 MODEL = os.environ.get('OPENAI_MODEL', 'gpt-4.1-mini')
@@ -33,7 +26,16 @@ ACCESS_CODE = os.environ.get('BRIEF_ACCESS_CODE', '')
 PUBLIC_BRIEF = os.environ.get('BRIEF_PUBLIC', 'true').lower() == 'true'
 if HOSTED and ((not PUBLIC_BRIEF and not ACCESS_CODE) or not os.environ.get('BRIEF_DATA_DIR')):
     raise RuntimeError('Hosted brief requires access protection and persistent storage configuration')
+API_PATHS = {'/api/ask', '/api/history'}
+ALLOWED_ORIGINS = frozenset(origin.strip() for origin in os.environ.get(
+    'BRIEF_ALLOWED_ORIGINS',
+    'https://damnjjwtf.github.io,https://th650xxxb8nx0h.cf.metaaiusercontent.com',
+).split(',') if origin.strip())
 LIMIT = threading.BoundedSemaphore(2)
+
+
+def valid_session_id(value):
+    return len(value) == 64 and all(char in '0123456789abcdef' for char in value)
 
 
 class Connection(sqlite3.Connection):
@@ -92,6 +94,9 @@ class Handler(BaseHTTPRequestHandler):
         pass  # Questions and credentials never go to request logs.
 
     def session(self):
+        token = self.headers.get('X-Brief-Session', '')
+        if valid_session_id(token):
+            return token
         cookie = http.cookies.SimpleCookie()
         try:
             cookie.load(self.headers.get('Cookie', ''))
@@ -99,7 +104,7 @@ class Handler(BaseHTTPRequestHandler):
             pass
         value = cookie.get('brief_session')
         sid = value.value if value else ''
-        if len(sid) != 64 or any(c not in '0123456789abcdef' for c in sid):
+        if not valid_session_id(sid):
             sid = secrets.token_hex(32)
         return sid
 
@@ -108,11 +113,24 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header('Content-Type', 'application/json')
         self.send_header('Cache-Control', 'no-store')
-        if sid:
+        self.send_cors_headers()
+        if sid and not self.headers.get('X-Brief-Session'):
             self.send_header('Set-Cookie', 'brief_session='+sid+'; HttpOnly; SameSite=Strict; Path=/; Max-Age=2592000'+('; Secure' if HOSTED else ''))
         self.send_header('Content-Length', str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def api_path(self):
+        return urllib.parse.urlsplit(self.path).path in API_PATHS
+
+    def cross_origin(self):
+        return self.api_path() and self.headers.get('Origin') in ALLOWED_ORIGINS
+
+    def send_cors_headers(self):
+        if self.api_path():
+            self.send_header('Vary', 'Origin')
+        if self.cross_origin():
+            self.send_header('Access-Control-Allow-Origin', self.headers['Origin'])
 
     def trusted(self):
         host = self.headers.get('Host', '')
@@ -120,7 +138,18 @@ class Handler(BaseHTTPRequestHandler):
         hosts = {f'127.0.0.1:{PORT}', f'localhost:{PORT}'}
         if PUBLIC_HOST:
             hosts.add(PUBLIC_HOST)
-        return host in hosts and (not origin or origin in {f'http://127.0.0.1:{PORT}',f'http://localhost:{PORT}',f'https://{PUBLIC_HOST}'})
+        own_origins = {f'http://127.0.0.1:{PORT}', f'http://localhost:{PORT}', f'https://{PUBLIC_HOST}'}
+        return host in hosts and (not origin or origin in own_origins or self.cross_origin())
+
+    def do_OPTIONS(self):
+        if not self.trusted() or not self.cross_origin():
+            return self.send_json(403, {'error': 'This origin cannot access the brief API.'})
+        self.send_response(204)
+        self.send_cors_headers()
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type, X-Brief-Session')
+        self.send_header('Access-Control-Max-Age', '600')
+        self.end_headers()
 
     def authenticated(self):
         if PUBLIC_BRIEF:
@@ -147,6 +176,9 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def require_access(self):
+        if self.cross_origin() and not valid_session_id(self.headers.get('X-Brief-Session', '')):
+            self.send_json(400, {'error': 'A 64-character hex X-Brief-Session is required.'})
+            return False
         if self.authenticated():
             return True
         if self.path.startswith('/api/'):
@@ -157,7 +189,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if not self.trusted():
-            return self.send_json(403, {'error': 'Local requests only.'})
+            return self.send_json(403, {'error': 'This origin cannot access the brief API.'})
         url = urllib.parse.urlsplit(self.path)
         if url.path == '/healthz':
             with connect() as db:
@@ -189,7 +221,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_DELETE(self):
         if not self.trusted():
-            return self.send_json(403, {'error':'Local requests only.'})
+            return self.send_json(403, {'error':'This origin cannot access the brief API.'})
         if not self.require_access():
             return
         url = urllib.parse.urlsplit(self.path)
@@ -202,7 +234,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         if not self.trusted():
-            return self.send_json(403, {'error':'Local requests only.'})
+            return self.send_json(403, {'error':'This origin cannot access the brief API.'})
         if self.path == '/login':
             try:
                 length = int(self.headers.get('Content-Length', '0'))
@@ -255,8 +287,20 @@ class Handler(BaseHTTPRequestHandler):
                 db.executemany('INSERT INTO messages(session,entry_id,role,content) VALUES(?,?,?,?)', [(sid,entry_id,'user',question.strip()), (sid,entry_id,'assistant',result)])
             self.send_json(200, {'answer':result}, sid)
         except urllib.error.HTTPError as err:
-            message = 'The AI account needs available API credit. Your question was not saved.' if err.code == 429 else 'The AI connection could not answer. Check the API account or try again.'
-            self.send_json(502, {'error':message}, sid)
+            try:
+                detail = json.loads(err.read(8192)).get('error', {})
+            except (ValueError, TypeError, AttributeError):
+                detail = {}
+            if detail.get('type') == 'insufficient_quota' or detail.get('code') == 'credit_balance_exhausted':
+                message = 'The OpenAI project needs API credit. Your question was not saved.'
+                code = 'openai_quota'
+            elif err.code == 429:
+                message = 'OpenAI is limiting requests. Please try again in a moment.'
+                code = 'openai_rate_limit'
+            else:
+                message = 'OpenAI could not answer. Check the API account or try again.'
+                code = 'openai_unavailable'
+            self.send_json(502, {'error': message, 'code': code}, sid)
         except Exception:
             self.send_json(502, {'error':'The AI connection took too long or could not answer. Please try again.'}, sid)
         finally:
