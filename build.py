@@ -95,7 +95,7 @@ def edition_html(edition, issue_date, canonical):
         <p class="byline">Made by Damn JJ for Jessica Branson.</p>
         <p class="eyebrow">{line(edition, 'date_label')}</p>
         <h1><span class="accent">Proptech</span> <span class="keep-together">Scouting&nbsp;Report</span></h1>
-        <p class="lede">Real estate tech, scouted weekly — what's out there and where we play.</p>
+        <p class="lede">Real estate tech, scouted daily — what's out there and where we play.</p>
         <p class="hook">{line(edition, 'hook')}</p>
         <p class="meta-line"><b>{counts}</b> {'story' if counts == 1 else 'stories'} · <b>{len(dates)}</b> {'day' if len(dates) == 1 else 'days'} · <b>30 sec</b> skim · {line(edition, 'briefings')}</p>
       </header>
