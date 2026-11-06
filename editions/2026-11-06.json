@@ -1,0 +1,100 @@
+{
+  "date_label": "Nov 6, 2026",
+  "briefings": "Briefing #22",
+  "hook": "The vendor that used to sell to MLSs now sells to the brokerage, on top of the brokerage's existing system rather than replacing it.",
+  "market_map": "Today's stories: Lundy sells its first enterprise brokerage assistant; RealtyMark puts 2,000 agents on one AI platform; Cotality's governed front door for AI; LenDb.ai: a free loan-officer database built for AI assistants.",
+  "where_we_play": "Every deployment this week rides one vendor's stack — Jefe on BoldTrail, AImee on Smart Agent Guide, Aly inside Cotality's Araya. The 2,000-agent independent brokerage that doesn't run BoldTrail has no off-the-shelf AI teammate that plugs into whatever CRM and MLS it already has. That gap — one assistant, any stack, with the brokerage's own rules and Fair Housing checks baked in — is the opening that survives whichever platform wins the brokerage.",
+  "one_line": "The stack-agnostic AI teammate for the independent brokerage.",
+  "days": [
+    {
+      "date": "2026-11-06",
+      "stories": [
+        {
+          "title": "Lundy sells its first enterprise brokerage assistant — the MLS vendor crosses to the broker's side",
+          "summary": "Lundy — the voice-AI company that built its name inside organized real estate (voice search and a voice add/edit app with MetroList and Rapattoni; Navigator, an assistant trained on MLS rules and policy documents, in MLS and association help desks; nora, its agent assistant, launched by MetroList to 20,000+ subscribers in June 2026) — shipped its first enterprise brokerage deployment on November 3: Jefe, a voice-first assistant for every agent at LoKation Real Estate, a six-state brokerage based in Pompano Beach, Florida. The vendor that used to sell to MLSs now sells to the brokerage, on top of the brokerage's existing system rather than replacing it.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 3 deployment; WAV Group, Nov 4",
+              "url": "https://wavgroup.com/2026/11/04/lundy-goes-enterprise-lokation-jefe-and-the-boldtrail-ai-rails/"
+            }
+          ]
+        },
+        {
+          "title": "RealtyMark puts 2,000 agents on one AI platform — the mid-size brokerage buys the whole stack at once",
+          "summary": "RealtyMark, a Philadelphia-area independent brokerage with 2,000+ agents across eight states, launched a new company platform at realtymark.net, built on Smart Agent Guide. The pattern from finding 1, from the other direction — a mid-size independent brokerage buying a whole AI platform (website + CRM + AI teammate) as one purchase, not assembling tools agent by agent.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 6, EIN News (vendor release)",
+              "url": "https://tpp.einnews.com/pr_news/954905587/realtymark-launches-ai-powered-company-platform-for-over-2-000-agents-every-agent-live-on-day-one"
+            }
+          ]
+        },
+        {
+          "title": "Cotality's governed front door for AI — the sanctioned-access reference design gets its award",
+          "summary": "Cotality's CoreAI — the intelligence layer threaded through 210+ of its commercial products — plus its MCP Server (launched March 31, 2026), a standard plug that lets any AI assistant connect once, see which data tools its license allows, and pull answers in real time: property identifiers, characteristics, climate risk, ownership data, market trends. This is the reference design for Jessica's pitch, now with an award on it: governed AI access means the data owner sets the license, the assistant sees only what the license allows, and broker attribution travels with the data.",
+          "tags": [
+            "pipes",
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "RETechnology, Nov 5; award Nov 2",
+              "url": "https://retechnology.com/articles/the-port-is-open-cotality-s-coreai-and-the-new-front-door-to-property-data"
+            }
+          ]
+        },
+        {
+          "title": "LenDb.ai: a free loan-officer database built for AI assistants — the free-data-as-feed shape, in mortgage",
+          "summary": "Draper Goren Blockchain Studio launched LenDb.ai, a free, lender-neutral database of 224,703 US mortgage loan officers — 48,228 full profiles built from 721 lenders' own loan-officer pages, 512,101 license records across all 51 states and territories — designed for the way people now shop for a mortgage: by asking an AI assistant. Mortgage-adjacent, but the shape is the one JJ's open-data thread tracks — a large public/licensed dataset packaged as a free feed for AI assistants, distributed through the assistant's own connector directory rather than through a website.",
+          "tags": [
+            "ai"
+          ],
+          "sources": [
+            {
+              "label": "Nov 6, PR Newswire (vendor release)",
+              "url": "https://prnewswire.com/news-releases/draper-goren-launches-lendbai-a-free-database-of-224-000-us-loan-officers-built-for-ai-assistants-and-run-day-to-day-by-an-ai-ceo-302931594.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The stack-agnostic AI teammate for the independent brokerage",
+      "text": "Every deployment this week rides one vendor's stack — Jefe on BoldTrail, AImee on Smart Agent Guide, Aly inside Cotality's Araya. The 2,000-agent independent brokerage that doesn't run BoldTrail has no off-the-shelf AI teammate that plugs into whatever CRM and MLS it already has. That gap — one assistant, any stack, with the brokerage's own rules and Fair Housing checks baked in — is the opening that survives whichever platform wins the brokerage."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 2",
+      "title": "Tuccori / NAR buyer settlement — STILL no outcome, 4 days post-hearing.",
+      "text": "The final approval hearing was Monday, Nov 2, 9:30 AM, Judge Jenkins (N.D. Ill.). No ruling has surfaced as of this morning (lawfold last updated Nov 1; openclassactions as of Oct 28). Do not cite approval. One Nov 2 Substack piece writes as if approval is a matter of time — that is the author's assumption, not a ruling."
+    },
+    {
+      "when": "Nov 6–8",
+      "title": "NAR NXT opens today, Nov 6–8, New Orleans",
+      "text": "(~10,000 attendees, 200+ exhibitors). Watch for ORE / MLS-AI news over the weekend: Cotality's chief data and analytics officer John Rogers speaks on data, AI, and the future of real estate; REdistribute is meeting MLS leaders and brokers at the show; Home Fraud Defense is exhibiting on transaction fraud. No policy news from the floor yet — this morning is opening day."
+    },
+    {
+      "when": "Nov 6",
+      "title": "Compass fight quiet",
+      "text": "next event is still the motion to dismiss, no trial date. No SFARMLS news — Topic 14 open questions unchanged."
+    },
+    {
+      "when": "Nov 21",
+      "title": "Pointer to research briefing #33 (not re-reported):",
+      "text": "FTC personalized-pricing 6(b) orders to nine companies (45-day response window; comment period on the enforcement policy statement ends Nov 21); FTC + 7 states sued Toast (Oct 29) and the Riverside Payments settlement (Nov 2, $32.1M judgment suspended after $600K) — hidden-fees + hard-cancellation enforcement now a spine in B2B as well as consumer."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "date_label": "Nov 4, 2026",
+  "briefings": "Briefing #20",
+  "hook": "ORE's own FAQ says technology-vendor selection runs through Q1 2027.",
+  "market_map": "Today's stories: Open Real Estate picks up real buy-in; HouseCanary pushes MLS listings into Google search; SFAR itself changes systems; Australia: commercial comparable sales go pay-per-row over MCP.",
+  "where_we_play": "Findings 1, 2, and 4 converge: ORE is choosing a tech vendor by Q1 2027, HouseCanary is already moving MLS listings to Google through negotiated MLS deals, and HtAG shows comp data going pay-per-row over a standard connection. The pipes are multiplying; nobody is selling the brokerage-side control panel — which pipes carry my listings, what each one pays per listing, what happens to my data if I leave. That panel is the permission-and-exit layer from briefing #16, and the ORE vendor window gives it a deadline. It needs no MLS credentialing to prototype (it tracks deals and destinations, not listings), and it becomes more valuable with every new pipe.",
+  "one_line": "The pipe-picker moment: build the tool that lets a brokerage compare, join, and leave listing pipes.",
+  "days": [
+    {
+      "date": "2026-11-04",
+      "stories": [
+        {
+          "title": "Open Real Estate picks up real buy-in — 826 support letters, first MLS backers named (Nov 2–3)",
+          "summary": "Open Real Estate (ORE) — the shared listing pipe launched Oct 26 by AGNT (eXp's parent), HomeServices of America, Keller Williams, and Real REMAX Group — now reports 825–826 letters of support from brokerage leaders, 59% of them from independent firms, plus support from four regional MLSs (the first MLS backers named; the reports do not name all four in the excerpts checked). ORE's own FAQ says technology-vendor selection runs through Q1 2027. Flag: support-letter counts and the \"equal revenue sharing\" model are the founders' own figures; no MLS acceptance, governance, or vendor pick is final. Still a plan, not a working platform.",
+          "tags": [
+            "pipes",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "realestatenews.com",
+              "url": "https://www.realestatenews.com/2026/11/02/new-listings-platform-gaining-buy-in-from-brokerages-mlss"
+            },
+            {
+              "label": "inman.com",
+              "url": "https://www.inman.com/2026/11/03/open-real-estate-who-controls-the-feed-and-who-gets-paid/"
+            }
+          ]
+        },
+        {
+          "title": "HouseCanary pushes MLS listings into Google search — three more brokerages, 1,000+ agents (Nov 4, in-window)",
+          "summary": "HouseCanary signed three brokerages — RE/MAX Advantage, Berkshire Hathaway HomeServices Florida Properties Group, and ENRG Realty — to its Google Listings Program, putting active listings for more than 1,000 additional agents into Google mobile search in live markets. this is the intermediary lane in action — the company that moves listing data from MLS systems to the consumer surface captures the first inquiry, and the first inquiry is the business. Flag: HousingWire report based on a company announcement (automation-assisted, editor-reviewed). No pricing, opt-in rates, or inquiry-volume figures disclosed.",
+          "tags": [
+            "pipes",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "housingwire.com",
+              "url": "https://www.housingwire.com/articles/housecanary-expands-google-listings/"
+            }
+          ]
+        },
+        {
+          "title": "SFAR itself changes systems — GrowthZone member platform launches, tied to SFARMLS records (Nov 4, in-window)",
+          "summary": "The San Francisco Association of REALTORS (SFAR) launched GrowthZone AMS with GZ Learn built in as its new member-management and education platform for its nearly 4,000 members — one place to manage membership, register for events, pay dues, and take courses. this is the first SFAR systems news in this record in weeks, and it matters for timing, not for access. Flag: vendor release (GrowthZone as source, via Newswire). No data-access, API, or vendor-program detail in the announcement.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "newswire.com",
+              "url": "https://www.newswire.com/news/san-francisco-association-of-realtors-launches-growthzone-ams-with-gz-learn"
+            }
+          ]
+        },
+        {
+          "title": "Australia: commercial comparable sales go pay-per-row over MCP — the data-layer pattern spreads (Nov 4, in-window)",
+          "summary": "HtAG Analytics (Melbourne) launched commercial sold-property search in its Developer Portal: sold industrial, office, retail, and other commercial property, searchable by location, category, tenure, price, date, and size, through a self-serve REST API and through MCP (Model Context Protocol — the open standard that lets an AI assistant call outside data tools). two things travel to the US even though the data does not. Flag: vendor release (EIN Presswire). Australia-only; sold comps only — no commercial leasing, rents, yields, or for-sale listings. No adoption or accuracy figures.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "it.einnews.com",
+              "url": "https://it.einnews.com/pr_news/954378583/htag-opens-australian-commercial-property-sales-data-to-ai-assistants-through-mcp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The pipe-picker moment: build the tool that lets a brokerage compare, join, and leave listing pipes",
+      "text": "Findings 1, 2, and 4 converge: ORE is choosing a tech vendor by Q1 2027, HouseCanary is already moving MLS listings to Google through negotiated MLS deals, and HtAG shows comp data going pay-per-row over a standard connection. The pipes are multiplying; nobody is selling the brokerage-side control panel — which pipes carry my listings, what each one pays per listing, what happens to my data if I leave. That panel is the permission-and-exit layer from briefing #16, and the ORE vendor window gives it a deadline. It needs no MLS credentialing to prototype (it tracks deals and destinations, not listings), and it becomes more valuable with every new pipe."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 2",
+      "title": "Tuccori/NAR buyer settlement: STILL no outcome surfaced, two days after the Nov 2 final approval hearing.",
+      "text": "Checked HousingWire, Inman, OpenClassActions, and the settlement site this morning: the latest court documents found are still the Oct 7 final-approval memos, and tracker pages still read \"awaiting final approval.\" The judge may have taken the matter under advisement, or an order may not yet be posted or reported — either way, do not cite approval until an order or a reputable report lands. Fund $120,334,500, NAR share $52.25M; claims closed Oct 27; no payment date until approval. Source: https://openclassactions.com/settlements/real-estate/homebuyer-antitrust-class-action-settlement.php"
+    },
+    {
+      "when": "Nov 4",
+      "title": "Compass cooperation-rules fight: no new filing or ruling in-window.",
+      "text": "A Nov 4 recap (RealtyToday) confirms the next event is Compass's anticipated motion to dismiss, with no trial date set in either SDNY case. Texture from a Nov 1 scoreboard (LinkedIn): nine MLSs publicly refusing Compass's demand, eight in litigation, ~272,000 subscribers behind them, and a CMLS legal-defense fund above $1M; OneKey's filing shows 156 cooperation fines (~$407,800) since Jan 2025, five to Compass (~$13,800, $9,300 waived). The count stands at nine MLS plaintiffs across the two cases (CRMLS + OneKey; Arizona Regional, BridgeMLS, Canopy, Doorify, Hive, REcolorado, MLSListings). No SFARMLS position has surfaced either way."
+    },
+    {
+      "when": "Nov 3",
+      "title": "AI listing-photo disclosure wave gains a new city (proposal, not law):",
+      "text": "a Nov 3 TBPN segment surfaces NYC Mayor Zohran Mamdani's proposal for mandatory disclosure of AI-generated apartment listings. It joins the laws already in this record — California and Wisconsin disclosure rules effective Jan 1, 2027 — but a mayoral proposal is not a statute; treat it as direction of travel, not a compliance deadline."
+    },
+    {
+      "when": "Nov 4",
+      "title": "No new movement in-window on:",
+      "text": "NAR rule changes; FTC or state enforcement actions affecting agent tools or listing-data use; RESO MCP Profile adoption; ORE governance or vendor pick beyond the buy-in numbers above; the NAR/Compass discovery fight."
+    },
+    {
+      "when": "Oct 1",
+      "title": "Standing, unchanged:",
+      "text": "NAR's Clear Cooperation Policy (one-business-day submission rule) still being defended on multiple fronts; CVR MLS AI-access ban (effective Oct 1) still the only named MLS AI ban in this record; NAR broker AI rulebook (briefing #13) still the clearest gray-zone line; state private-listing laws keep spreading (WA June, CT Oct 1, WI Jan 1 2027, NY awaiting signature); Cotality Trestle MCP + Defender (briefing #5) still the sanctioned-AI template; RESO Web API remains the standard, and each MLS's vendor credentialing remains the gate."
+    },
+    {
+      "when": "Oct 16",
+      "title": "No SFARMLS data-access news in-window.",
+      "text": "Finding 3 is a member-systems launch, not a data door. Topic 14 open questions unchanged: vendor-credentialing path and terms still unknown; license doc still 2015. The prototype-first route (build on public-record data layers like briefing #19's Homesage MCP, then walk in with something live) still stands. --- *Briefings in this series: #1 Oct 16 (MLS gray zone, Ploti, BoldTrail MCP, Ruuster 2.0) · #2 Oct 17 (Cotality Claude connector, SourceRE free MCP, gray-zone hack reel) · #3 Oct 18 (FlexMLS Claude/MCP, SourceRE deep-dive, eXp MCP-first) · #4 Oct 19 (PropertyRadar ChatGPT/Claude MCP, Bright listing statuses, SERHANT. Dot) · #5 Oct 20 (Zillow Claude connector, Cotality Trestle MCP + Defender, Real Leo Pro rumor, Bright statuses live) · #6 Oct 21 (Solid Earth Recursive launch, Homesage.ai sandbox, DC photo-disclosure bill, eXp two-AI-tools rumor) · #7 Oct 22 (Leo Pro, LienWatch.AI, RESO CEO Istanbul keynote, Q3 funding concentration) · #8 Oct 23 (Agent Buddi × Affiliated Monitoring, RealPlus AI Connector, Archie Engine 1.3 local model) · #9 Oct 24 (RECO Ontario AI guidance, ReStructure \"41-agent team,\" EasyAgentIDX IDX + read-only MCP) · #10 Oct 25 (RESO MCP Profile proposal, Yardi Virtuoso Enterprise, 1 Percent Lists AI-search play) · #11 Oct 26 (Open Real Estate launch, Agent Image SiteAI, FOREWARN Community Alerts, NTREIS reData Export) · #12 Oct 27 (DealNav 3.0, DealGround Claude connector, Open Real Estate day two, Keyes × HouseCanary Google Listings) · #13 Oct 28 (Delta Intelligent Websites, RealScout × eXp Coming Soon, Open Real Estate day three, NAR broker AI rulebook) · #14 Oct 29 (OneKey joins CRMLS v. Compass, Open Real Estate day four, RoostHaven, pre-search analysis) · #15 Oct 30 (RentRedi × Bright MLS, Bright AI Academy + CYPHER survey, Inman Best of Proptech winners, NAR v. Compass discovery fight) · #16 Oct 31 (Mod Seller IQ, Open Real Estate day six, Compass Home Platform, UpstreamRE data-standard friction) · #17 Nov 1 (PropertyRadar × CENTURY 21 Commercial, The Agency's in-house AI platform, Open Real Estate day seven, Inman Best of Proptech rest of winners) · #18 Nov 2 (MLSListings joins Compass suit, Upfront instant payouts, Zillow Likely to List 1-in-4, DataCentering broker tools) · #19 Nov 3 (Homesage MCP server, LoKation/Jefe, iamproperty One).*"
+    }
+  ]
+}

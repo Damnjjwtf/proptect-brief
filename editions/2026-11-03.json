@@ -1,0 +1,89 @@
+{
+  "date_label": "Nov 3, 2026",
+  "briefings": "Briefing #19",
+  "hook": "this is the next step from briefing #6's Homesage sandbox (Oct 20, 155M records, 300 free credits).",
+  "market_map": "Today's stories: Homesage.ai opens its property database to AI assistants via MCP; LoKation buys a branded voice assistant for every agent; UK: iamproperty launches One.",
+  "where_we_play": "Findings 1 and 2 converge: Homesage gives any AI assistant the property numbers over a standard connection, and Jefe shows agents will talk to an assistant that acts inside tools they already use. Nobody has combined them for the independent agent: a voice/text assistant that (a) pulls public-record numbers via an MCP-style connection, (b) ranks the agent's *own* database by sell-readiness (briefing #18's seller-intent job), and (c) reports work completed, not seats sold. It stays outside the permission gate as long as it touches only public data and the agent's own data. The moment it wants live MLS listings, the gate returns — which is exactly why the prototype-first route (build on Homesage, then walk into SFARMLS with something live) still stands.",
+  "one_line": "The assistant that carries its own numbers — no MLS deal required.",
+  "days": [
+    {
+      "date": "2026-11-03",
+      "stories": [
+        {
+          "title": "Homesage.ai opens its property database to AI assistants via MCP — the \"around the gate\" data layer, now plug-and-play (Nov 3, in-window)",
+          "summary": "Homesage.ai launched a Real Estate MCP server. this is the next step from briefing #6's Homesage sandbox (Oct 20, 155M records, 300 free credits). Flag: vendor press release (EIN Presswire). No adoption figures, no independent test of the value estimates or the motivation score, and the \"160M+\" coverage figure is the company's own. Not an MLS data source — do not present it as one.",
+          "tags": [
+            "pipes",
+            "ai"
+          ],
+          "sources": [
+            {
+              "label": "einpresswire.com",
+              "url": "https://www.einpresswire.com/article/953774159/homesage-ai-opens-160m-u-s-properties-to-ai-agents-with-new-real-estate-mcp-server"
+            }
+          ]
+        },
+        {
+          "title": "LoKation buys a branded voice assistant for every agent — the \"third path\" between building in-house and just opening the data (Nov 3, in-window)",
+          "summary": "LoKation Real Estate (brokerage in Florida, Georgia, Alabama, Texas, South Carolina, and Colorado) launched Jefe, a voice-first AI assistant for every LoKation agent, built by Lundy, Inc. the buyable shape matters more than the brand. Flag: vendor announcement (GlobeNewswire, Lundy as source). No agent count, no pricing, no usage figures yet; expansion to LoKation Streamline (mortgage/title/insurance bundle) is planned, not live.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "globenewswire.com",
+              "url": "https://www.globenewswire.com/news-release/2026/11/03/3394454/0/en/lokation-real-estate-partners-with-lundy-to-launch-jefe-a-custom-ai-assistant-for-every-lokation-agent.html"
+            }
+          ]
+        },
+        {
+          "title": "UK: iamproperty launches One — 12 agency tools in one platform that \"can pay for itself\" through transaction credits (Nov 3, in-window)",
+          "summary": "UK proptech firm iamproperty launched One, a modular estate-agency platform combining 12 of its solutions — auctions, sales, lettings, accounts, material information (the upfront property details UK agents must disclose), anti-money-laundering/risk checks, conveyancing (the legal transfer process), lead nurturing, prospecting, competitor analysis, market appraisal, and reporting — under one login. the pricing idea travels even though the product is UK-only: software paid for by transactions, not subscriptions. Flag: UK market, vendor launch coverage (Estate Agent Today, Proptech-X, The Negotiator all carrying the announcement). \"Potentially zero cost\" depends on qualifying activity — no agency has yet reported actually reaching zero.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "estateagenttoday.co.uk",
+              "url": "https://www.estateagenttoday.co.uk/breaking-news/2026/11/landmark-agency-platform-launched-by-iamproperty/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The assistant that carries its own numbers — no MLS deal required",
+      "text": "Findings 1 and 2 converge: Homesage gives any AI assistant the property numbers over a standard connection, and Jefe shows agents will talk to an assistant that acts inside tools they already use. Nobody has combined them for the independent agent: a voice/text assistant that (a) pulls public-record numbers via an MCP-style connection, (b) ranks the agent's *own* database by sell-readiness (briefing #18's seller-intent job), and (c) reports work completed, not seats sold. It stays outside the permission gate as long as it touches only public data and the agent's own data. The moment it wants live MLS listings, the gate returns — which is exactly why the prototype-first route (build on Homesage, then walk into SFARMLS with something live) still stands."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 2",
+      "title": "TODAY — Tuccori/NAR buyer settlement: final approval hearing was held Nov 2, and NO outcome has surfaced as of this morning's check.",
+      "text": "Searched HousingWire, Inman, OpenClassActions, and the settlement site: the latest court documents found are the Oct 7 final-approval memos, and the latest tracker pages still read \"awaiting final approval.\" The judge may have taken the matter under advisement, or an order may not yet be posted or reported — either way, do not cite approval until an order or a reputable report lands. This was the item research briefing #30 deferred to this edition, and it stays open. Fund $120,334,500, NAR share $52.25M; claims closed Oct 27; no payment date until approval. Source: https://openclassactions.com/settlements/real-estate/homebuyer-antitrust-class-action-settlement.php"
+    },
+    {
+      "when": "Nov 3",
+      "title": "Compass cooperation-rules fight: no new movement in-window.",
+      "text": "The count stands at nine MLS plaintiffs (CRMLS + OneKey in one case; Arizona Regional, BridgeMLS, Canopy, Doorify, Hive, REcolorado, MLSListings in the other — briefing #18). No ruling in either case; no new Compass filing surfaced. No SFARMLS position has surfaced either way."
+    },
+    {
+      "when": "Nov 3",
+      "title": "No new movement in-window on:",
+      "text": "NAR rule changes; FTC or state enforcement actions affecting agent tools or listing-data use; ORE's governance, vendor pick, or MLS acceptance (still Q1 2027 launch target); RESO MCP Profile adoption; the NAR/Compass discovery fight."
+    },
+    {
+      "when": "Oct 1",
+      "title": "Standing, unchanged:",
+      "text": "NAR's Clear Cooperation Policy (one-business-day submission rule) still being defended on multiple fronts; CVR MLS AI-access ban (effective Oct 1) still the only named MLS AI ban in this record; NAR broker AI rulebook (briefing #13) still the clearest gray-zone line; state private-listing laws keep spreading (WA June, CT Oct 1, WI Jan 1 2027, NY awaiting signature); Cotality Trestle MCP + Defender (briefing #5) still the sanctioned-AI template; RESO Web API remains the standard, and each MLS's vendor credentialing remains the gate."
+    },
+    {
+      "when": "Oct 16",
+      "title": "No SFARMLS news in-window.",
+      "text": "Topic 14 open questions unchanged: vendor-credentialing path and terms still unknown; license doc still 2015. The prototype-first route (finding 1) is the practical answer to the stall while the permission question stays open. --- *Briefings in this series: #1 Oct 16 (MLS gray zone, Ploti, BoldTrail MCP, Ruuster 2.0) · #2 Oct 17 (Cotality Claude connector, SourceRE free MCP, gray-zone hack reel) · #3 Oct 18 (FlexMLS Claude/MCP, SourceRE deep-dive, eXp MCP-first) · #4 Oct 19 (PropertyRadar ChatGPT/Claude MCP, Bright listing statuses, SERHANT. Dot) · #5 Oct 20 (Zillow Claude connector, Cotality Trestle MCP + Defender, Real Leo Pro rumor, Bright statuses live) · #6 Oct 21 (Solid Earth Recursive launch, Homesage.ai sandbox, DC photo-disclosure bill, eXp two-AI-tools rumor) · #7 Oct 22 (Leo Pro, LienWatch.AI, RESO CEO Istanbul keynote, Q3 funding concentration) · #8 Oct 23 (Agent Buddi × Affiliated Monitoring, RealPlus AI Connector, Archie Engine 1.3 local model) · #9 Oct 24 (RECO Ontario AI guidance, ReStructure \"41-agent team,\" EasyAgentIDX IDX + read-only MCP) · #10 Oct 25 (RESO MCP Profile proposal, Yardi Virtuoso Enterprise, 1 Percent Lists AI-search play) · #11 Oct 26 (Open Real Estate launch, Agent Image SiteAI, FOREWARN Community Alerts, NTREIS reData Export) · #12 Oct 27 (DealNav 3.0, DealGround Claude connector, Open Real Estate day two, Keyes × HouseCanary Google Listings) · #13 Oct 28 (Delta Intelligent Websites, RealScout × eXp Coming Soon, Open Real Estate day three, NAR broker AI rulebook) · #14 Oct 29 (OneKey joins CRMLS v. Compass, Open Real Estate day four, RoostHaven, pre-search analysis) · #15 Oct 30 (RentRedi × Bright MLS, Bright AI Academy + CYPHER survey, Inman Best of Proptech winners, NAR v. Compass discovery fight) · #16 Oct 31 (Mod Seller IQ, Open Real Estate day six, Compass Home Platform, UpstreamRE data-standard friction) · #17 Nov 1 (PropertyRadar × CENTURY 21 Commercial, The Agency's in-house AI platform, Open Real Estate day seven, Inman Best of Proptech rest of winners) · #18 Nov 2 (MLSListings joins Compass suit, Upfront instant payouts, Zillow Likely to List 1-in-4, DataCentering broker tools).*"
+    }
+  ]
+}
