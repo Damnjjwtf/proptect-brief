@@ -317,6 +317,8 @@
         line-height: 1.7;
         font-weight: 500;
       }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
       .empty-note {
         display: none;
@@ -375,28 +377,6 @@
         <h2 class="section-label">In one line</h2>
         <p>Brokerages just built their own pipe, permissions are becoming the product — and no Bay Area MLS has joined either. Yet.</p>
       </section>
-
-      <!-- ================= Toolbar ================= -->
-      <nav class="toolbar" aria-label="Jump to section and filter stories">
-        <div class="toolbar-inner">
-          <div class="toolbar-group">
-            <span class="toolbar-label">Jump</span>
-            <a class="jump" href="#sun">Sun 25</a>
-            <a class="jump" href="#mon">Mon 26</a>
-            <a class="jump" href="#tue">Tue 27</a>
-            <a class="jump" href="#openings">Openings</a>
-            <a class="jump" href="#watch">Dates</a>
-          </div>
-          <div class="toolbar-group">
-            <span class="toolbar-label">Show</span>
-            <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-btn" type="button" data-filter="pipes" aria-pressed="false">Listing pipes</button>
-            <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI connectors</button>
-            <button class="filter-btn" type="button" data-filter="agent" aria-pressed="false">Agent tools</button>
-            <button class="filter-btn" type="button" data-filter="policy" aria-pressed="false">Policy &amp; standards</button>
-          </div>
-        </div>
-      </nav>
 
       <!-- ================= Sunday ================= -->
       <section class="day" id="sun" data-day="">
@@ -568,7 +548,7 @@
       </section>
 
       <footer>
-        Compiled from Damn JJ’s daily briefings, Oct 25–27, 2026 (editions #10–#12). Several stories rest on vendor releases — treat their numbers as company-claimed. Nothing here is legal advice.
+        Compiled from Damn JJ’s daily briefings, Oct 25–27, 2026 (editions #10–#12). Several stories rest on vendor releases — treat their numbers as company-claimed. Nothing here is legal advice. · <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a>
       </footer>
     </div>
 

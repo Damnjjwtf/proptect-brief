@@ -53,7 +53,7 @@ def edition_html(edition, issue_date, canonical):
     dates = [day['date'] for day in edition['days']]
     if not dates or dates != sorted(set(dates)) or dates[-1] != issue_date:
         raise ValueError('Days must be unique, oldest first, and end on the filename date')
-    day_sections, jumps = [], []
+    day_sections = []
     for day in edition['days']:
         label = date_label(day['date'])
         weekday = date.fromisoformat(day['date']).strftime('%A')
@@ -61,7 +61,6 @@ def edition_html(edition, issue_date, canonical):
         if not day['stories']:
             raise ValueError(f'{label} needs at least one story')
         cards = '\n'.join(story_card(story) for story in day['stories'])
-        jumps.append(f'<a class="jump" href="#{anchor}">{weekday[:3]} {date.fromisoformat(day["date"]).day}</a>')
         day_sections.append(f'''<section class="day" id="{anchor}" data-day>
           <div class="day-head"><h2>{weekday}</h2><span class="day-date">{label}</span></div>
           <div class="cards">{cards}</div>
@@ -69,25 +68,17 @@ def edition_html(edition, issue_date, canonical):
         </section>''')
     counts = sum(len(day['stories']) for day in edition['days'])
     days = '\n'.join(day_sections)
-    navigation = '\n'.join(jumps)
-    toolbar = re.search(r'<nav class="toolbar".*?</nav>', canonical, re.S)[0]
-    toolbar = re.sub(r'<a class="jump" href="#sun">.*?<a class="jump" href="#tue">[^<]+</a>',
-                     lambda _: navigation, toolbar, flags=re.S)
     panels = ''
     openings = edition.get('openings', [])
     if openings:
         rows = ''.join(f'<li><span class="n">{i:02d}</span><span><strong>{line(item, "title")}</strong> — {line(item, "text")}</span></li>'
                        for i, item in enumerate(openings, 1))
         panels += f'<section class="panel" id="openings"><h2>Openings worth a look</h2><ol class="openings">{rows}</ol></section>'
-    else:
-        toolbar = toolbar.replace('<a class="jump" href="#openings">Openings</a>', '')
     watch = edition.get('watch', [])
     if watch:
         rows = ''.join(f'<li><span class="watch-when">{line(item, "when")}</span><span><strong>{line(item, "title")}</strong> — {line(item, "text")}</span></li>'
                        for item in watch)
         panels += f'<section class="panel" id="watch"><h2>Permission watch &amp; dates</h2><ul class="watch-list">{rows}</ul></section>'
-    else:
-        toolbar = toolbar.replace('<a class="jump" href="#watch">Dates</a>', '')
     head = canonical.split('<body>', 1)[0]
     script = re.search(r'<script>.*?</script>', canonical, re.S)[0]
     return f'''{head}<body><div class="wrap">
@@ -107,10 +98,9 @@ def edition_html(edition, issue_date, canonical):
       <section class="oneline" aria-label="The short version">
         <h2 class="section-label">In one line</h2><p>{line(edition, 'one_line')}</p>
       </section>
-      {toolbar}
       {days}
       {panels}
-      <footer>Compiled from Damn JJ’s daily briefings. Vendor figures are company claims.</footer>
+      <footer>Compiled from Damn JJ’s daily briefings. Vendor figures are company claims. · <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
     </div>{script}</body></html>\n'''
 
 
