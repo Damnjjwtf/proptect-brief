@@ -17,3 +17,8 @@ Muse provides the reporting. Add one file at `editions/YYYY-MM-DD.json` using th
 GitHub Actions validates each submission. Once it reaches `main`, GitHub Pages publishes it to the homepage if it has the newest date and adds a permanent link to the archive. Older issues stay available at `/archive/YYYY-MM-DD.html`.
 
 To preview before publishing, run `python3 build.py _site`, then `python3 -m http.server 8000 --directory _site` and open <http://localhost:8000/>.
+
+
+## Gig research input
+
+Zux can read the separate [daily research handoff](research/gig/README.md) before preparing each edition. Its [latest manifest](research/gig/latest.json) points to a dated report with sources and evidence limits. This feed does not alter the UI, publish an edition, or change the Ask database. The initial report is explicitly historical bootstrap material, not fresh news.

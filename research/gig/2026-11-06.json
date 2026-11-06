@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "producer": "gig",
+  "date": "2026-11-06",
+  "timezone": "America/Los_Angeles",
+  "generated_at": "2026-11-06T20:29:32.966281+00:00",
+  "status": "bootstrap",
+  "summary": "Historical context imported from the existing November 5 research notes. Not fresh November 6 news; external sources not rechecked during setup. No experiment or outreach is authorized by these proposals.",
+  "items": [
+    {
+      "id": "ploti-nov5",
+      "title": "Can we spend less time chasing property records?",
+      "signal": "Ploti says it connects parcel, zoning and permit records to AI, with links back to official sources.",
+      "evidence": "Its product page describes the workflow. We have not checked SF coverage, pricing or accuracy.",
+      "limits": "Historical import from existing research checked November 5, 2026; source not independently rechecked during this feed setup. Its product page describes the workflow. We have not checked SF coverage, pricing or accuracy.",
+      "why_it_matters": "Build a property research sheet together. JJ makes a simple page that collects source-linked permit and zoning notes; Jess chooses the questions buyers actually ask and reviews the answers.",
+      "proposed_test": "Start with one SF property and three questions from Jess. JJ builds the page using official records first. Time the research and have Jess flag every missing or misleading detail.",
+      "sources": [
+        {
+          "url": "https://www.ploti.ai/",
+          "label": "Ploti · Product page",
+          "published_at": null,
+          "checked_at": "2026-11-05",
+          "kind": "historical_reference"
+        }
+      ]
+    },
+    {
+      "id": "recursive-nov5",
+      "title": "AI search still depends on MLS access.",
+      "signal": "Solid Earth describes an AI assistant that turns plain-language questions into MLS searches.",
+      "evidence": "Its October 28 walkthrough says results depend on the member’s permissions. It does not establish access for Jess.",
+      "limits": "Historical import from existing research checked November 5, 2026; source not independently rechecked during this feed setup. Its October 28 walkthrough says results depend on the member’s permissions. It does not establish access for Jess.",
+      "why_it_matters": "Build a search-request translator: Jess writes a real buyer request; JJ turns it into a checklist of listing filters and unanswered questions. Jess runs the search in her approved MLS.",
+      "proposed_test": "Try five fictional buyer requests. Compare JJ’s generated filters with Jess’s own. Only explore an MLS connection after her provider confirms access.",
+      "sources": [
+        {
+          "url": "https://solidearth.com/solid-earth-blog/recursive-ai-mls-workflow",
+          "label": "Solid Earth · October 28 walkthrough",
+          "published_at": "2026-10-28",
+          "checked_at": "2026-11-05",
+          "kind": "historical_reference"
+        }
+      ]
+    },
+    {
+      "id": "calls-nov5",
+      "title": "The handoff matters as much as the call.",
+      "signal": "CINC says Call AI can qualify an inquiry, transfer the caller and save a transcript and summary.",
+      "evidence": "We rechecked its September 15 post. These are vendor claims; we have not tested call quality or results.",
+      "limits": "Historical import from existing research checked November 5, 2026; source not independently rechecked during this feed setup. We rechecked its September 15 post. These are vendor claims; we have not tested call quality or results.",
+      "why_it_matters": "Prototype an inquiry-to-follow-up tool. JJ builds a form that turns inquiry notes into a short summary and draft reply; Jess defines the must-have details and edits the tone.",
+      "proposed_test": "Use ten fictional inquiries. Jess scores the summaries for missing details and whether the reply is usable. Start with pasted notes before adding voice calls.",
+      "sources": [
+        {
+          "url": "https://www.cincpro.com/blog/ai-phone-calls-in-real-estate",
+          "label": "CINC · September 15 product post",
+          "published_at": "2026-09-15",
+          "checked_at": "2026-11-05",
+          "kind": "historical_reference"
+        }
+      ]
+    }
+  ]
+}
