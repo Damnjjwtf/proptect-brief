@@ -1,0 +1,101 @@
+{
+  "date_label": "Nov 8, 2026",
+  "briefings": "Briefing #24",
+  "hook": "NAR just crowned the brokerage AI assistant — the category now has an incumbent to beat.",
+  "market_map": "Today: BrokerBot wins NAR's Pitch Battle; Zumper puts tour booking inside Google Search and Maps; and the one-platform wave reaches Corcoran and BHHS.",
+  "where_we_play": "NAR just crowned BrokerBot, and the big brands are building their own platforms — so the assistant category is now a race, not a question. The unserved middle is the independent brokerage: the Open Real Estate buy-in showed 59% independent firms, and those firms can't build a BWCONNECT and may not want a single vendor's assistant trained on someone else's playbook. The opening is a stack-agnostic teammate that plugs into the brokerage's existing tools (the shape from briefing #22), sold to the owner-operator who still runs the brokerage. The sales-side \"book a showing from Google\" (finding 2) is the second open move — Zumper proved the rental version; for-sale is unbuilt.",
+  "one_line": "The independent-brokerage AI teammate, now with a clock on it.",
+  "days": [
+    {
+      "date": "2026-11-08",
+      "stories": [
+        {
+          "title": "BrokerBot wins NAR's Pitch Battle — the brokerage AI assistant is now the anointed category",
+          "summary": "BrokerBot — an AI assistant trained on brokerage work that answers agent questions and handles onboarding, transaction coordination, CRM admin — the brokerage's customer system — and marketing — won NAR's 2026 Tech & Innovation Pitch Battle and the $15,000 prize from Second Century Ventures, NAR's investment arm. NAR is the National Association of Realtors, the industry's big trade group. Co-founder and CEO Jerimiah Taylor took the stage with the oversized check. KytherID — which keeps buyers anonymous at the start of an offer and releases verified information as the deal progresses — won the Crowd Favorite award, voted live by the NXT audience; founder Stephanie Jones posted the trophy herself. The other four finalists (Association Online, CleanSL8, Property Shield, SKLÜT) went home empty-handed. Read the result as NAR's verdict on where the money goes: BrokerBot was already runner-up for best overall at the Inman Best of Proptech awards and a 2026 REACH cohort company — REACH is NAR's startup program — and now it has the industry's own stamp. The winning category is the brokerage AI assistant, not the fraud/identity tools — two of the six finalists were identity tools, and the Crowd Favorite is one of them, so the audience likes identity but the judges picked the assistant. The assistant layer is now a crowned category with an incumbent to beat: build there only with a sharper wedge, or sell the pick-and-shovel around it — the brokerage's own data, the onboarding content BrokerBot trains on. Flag: no formal NAR press release found as of this morning — the winner identification rests on NAR Tech & Innovation's own post (photo of Taylor with the $15,000 winner's check, dated 11/7/2026) plus the pre-event lineup naming Taylor as BrokerBot's co-founder; the Crowd Favorite is confirmed by the winner's own post.",
+          "tags": [
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 7, NAR NXT, New Orleans; NAR Tech & Innovation (Facebook) + Stephanie Jones (Facebook) + Scott Lauri (Instagram/Facebook)",
+              "url": "https://facebook.com/narinnovation"
+            },
+            {
+              "label": "facebook.com",
+              "url": "https://facebook.com/StephanieJMJ"
+            },
+            {
+              "label": "instagram.com",
+              "url": "https://instagram.com/p/Dfe-SCIEdtF/"
+            }
+          ]
+        },
+        {
+          "title": "Zumper puts tour booking inside Google Search and Maps",
+          "summary": "Zumper launched “Book Online”: renters can schedule an apartment tour directly from a community's Google Business Profile — the listing that shows up in Google Search and Maps — without ever visiting the community's own website. It connects to the community's existing tour-scheduling provider, supports in-person, self-guided, and live virtual tours, and passes renter details (contact info, floor plan, move-in date, tour type, time) into the community's workflow. It is available to communities using Zumper's Amplify for Google Business Profile product. The showing is leaving the portal and the agent's site and moving onto Google itself. Zumper's own survey numbers — vendor figures, not independently checked: 59% of renters check a community's Google Business Profile at least sometimes before visiting its own site, and 65% said they would likely book a tour directly from Google. This is rentals and multifamily, not for-sale homes — but the shape transfers directly: a for-sale listing's Google Business Profile with a “book a showing” button is the same product with a different inventory feed. The open move is the sales-side version, and the distribution lesson is the same as Homezai's single-sign-on through the MLS — the shared listing database agents use — in briefing #23: whoever owns the step where the showing gets booked owns the lead. Flag: trade-press roundup of a vendor announcement; the 59%/65% figures are Zumper's own survey.",
+          "tags": [
+            "ai"
+          ],
+          "sources": [
+            {
+              "label": "Nov 6, Online Marketplaces (roundup of Zumper announcement)",
+              "url": "https://onlinemarketplaces.com/articles/product-and-services-roundup-zumper-bienici-avito-ru-zoopla/"
+            }
+          ]
+        },
+        {
+          "title": "The one-platform wave reaches the big brokerages — Corcoran HOME and BHHS MAESTRO",
+          "summary": "Two more big-brokerage platform pushes surfaced on Instagram during NXT week. Corcoran ran a “HOME platform kickoff” event — its Agent Studio reel asked attendees what part of the HOME platform they're most excited about. Berkshire Hathaway HomeServices California Properties is promoting MAESTRO — “One Brokerage. One Connected Experience.” — as its connected agent platform. The pattern from briefings #22–#23 (Jefe, RealtyMark, BWCONNECT — brokerages buying or building one integrated system) now shows at Anywhere- and BHHS-scale brands, not just independents. Anywhere is Corcoran's parent company. That confirms the wave but also narrows the opening: the big brands are building their own, so the remaining buyer is the mid-size independent that can't build and doesn't want a single vendor's stack — the stack-agnostic teammate from briefing #22, now with a clock on it. Flag: promo reels only — no launch dates, no feature lists, no pricing, no agent counts. The wave is visible; the products are not yet checkable.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 6–7, Instagram (promo reels, no launch dates)",
+              "url": "https://instagram.com/reel/DfarnQDhkAd/"
+            },
+            {
+              "label": "instagram.com",
+              "url": "https://instagram.com/reel/DfbHyZII12F/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The independent-brokerage AI teammate, now with a clock on it",
+      "text": "NAR just crowned BrokerBot, and the big brands are building their own platforms — so the assistant category is now a race, not a question. The unserved middle is the independent brokerage: the Open Real Estate buy-in showed 59% independent firms, and those firms can't build a BWCONNECT and may not want a single vendor's assistant trained on someone else's playbook. The opening is a stack-agnostic teammate that plugs into the brokerage's existing tools (the shape from briefing #22), sold to the owner-operator who still runs the brokerage. The sales-side \"book a showing from Google\" (finding 2) is the second open move — Zumper proved the rental version; for-sale is unbuilt."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 2",
+      "title": "Tuccori / NAR buyer settlement — still no outcome, 6 days after the hearing",
+      "text": "The final approval hearing was Monday, Nov 2, 9:30 AM, Judge Jenkins (N.D. Ill.). No order has been reported in Nov 3–8 coverage, and the settlement trackers still show pre-hearing status. Do not cite approval. Scale detail from the Oct 7 filings: $120.3M fund across 26 settling parties, 132,000+ claims, 25 opt-outs, 2 objections."
+    },
+    {
+      "when": "Oct 30",
+      "title": "Compass fight quiet",
+      "text": "The MLSListings join (7th plaintiff in the six-MLS suit, amended complaint Oct 30) was already covered in briefing #18; the Nov 2–4 trade-press pieces are coverage of that same filing, not new developments. Compass still plans to file a motion to dismiss in the separate CRMLS case, and three Compass-affiliated agents plan to ask a judge to quash NAR-issued subpoenas in NAR's legal battle with ThePLS.com. No trial date in the Southern District case; the motion to dismiss is the next event."
+    },
+    {
+      "when": "Nov 8",
+      "title": "NAR NXT ended Nov 8, New Orleans",
+      "text": "No new Open Real Estate news from the floor — the Nov 3–4 pieces remain recaps of the Oct 26 announcement; the vendor pick still runs through Q1 2027."
+    },
+    {
+      "when": "Nov 8",
+      "title": "No SFARMLS news",
+      "text": "Topic 14 open questions unchanged."
+    },
+    {
+      "when": "Nov 11",
+      "title": "Pointers to research briefing #35 (not re-reported)",
+      "text": "EU Digital Fairness Act proposal lands Nov 11 (3 days); FTC + four states settled with Progress Residential for $49.75M over hidden fees and suppressed reviews — show the true total price upfront, disclose every fee, never suppress a review. GenLens #24: OpenAI models leave Cursor Nov 12 (proposed date, talks ongoing)."
+    }
+  ]
+}
