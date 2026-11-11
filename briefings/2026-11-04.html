@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-estate agent-tech briefing — Wed 2026-11-04 (edition #20) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #</p>
+      <h1>Real-estate agent-tech briefing — Wed 2026-11-04 (edition #20)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>Filed 2026-11-04 ~9:00 AM PT. Window: ~24h (since briefing #19, Nov 3 ~9 AM PT). Topic: 14. Plain language throughout; any industry term is explained where it first appears. Dedupe: checked research briefing 2026-11-04 (#31: Claude Code 2.1.318, Jev name trap, plugin countdown, KPop activations — no agent-tech overlaps; Tuccori appears there only as a pointer deferred to this briefing), GenLens 2026-11-04 (#20: enterprise AI spending, MIT weight edit, Kimi weights, Anthropic S-1, 6sense, Adobe AI traffic, Supermetrics, OptimizeGEO, Google K-12, China export draft — none agent-tech), and real-estate-2026-11-03 (#19). Findings below are additive, not repeats. Recirculating Nov 3 items already in #19 (LoKation/Jefe, Homesage MCP, iamproperty One) are not re-elevated.</p>
+<h2>1. Open Real Estate picks up real buy-in — 826 support letters, first MLS backers named (Nov 2–3)</h2>
+<ul>
+<li><strong>Sources:</strong> <a href="https://www.realestatenews.com/2026/11/02/new-listings-platform-gaining-buy-in-from-brokerages-mlss" target="_blank" rel="noopener">https://www.realestatenews.com/2026/11/02/new-listings-platform-gaining-buy-in-from-brokerages-mlss</a> · <a href="https://www.inman.com/2026/11/03/open-real-estate-who-controls-the-feed-and-who-gets-paid/" target="_blank" rel="noopener">https://www.inman.com/2026/11/03/open-real-estate-who-controls-the-feed-and-who-gets-paid/</a></li>
+<li><strong>What it is:</strong> Open Real Estate (ORE) — the shared listing pipe launched Oct 26 by AGNT (eXp&#x27;s parent), HomeServices of America, Keller Williams, and Real REMAX Group — now reports 825–826 letters of support from brokerage leaders, 59% of them from independent firms, plus support from four regional MLSs (the first MLS backers named; the reports do not name all four in the excerpts checked). Early participating brokerages named include Brown Harris Stevens, Lamacchia Realty, Samson Properties, and Windermere. The pitch stays the same: enter a listing once in standard fields, share it with participating brokerages and local MLSs at the same time, free to join, with participating brokerages sharing revenue equally per listing. Inman&#x27;s Nov 3 analysis names the real question: who controls the feed and who gets paid — if a brokerage-led pipe becomes a major distribution point, local MLSs keep their rules and tools but lose their role as the place listings flow through. The same analysis flags the tension in ORE&#x27;s own rules: a &quot;participant view&quot; category lets listings sit visible to participating agents without public marketing, which sits awkwardly with the word &quot;open.&quot;</li>
+<li><strong>Product opportunity (watch the vendor pick, not the press release):</strong> ORE&#x27;s own FAQ says technology-vendor selection runs through Q1 2027. Whoever builds that pipe — and whatever standard it sets for listing entry, distribution, and revenue sharing — becomes the template every later entrant copies. For JJ, the opening is not another pipe; it is the layer around the pipe: destination choice, exit terms, and per-listing payment tracking for brokerages that join. That is briefing #16&#x27;s permission-and-exit whitespace, now with a dated decision window (Q1 2027) attached.</li>
+<li><strong>Flag:</strong> support-letter counts and the &quot;equal revenue sharing&quot; model are the founders&#x27; own figures; no MLS acceptance, governance, or vendor pick is final. Still a plan, not a working platform.</li>
+</ul>
+<h2>2. HouseCanary pushes MLS listings into Google search — three more brokerages, 1,000+ agents (Nov 4, in-window)</h2>
+<ul>
+<li><strong>Source:</strong> <a href="https://www.housingwire.com/articles/housecanary-expands-google-listings/" target="_blank" rel="noopener">https://www.housingwire.com/articles/housecanary-expands-google-listings/</a></li>
+<li><strong>What it is:</strong> HouseCanary signed three brokerages — RE/MAX Advantage, Berkshire Hathaway HomeServices Florida Properties Group, and ENRG Realty — to its Google Listings Program, putting active listings for more than 1,000 additional agents into Google mobile search in live markets. The program (launched early 2026, slated to expand to all eligible US markets this fall) works by HouseCanary negotiating agreements with MLSs to send member brokerages&#x27; listings to Google. Participating MLSs named in the report: Arizona Regional MLS, Bright MLS, California Regional MLS (CRMLS), IRES MLS, Permian Basin Board of Realtors, REcolorado, and San Diego MLS.</li>
+<li><strong>Product opportunity (partner / reverse-engineer):</strong> this is the intermediary lane in action — the company that moves listing data from MLS systems to the consumer surface captures the first inquiry, and the first inquiry is the business. Note what is missing from the MLS list: SFARMLS is not a participant, and neither is any other NorCal Alliance MLS. For Jessica, that gap is the point: the pipes reaching Google today do not yet include her market, which is either an opening (a first-mover pitch for a Bay Area MLS) or a warning (her MLS is not in the room where this distribution is being negotiated).</li>
+<li><strong>Flag:</strong> HousingWire report based on a company announcement (automation-assisted, editor-reviewed). No pricing, opt-in rates, or inquiry-volume figures disclosed.</li>
+</ul>
+<h2>3. SFAR itself changes systems — GrowthZone member platform launches, tied to SFARMLS records (Nov 4, in-window)</h2>
+<ul>
+<li><strong>Source:</strong> <a href="https://www.newswire.com/news/san-francisco-association-of-realtors-launches-growthzone-ams-with-gz-learn" target="_blank" rel="noopener">https://www.newswire.com/news/san-francisco-association-of-realtors-launches-growthzone-ams-with-gz-learn</a></li>
+<li><strong>What it is:</strong> The San Francisco Association of REALTORS (SFAR) launched GrowthZone AMS with GZ Learn built in as its new member-management and education platform for its nearly 4,000 members — one place to manage membership, register for events, pay dues, and take courses. For staff, GrowthZone&#x27;s Real Estate Edition ties member records to NRDS (the national member database) and SFARMLS in one system. SFAR introduced it to members at the SF Summit on Oct 26, with hands-on training on stage.</li>
+<li><strong>Product opportunity (a window, not an opening):</strong> this is the first SFAR systems news in this record in weeks, and it matters for timing, not for access. Nothing here changes vendor credentialing or opens a data door — GrowthZone is member management, not a listing-data API. But an association mid-systems-change is an association whose staff is already in &quot;new vendor&quot; mode, which is a better moment for a governed-access conversation than a quiet one. The practical read for JJ and Jessica: the pitch draft stays held (no outreach without her go-ahead), but the calendar argument for it just got stronger — SFAR is modernizing its stack right now.</li>
+<li><strong>Flag:</strong> vendor release (GrowthZone as source, via Newswire). No data-access, API, or vendor-program detail in the announcement.</li>
+</ul>
+<h2>4. Australia: commercial comparable sales go pay-per-row over MCP — the data-layer pattern spreads (Nov 4, in-window)</h2>
+<ul>
+<li><strong>Source:</strong> <a href="https://it.einnews.com/pr_news/954378583/htag-opens-australian-commercial-property-sales-data-to-ai-assistants-through-mcp" target="_blank" rel="noopener">https://it.einnews.com/pr_news/954378583/htag-opens-australian-commercial-property-sales-data-to-ai-assistants-through-mcp</a></li>
+<li><strong>What it is:</strong> HtAG Analytics (Melbourne) launched commercial sold-property search in its Developer Portal: sold industrial, office, retail, and other commercial property, searchable by location, category, tenure, price, date, and size, through a self-serve REST API and through MCP (Model Context Protocol — the open standard that lets an AI assistant call outside data tools). Searches are billed per row at A$0.075 on the Enhanced tier, first 25 rows free, with a no-code Playground in the browser. HtAG&#x27;s connectors are listed in Anthropic&#x27;s Claude connector directory. A live search cited in the release returned 14 industrial sales within 5 km of Huntingwood, NSW, since Nov 1, 2025 — only one with a recorded sale price, which is itself the point: commercial sale prices are usually unpublished (&quot;contact agent&quot;).</li>
+<li><strong>Product opportunity (model to borrow):</strong> two things travel to the US even though the data does not. First, pay-per-row pricing for comparable sales — a cleaner model than credit bundles for a comp product, because the buyer pays for evidence used, not access promised. Second, the MCP-plus-API pairing from briefing #19&#x27;s Homesage pattern, now applied to the hardest comps to find (commercial, where prices are hidden). A US version would still need a lawful data source — county records, not MLS feeds — but the pricing and distribution shape is copyable today.</li>
+<li><strong>Flag:</strong> vendor release (EIN Presswire). Australia-only; sold comps only — no commercial leasing, rents, yields, or for-sale listings. No adoption or accuracy figures.</li>
+</ul>
+<h2>Also noted (one line each)</h2>
+<ul>
+<li><strong>IG sweep:</strong> no new in-window agent-tech launch with verifiable evidence. Adoption evidence, not a launch: a Nov 4 Reel interviews REAL Broker CTO Pritesh Damani on Leo (the platform already in this record since briefing #7) — 350+ specialized AI agents claimed, MLS-data connections described as upcoming, not live. Gray-zone pattern, vendor claim only: Bounti (Nov 3 Reel, @brokerjeff) says MLS integration is now live for Canopy-system users, pulling CMAs and market reports into its assistant — small account, unverified, not elevated. Repeats/promos only: Realestoria AI Agent (already in #19), Breezy comp app demo, Gamma listing presentations, listing-pack automation, WhatsApp lead bots.</li>
+<li><strong>Ruled out / not new:</strong> Luxury Presence&#x27;s Best Overall Proptech win (BusinessWire, Nov 3) restates the Oct 29 award already covered in briefing #15; LoKation/Jefe coverage recirculating Nov 3–4 is briefing #19&#x27;s finding, not a new one. The Agency&#x27;s in-house AI platform and NAR REACH award coverage remain background, not in-window movement.</li>
+</ul>
+<h2>Whitespace / opening worth a closer look</h2>
+<p><strong>The pipe-picker moment: build the tool that lets a brokerage compare, join, and leave listing pipes.</strong> Findings 1, 2, and 4 converge: ORE is choosing a tech vendor by Q1 2027, HouseCanary is already moving MLS listings to Google through negotiated MLS deals, and HtAG shows comp data going pay-per-row over a standard connection. The pipes are multiplying; nobody is selling the brokerage-side control panel — which pipes carry my listings, what each one pays per listing, what happens to my data if I leave. That panel is the permission-and-exit layer from briefing #16, and the ORE vendor window gives it a deadline. It needs no MLS credentialing to prototype (it tracks deals and destinations, not listings), and it becomes more valuable with every new pipe.</p>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>Tuccori/NAR buyer settlement: STILL no outcome surfaced, two days after the Nov 2 final approval hearing.</strong> Checked HousingWire, Inman, OpenClassActions, and the settlement site this morning: the latest court documents found are still the Oct 7 final-approval memos, and tracker pages still read &quot;awaiting final approval.&quot; The judge may have taken the matter under advisement, or an order may not yet be posted or reported — either way, <strong>do not cite approval until an order or a reputable report lands.</strong> Fund $120,334,500, NAR share $52.25M; claims closed Oct 27; no payment date until approval. Source: <a href="https://openclassactions.com/settlements/real-estate/homebuyer-antitrust-class-action-settlement.php" target="_blank" rel="noopener">https://openclassactions.com/settlements/real-estate/homebuyer-antitrust-class-action-settlement.php</a></li>
+<li><strong>Compass cooperation-rules fight: no new filing or ruling in-window.</strong> A Nov 4 recap (RealtyToday) confirms the next event is Compass&#x27;s anticipated motion to dismiss, with no trial date set in either SDNY case. Texture from a Nov 1 scoreboard (LinkedIn): nine MLSs publicly refusing Compass&#x27;s demand, eight in litigation, ~272,000 subscribers behind them, and a CMLS legal-defense fund above $1M; OneKey&#x27;s filing shows 156 cooperation fines (~$407,800) since Jan 2025, five to Compass (~$13,800, $9,300 waived). The count stands at nine MLS plaintiffs across the two cases (CRMLS + OneKey; Arizona Regional, BridgeMLS, Canopy, Doorify, Hive, REcolorado, MLSListings). No SFARMLS position has surfaced either way.</li>
+<li><strong>AI listing-photo disclosure wave gains a new city (proposal, not law):</strong> a Nov 3 TBPN segment surfaces NYC Mayor Zohran Mamdani&#x27;s proposal for mandatory disclosure of AI-generated apartment listings. It joins the laws already in this record — California and Wisconsin disclosure rules effective Jan 1, 2027 — but a mayoral proposal is not a statute; treat it as direction of travel, not a compliance deadline.</li>
+<li><strong>No new movement in-window on:</strong> NAR rule changes; FTC or state enforcement actions affecting agent tools or listing-data use; RESO MCP Profile adoption; ORE governance or vendor pick beyond the buy-in numbers above; the NAR/Compass discovery fight.</li>
+<li><strong>Standing, unchanged:</strong> NAR&#x27;s Clear Cooperation Policy (one-business-day submission rule) still being defended on multiple fronts; CVR MLS AI-access ban (effective Oct 1) still the only named MLS AI ban in this record; NAR broker AI rulebook (briefing #13) still the clearest gray-zone line; state private-listing laws keep spreading (WA June, CT Oct 1, WI Jan 1 2027, NY awaiting signature); Cotality Trestle MCP + Defender (briefing #5) still the sanctioned-AI template; RESO Web API remains the standard, and each MLS&#x27;s vendor credentialing remains the gate.</li>
+<li><strong>No SFARMLS data-access news in-window.</strong> Finding 3 is a member-systems launch, not a data door. Topic 14 open questions unchanged: vendor-credentialing path and terms still unknown; license doc still 2015. The prototype-first route (build on public-record data layers like briefing #19&#x27;s Homesage MCP, then walk in with something live) still stands.</li>
+</ul>
+<hr>
+<p><em>Briefings in this series: #1 Oct 16 (MLS gray zone, Ploti, BoldTrail MCP, Ruuster 2.0) · #2 Oct 17 (Cotality Claude connector, SourceRE free MCP, gray-zone hack reel) · #3 Oct 18 (FlexMLS Claude/MCP, SourceRE deep-dive, eXp MCP-first) · #4 Oct 19 (PropertyRadar ChatGPT/Claude MCP, Bright listing statuses, SERHANT. Dot) · #5 Oct 20 (Zillow Claude connector, Cotality Trestle MCP + Defender, Real Leo Pro rumor, Bright statuses live) · #6 Oct 21 (Solid Earth Recursive launch, Homesage.ai sandbox, DC photo-disclosure bill, eXp two-AI-tools rumor) · #7 Oct 22 (Leo Pro, LienWatch.AI, RESO CEO Istanbul keynote, Q3 funding concentration) · #8 Oct 23 (Agent Buddi × Affiliated Monitoring, RealPlus AI Connector, Archie Engine 1.3 local model) · #9 Oct 24 (RECO Ontario AI guidance, ReStructure &quot;41-agent team,&quot; EasyAgentIDX IDX + read-only MCP) · #10 Oct 25 (RESO MCP Profile proposal, Yardi Virtuoso Enterprise, 1 Percent Lists AI-search play) · #11 Oct 26 (Open Real Estate launch, Agent Image SiteAI, FOREWARN Community Alerts, NTREIS reData Export) · #12 Oct 27 (DealNav 3.0, DealGround Claude connector, Open Real Estate day two, Keyes × HouseCanary Google Listings) · #13 Oct 28 (Delta Intelligent Websites, RealScout × eXp Coming Soon, Open Real Estate day three, NAR broker AI rulebook) · #14 Oct 29 (OneKey joins CRMLS v. Compass, Open Real Estate day four, RoostHaven, pre-search analysis) · #15 Oct 30 (RentRedi × Bright MLS, Bright AI Academy + CYPHER survey, Inman Best of Proptech winners, NAR v. Compass discovery fight) · #16 Oct 31 (Mod Seller IQ, Open Real Estate day six, Compass Home Platform, UpstreamRE data-standard friction) · #17 Nov 1 (PropertyRadar × CENTURY 21 Commercial, The Agency&#x27;s in-house AI platform, Open Real Estate day seven, Inman Best of Proptech rest of winners) · #18 Nov 2 (MLSListings joins Compass suit, Upfront instant payouts, Zillow Likely to List 1-in-4, DataCentering broker tools) · #19 Nov 3 (Homesage MCP server, LoKation/Jefe, iamproperty One).</em></p>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-04.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>

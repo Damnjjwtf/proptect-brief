@@ -89,6 +89,7 @@ def edition_html(edition, issue_date, canonical):
         <p class="lede">Real estate tech, scouted daily — what's out there and where we play.</p>
         <p class="hook">{line(edition, 'hook')}</p>
         <p class="meta-line"><b>{counts}</b> {'story' if counts == 1 else 'stories'} · <b>{len(dates)}</b> {'day' if len(dates) == 1 else 'days'} · <b>30 sec</b> skim · {line(edition, 'briefings')}</p>
+        <p class="full-brief"><a href="https://damnjjwtf.github.io/proptect-brief/briefings/{issue_date}.html">Read the full daily brief &rarr;</a></p>
       </header>
       <section class="scouting" aria-label="Scouting report">
         <h2 class="section-label">Scouting Report</h2>
@@ -129,7 +130,15 @@ def build(destination):
     rows = []
     for issue_date in sorted(issues, reverse=True):
         page, label, briefings = issues[issue_date]
-        (archive / f'{issue_date}.html').write_text(with_archive_link(page, './'), encoding='utf-8')
+        page = with_archive_link(page, './')
+        if issue_date == FIRST_DATE:
+            # The bundled first edition is the raw template, not edition_html,
+            # so it never got the hero link: add it after its baked-in meta-line.
+            link = ('<p class="full-brief"><a href="https://damnjjwtf.github.io/proptect-brief/briefings/'
+                    f'{issue_date}.html">Read the full daily brief &rarr;</a></p>')
+            page = page.replace('Editions <b>#10–#12</b></p>',
+                                'Editions <b>#10–#12</b></p>\n        ' + link, 1)
+        (archive / f'{issue_date}.html').write_text(page, encoding='utf-8')
         rows.append(f'<article class="card"><h3><a href="{issue_date}.html">{label}</a></h3><p class="one-line">{briefings}</p></article>')
     head = canonical.split('<body>', 1)[0].replace(f'<title>{TITLE}</title>', f'<title>Archive | {TITLE}</title>')
     archive_html = f'''{head}<body><main class="wrap">

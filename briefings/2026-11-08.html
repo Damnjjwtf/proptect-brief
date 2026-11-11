@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-Estate Briefing #24 — Sun 2026-11-08 (8 AM PT) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #24</p>
+      <h1>Real-Estate Briefing #24 — Sun 2026-11-08 (8 AM PT)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>Plain language throughout; any industry term is explained where it first appears.</p>
+<h2>1. BrokerBot wins NAR&#x27;s Pitch Battle — the brokerage AI assistant is now the industry&#x27;s anointed category</h2>
+<p><strong>Nov 7, NAR NXT, New Orleans; NAR Tech &amp; Innovation (Facebook) + Stephanie Jones (Facebook) + Scott Lauri (Instagram/Facebook)</strong> | facebook.com/narinnovation (winner photo, check dated 11/7/2026) · facebook.com/StephanieJMJ (Crowd Favorite) · instagram.com/p/Dfe-SCIEdtF/ (ceremony carousel)</p>
+<ul>
+<li><strong>What it is:</strong> <strong>BrokerBot</strong> — the brokerage-trained AI assistant that answers agent questions and handles onboarding, transaction coordination, CRM admin, and marketing — won NAR&#x27;s 2026 Tech &amp; Innovation Pitch Battle and the $15,000 prize from Second Century Ventures, NAR&#x27;s investment arm. Co-founder and CEO Jerimiah Taylor took the stage with the oversized check. <strong>KytherID</strong> — buyers stay anonymous at the start of an offer, verified information released as the deal progresses — won the Crowd Favorite award, voted live by the NXT audience; founder Stephanie Jones posted the trophy herself. The other four finalists (Association Online, CleanSL8, Property Shield, SKLÜT) went home empty-handed.</li>
+<li><strong>What it means:</strong> read the result as NAR&#x27;s verdict on where the money goes. BrokerBot was already the runner-up for best overall at the Inman Best of Proptech awards and a 2026 REACH cohort company — now it has the industry&#x27;s own stamp. The winning category is the brokerage AI assistant, not the fraud/identity tools (two of six finalists, and the Crowd Favorite is one of them — the audience likes identity, the judges picked the assistant). For the whitespace: the assistant layer is now a crowned category with an incumbent to beat — build there only with a sharper wedge, or sell the pick-and-shovel around it (the brokerage&#x27;s own data, the onboarding content BrokerBot trains on). <strong>Flag:</strong> no formal NAR press release found as of this morning — the winner identification rests on NAR Tech &amp; Innovation&#x27;s own post (photo of Taylor with the $15,000 winner&#x27;s check, dated 11/7/2026) plus the pre-event lineup naming Taylor as BrokerBot&#x27;s co-founder; the Crowd Favorite is confirmed by the winner&#x27;s own post.</li>
+</ul>
+<h2>2. Zumper puts tour booking inside Google Search and Maps — the showing front door moves to Google</h2>
+<p><strong>Nov 6, Online Marketplaces (roundup of Zumper announcement)</strong> | onlinemarketplaces.com/articles/product-and-services-roundup-zumper-bienici-avito-ru-zoopla/</p>
+<ul>
+<li><strong>What it is:</strong> Zumper launched &quot;Book Online&quot;: renters can schedule an apartment tour directly from a community&#x27;s Google Business Profile — the listing that shows up in Google Search and Maps — without ever visiting the community&#x27;s own website. It connects to the community&#x27;s existing tour-scheduling provider, supports in-person, self-guided, and live virtual tours, and passes renter details (contact info, floor plan, move-in date, tour type, time) into the community&#x27;s workflow. It is available to communities using Zumper&#x27;s Amplify for Google Business Profile product.</li>
+<li><strong>What it means:</strong> the showing is leaving the portal and the agent&#x27;s site and moving onto Google itself. Zumper&#x27;s own survey numbers (vendor figures, not independently checked): 59% of renters check a community&#x27;s Google Business Profile at least sometimes before visiting its own site, and 65% said they would likely book a tour directly from Google. This is rentals and multifamily, not for-sale homes — but the shape transfers directly: a for-sale listing&#x27;s Google Business Profile with a &quot;book a showing&quot; button is the same product with a different inventory feed. The open move is the sales-side version, and the distribution lesson is the same as Homezai&#x27;s SSO-through-the-MLS (briefing #23): whoever owns the step where the showing gets booked owns the lead. <strong>Flag:</strong> trade-press roundup of a vendor announcement; the 59%/65% figures are Zumper&#x27;s own survey.</li>
+</ul>
+<h2>3. The one-platform wave reaches the biggest brokerages — Corcoran HOME and BHHS MAESTRO</h2>
+<p><strong>Nov 6–7, Instagram (promo reels, no launch dates)</strong> | instagram.com/reel/DfarnQDhkAd/ (Corcoran Agent Studio) · instagram.com/reel/DfbHyZII12F/ (BHHS California Properties)</p>
+<ul>
+<li><strong>What it is:</strong> Two more big-brokerage platform pushes surfaced on Instagram during NXT week. Corcoran ran a &quot;HOME platform kickoff&quot; event (Corcoran Agent Studio reel: attendees asked what part of the HOME platform they&#x27;re most excited about). Berkshire Hathaway HomeServices California Properties is promoting <strong>MAESTRO</strong> — &quot;One Brokerage. One Connected Experience.&quot; — as its connected agent platform.</li>
+<li><strong>What it means:</strong> the pattern from briefings #22–#23 (Jefe, RealtyMark, BWCONNECT — brokerages buying or building one integrated system) now shows at Anywhere- and BHHS-scale brands, not just independents. That confirms the wave but also narrows the opening: the big brands are building their own, so the remaining buyer is the mid-size independent that can&#x27;t build and doesn&#x27;t want a single vendor&#x27;s stack — the stack-agnostic teammate from briefing #22, now with a clock on it. <strong>Flag:</strong> promo reels only — no launch dates, no feature lists, no pricing, no agent counts. The wave is visible; the products are not yet checkable.</li>
+</ul>
+<h2>Whitespace</h2>
+<p><strong>The independent-brokerage AI teammate, now with a clock on it.</strong> NAR just crowned BrokerBot, and the big brands are building their own platforms — so the assistant category is now a race, not a question. The unserved middle is the independent brokerage: the Open Real Estate buy-in showed 59% independent firms, and those firms can&#x27;t build a BWCONNECT and may not want a single vendor&#x27;s assistant trained on someone else&#x27;s playbook. The opening is a stack-agnostic teammate that plugs into the brokerage&#x27;s existing tools (the shape from briefing #22), sold to the owner-operator who still runs the brokerage. The sales-side &quot;book a showing from Google&quot; (finding 2) is the second open move — Zumper proved the rental version; for-sale is unbuilt.</p>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>Tuccori / NAR buyer settlement — STILL no outcome, 6 days post-hearing.</strong> The final approval hearing was Monday, Nov 2, 9:30 AM, Judge Jenkins (N.D. Ill.). No order has been reported in Nov 3–8 coverage, and the settlement trackers still show pre-hearing status. Do not cite approval. Scale detail from the Oct 7 filings: $120.3M fund across 26 settling parties, 132,000+ claims, 25 opt-outs, 2 objections.</li>
+<li><strong>Compass fight — no new movement.</strong> The MLSListings join (7th plaintiff in the six-MLS suit, amended complaint Oct 30) was already covered in briefing #18; the Nov 2–4 trade-press pieces are coverage of that same filing, not new developments. Compass still plans to file a motion to dismiss in the separate CRMLS case, and three Compass-affiliated agents plan to ask a judge to quash NAR-issued subpoenas in NAR&#x27;s legal battle with ThePLS.com. No trial date in the Southern District case; the motion to dismiss is the next event.</li>
+<li><strong>NAR NXT ends today, Nov 8, New Orleans.</strong> No new Open Real Estate news from the floor — the Nov 3–4 pieces remain recaps of the Oct 26 announcement; the vendor pick still runs through Q1 2027.</li>
+<li><strong>No SFARMLS news</strong> — Topic 14 open questions unchanged.</li>
+<li><strong>Pointer to research briefing #35 (not re-reported):</strong> EU Digital Fairness Act proposal lands Nov 11 (3 days); FTC + four states settled with Progress Residential for $49.75M over hidden fees and suppressed reviews — show the true total price upfront, disclose every fee, never suppress a review. GenLens #24: OpenAI models leave Cursor Nov 12 (proposed date, talks ongoing).</li>
+</ul>
+<h2>Also noted</h2>
+<ul>
+<li><strong>BuildNext raises $3.5M pre-Series A (Nov 8, rprealtyplus):</strong> Kochi-based proptech for VR home-construction experience centers, led by Madhumala Ventures — construction-tech, not agent-tech; noted for the funding file, not elevated.</li>
+<li><strong>JohnHart &quot;JANE&quot; (Nov 6, Instagram teaser):</strong> a docuseries premiering Nov 12, &quot;the story behind Jane&quot; — a brokerage AI assistant from JohnHart Real Estate. Teaser only; watch the Nov 12 premiere for what Jane actually does.</li>
+<li><strong>Oak Lane AI (Nov 7, Instagram):</strong> drafts a weekly seller update from showing feedback (&quot;buyers loved the yard but flagged the price&quot;) — the showing-feedback-to-seller thread, same family as Trust Moments&#x27; buyer-signal idea, small vendor, promo only.</li>
+<li><strong>Lab Coat Agents &quot;Tech Watch&quot; (Nov 7, Instagram):</strong> weekly roundup confirms the week&#x27;s items — Trust Moments, RealtyMark/Almee, Zumper (finding 2), RealReports × LERA — no other new launches in it.</li>
+<li><strong>Supa £21M seed (Nov 4–5):</strong> already in the Friday money briefing; not re-reported.</li>
+</ul>
+<h2>IG sweep</h2>
+<p>No new launches beyond the items above — the rest is small-vendor promo, all unverified, none elevated: RealTea AI &quot;Ellis&quot; (voice assistant demo, Nov 8); BIS Realty &quot;BRIA Copilot&quot; (&quot;your AI twin, trained by you,&quot; Nov 8); Property Launch AI (listing link → marketing materials, Nov 8); Marvberry (mascot AI assistant, Nov 8); We Are Magnets &quot;WAM Agent&quot; (listings via chat/PDF/voice notes, Nov 8); 91prop AI calling agents; Chippi (team AI assistant); HomeListingAI (after-hours chat); Burrak AI (showing-notes → follow-up); SabiProp (website + CRM for realtors); PostAI (listing → guided tour video, Singapore); Immvela (team AI, RE/MAX Germany survey claim); Agent Legend (after-hours lead answering); Desk Pilot (admin assistant); EasyReal (&quot;Ask. It&#x27;s Done.&quot;); Hey ARI; SL1 virtual assistant; &quot;Inside Agentic&quot; 6-week Claude Project program for agents (Nov 7); &quot;5 AI tools every realtor should know&quot; listicle (Nov 6). Mudafy Fénix Copilot repeat (already briefing #23).</p>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-08.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>

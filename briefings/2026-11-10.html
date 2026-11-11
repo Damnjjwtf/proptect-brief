@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-Estate Briefing #26 — Tue 2026-11-10 (8 AM PT) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #26</p>
+      <h1>Real-Estate Briefing #26 — Tue 2026-11-10 (8 AM PT)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>Plain language throughout; any industry term is explained where it first appears.</p>
+<h2>1. NAR just gave MLSs a claim on listing content — up to 50% copyright, plus new data-feed rules</h2>
+<p><strong>Approved Nov 8 at NAR NXT, reported Nov 9</strong> | theclose.com/news/news-nar-mls-copyright-policy-changes/ · housingwire.com/articles/nar-nxt-strategic-plan-mls/</p>
+<ul>
+<li><strong>What it is:</strong> NAR&#x27;s board approved four MLS policy changes at NAR NXT in New Orleans on Nov 8. The headline one is optional for local MLSs: an MLS may require brokers who don&#x27;t opt out to hand over up to a <strong>50% shared copyright interest in eligible listing content</strong> — photos and other marketing materials. It&#x27;s shared ownership, not ownership of half the photos, and no copyrights move automatically under the national policy; brokers keep the right to use and license their own content independently, and adopting MLSs must register database updates with the US Copyright Office at least quarterly. The other three changes: MLSs may set local <strong>data-feed eligibility and licensing requirements</strong> (reasonable, objective, applied equally) affecting IDX (internet data exchange — the feed that puts other brokers&#x27; listings on your site), virtual-office and broker back-office feeds, and syndication; a mandatory policy reinforcing that MLS data use must comply with agreements and relate to brokerage services, appraisals, or property valuations; and updated qualifications for NAR&#x27;s MLS Committee.</li>
+<li><strong>What it means:</strong> this is the permission layer moving under Jessica&#x27;s feet, in both directions at once. The copyright provision means the listing — the raw material of any MLS-data product — can now be part-owned by the MLS itself, which strengthens the MLS&#x27;s hand in any data-use negotiation and complicates who can license what to whom. The data-feed change means each MLS can now write its own eligibility rules for who gets a feed and on what terms — the vendor-credentialing gate from briefing #1, now with a national blessing to be local and specific. For the product question: any MLS-data product now needs a rights check built in from day one — who owns each photo and description (broker, photographer, or MLS), what the local MLS&#x27;s feed terms allow, and whether the broker opted out. The &quot;around the gate&quot; stack (public records + IDX) is untouched by the copyright provision, which makes it relatively more attractive, not less. <strong>Flag:</strong> trade-press reporting of a policy approval (The Close, HousingWire); no MLS has adopted the provision yet, so local effect is zero until one does — watch which MLS moves first. The $1.93M Zillow photo-copyright award (2023, upheld on appeal) is the reminder that this exposure is real money.</li>
+<li><strong>For Jessica:</strong> the SFAR angle is unchanged in the short term — SFARMLS would have to adopt the provision locally, and nothing says it has. But the next vendor conversation should now include two questions that didn&#x27;t exist last week: has SFARMLS adopted (or does it plan to adopt) the copyright provision, and what are its data-feed eligibility terms under the new policy?</li>
+</ul>
+<h2>2. NAR&#x27;s own data scientist warns agents about AI — and the numbers show why the warning matters now</h2>
+<p><strong>Nov 9, HousingWire (NAR NXT session, Nov 8)</strong> | housingwire.com/articles/nar-warns-ai-risks/</p>
+<ul>
+<li><strong>What it is:</strong> At NAR NXT, NAR&#x27;s director of data science Mike Woodward gave agents a blunt AI-risk session: free AI tools ingest what you feed them (&quot;if you&#x27;re not paying for it, you are the product&quot;), large language models hallucinate with confidence (he asked Claude for records on his own home and <strong>five of seven facts came back wrong</strong>), and AI image edits can cross into misrepresentation — adding a fireplace, moving a window, dropping in a pool breaches the Realtor Code of Ethics. His line on disclosure: show the original next to the edited image, label the edit clearly, and &quot;if you use AI and you don&#x27;t confess to it, you&#x27;re going to get caught.&quot; The session lands on top of NAR&#x27;s 2026 Realtors Technology Report (September): <strong>23% of agents use AI daily, 25% weekly, 31% occasionally — only 12% don&#x27;t use it and don&#x27;t plan to, down from 32% in 2025.</strong></li>
+<li><strong>What it means:</strong> the adoption curve has flipped — AI use among agents went from a minority habit to the default in a year — and the industry&#x27;s own body is now teaching risk instead of enthusiasm. Two product reads: first, the &quot;check the AI&#x27;s work&quot; layer is now a mainstream agent need, not a power-user one — a verification pass on AI-written listing copy, comps, and market claims, priced as insurance rather than software. Second, Woodward&#x27;s disclosure line is the same message as the Jan 1, 2027 photo-disclosure deadline (briefing #25&#x27;s whitespace): the compliance tool that archives the original, stamps the edit, and writes the disclosure now has NAR&#x27;s own stage behind it. <strong>Flag:</strong> conference-session reporting, not a study; the 23/25/31/12 figures are from NAR&#x27;s September report, trade-press summarized.</li>
+</ul>
+<h2>3. Agentree launches AI Studio — the whole listing-marketing job in one browser tab, including a cloned voice</h2>
+<p><strong>Nov 10, EIN Presswire (vendor release)</strong> | einnews.com/pr_news/955560435/agentree-launches-ai-studio-an-all-in-one-ai-suite-for-real-estate-agents</p>
+<ul>
+<li><strong>What it is:</strong> <strong>AI Studio</strong>, from Agentree (a marketing platform built for agents), is a suite of image, video, and writing tools: studio-quality headshots and lifestyle photo sets from one selfie; virtual staging and 3D floor plans (empty rooms furnished, &quot;walls and floors untouched&quot;); listing photos stitched into video walkthroughs; <strong>talking videos where the agent&#x27;s photo delivers a script in their own cloned voice</strong> (one short voice recording to clone it); listing descriptions, captions, emails, Reel scripts, and cold-call scripts written in the agent&#x27;s own voice from pasted samples; carousels and flyers generated from a topic or an MLS sheet. It sits inside Agentree&#x27;s platform (agent websites, listing pages, lead funnels, 4,000+ social templates). Free plan includes a website and 30 AI credits; Pro is <strong>$69/month</strong> with 1,000 credits.</li>
+<li><strong>What it means:</strong> the agent-marketing stack keeps consolidating toward one system that does the whole launch (briefings #24–#25: Coffee &amp; Contracts&#x27; Beans does the same from the social side). The new piece here is the cloned voice + talking video — the agent&#x27;s face and voice as a reusable asset, which is the same &quot;likeness as inventory&quot; shape as the Lotta character work, pointed at listings. The gap in the release is the story: it says nothing about disclosing AI-altered photos or AI-generated video, and nothing about watermarking — with California&#x27;s rental-ad disclosure law and Wisconsin&#x27;s advertising rule both taking effect Jan 1, 2027, a tool that stages rooms and clones voices without a disclosure step is shipping into a deadline. The open move is the same compliance layer from #25, now with a voice-clone disclosure to add. <strong>Flag:</strong> vendor release only; no independent test, no user numbers, no adoption figures. Agentree is based in Belgrade; no US agent count given.</li>
+</ul>
+<h2>Whitespace</h2>
+<p><strong>The listing-rights ledger — now with a clock on it.</strong> Yesterday&#x27;s whitespace (the compliance layer for AI-altered listing photos, deadline Jan 1, 2027) stands, and finding 1 sharpens it: the tool that archives the original, stamps the edit, and writes the disclosure should also record <strong>who owns each asset</strong> — broker, photographer, or MLS under the new 50% provision — because the same photo now carries two questions (was it altered? who owns it?) and the MLS&#x27;s answer to the second one can change by market. Nobody in this record sells that combined check. The buyer is the broker who just learned their MLS may own half their listing content, and the trigger is the first MLS that adopts the provision.</p>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>NAR MLS copyright + data-feed policy — NEW, approved Nov 8 (finding 1).</strong> Optional 50% copyright interest in listing content (broker opt-out required); MLSs may set local data-feed eligibility and licensing rules; mandatory tie of MLS data use to brokerage services/appraisals/valuations. No MLS adoption reported yet — watch for the first adopter.</li>
+<li><strong>Tuccori / NAR buyer settlement — STILL no outcome, 8 days post-hearing.</strong> The Nov 2 fairness hearing ended with the court taking final approval under advisement; a settlement tracker checked Nov 9 confirms no order since. Do not cite approval. $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Claims closed Oct 27.</li>
+<li><strong>AI photo disclosure — hard deadline Jan 1, 2027 (52 days).</strong> California AB 2025 (rental ads) + Wisconsin Act 69 take effect; California AB 723 (sale ads) in effect since Jan 1, 2026. Metro MLS (Wisconsin) enforcing since Sept 1 — $10/day for an unlabeled altered primary photo. NAR&#x27;s own NXT session (finding 2) now preaches the same disclosure rule. Bills pending in New York, New Jersey, and Washington, D.C. — not law yet.</li>
+<li><strong>Compass fight — no new movement in-window.</strong> Nov 3–4 press still recaps the Oct 30 items (MLSListings as 7th plaintiff; Compass&#x27;s planned motion to dismiss in the CRMLS case; subpoena-quash hearing Nov 20; separate Magloire securities suit, lead-plaintiff deadline Dec 8). No trial date in either SDNY case.</li>
+<li><strong>NAR NXT ended Nov 8, New Orleans.</strong> The copyright/data-feed policies are the substantive outcome for this thread; ORE vendor pick still runs through Q1 2027.</li>
+<li><strong>No SFARMLS news on vendor access</strong> — Topic 14 open questions unchanged. (SFAR&#x27;s GrowthZone member platform was briefing #20, Nov 4.)</li>
+<li><strong>Pointers to GenLens #26 / research #37 (not re-reported):</strong> EU Digital Fairness Act proposal lands <strong>tomorrow, Nov 11</strong> (leaked draft: 10 banned dark patterns, 6% fines, chatbot relationship-simulation opt-out); Google Workspace MCP agentic-OAuth enforcement Nov 11; Anthropic Usage Policy effective Nov 12; JohnHart &quot;JANE&quot; docuseries premieres Nov 12.</li>
+</ul>
+<h2>Also noted</h2>
+<ul>
+<li><strong>Zillow October market report (Nov 9):</strong> newly pending listings down 16.8% year over year — the largest YoY drop since 2023; typical home value $364,812, down 0.6% month over month. KeyBanc cut Zillow to Hold-equivalent Nov 9 after a Q3 guidance reset. Market context, not agent-tech.</li>
+<li><strong>AgntFlow review (Nov 6, aiandrealtors.com):</strong> iPhone-only app turning agents&#x27; phone clips into ready-to-post Reels with AI-written hooks, scripts, and captions; posts to Instagram/TikTok/Facebook; $30/month, $24 founder price if the trial starts by Dec 31. A review, not a launch — the solo-agent content shortcut, priced as a subscription.</li>
+<li><strong>Supa £21M seed (Nov 4):</strong> UK AI-native block (property) management, 7 acquired firms, ~20,000 homes — property management, not agent-tech; left to the money briefing.</li>
+<li><strong>Huspy &quot;$37M Series A&quot; (republished Nov 10):</strong> stale — the round is from 2022, recirculated with a fresh timestamp. Not new.</li>
+</ul>
+<h2>IG sweep</h2>
+<p>Agentree AI Studio (finding 3) is the only new launch in-window. Walled Garden&#x27;s &quot;Sage&quot; AI ad agent is Sept 16, not new. Small-vendor promo from #24–#25 (RealTea &quot;Ellis,&quot; BIS &quot;BRIA Copilot,&quot; Property Launch AI, Marvberry, WAM Agent, Oak Lane AI, JohnHart &quot;JANE&quot; teaser) still circulating, none elevated. JANE premieres Nov 12.</p>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-10.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>
