@@ -5,6 +5,7 @@ from html import escape
 import json
 from pathlib import Path
 import re
+import shutil
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent
@@ -148,6 +149,15 @@ def build(destination):
       <section class="day" aria-label="Past editions"><div class="cards">{''.join(rows)}</div></section>
     </main></body></html>\n'''
     (archive / 'index.html').write_text(archive_html, encoding='utf-8')
+    # Full-brief pages live at briefings/*.html in the repo, but the deploy
+    # only ships this _site directory, so copy them into the built site.
+    # (Found Nov 11: the file was in the repo yet 404'd live until this copy.)
+    briefings_src = ROOT / 'briefings'
+    if briefings_src.is_dir():
+        briefings = destination / 'briefings'
+        briefings.mkdir(parents=True, exist_ok=True)
+        for file in sorted(briefings_src.glob('*.html')):
+            shutil.copy2(file, briefings / file.name)
     print(f'Built {len(issues)} edition(s). Latest {latest}.')
 
 
