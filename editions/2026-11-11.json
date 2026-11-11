@@ -1,0 +1,92 @@
+{
+  "date_label": "Nov 11, 2026",
+  "briefings": "Briefing #27",
+  "hook": "This is the investor side of the \"around the gate\" data layer from briefing #1 — public-records and modeled property data, sold as search-by-return rather than search-by-listing, with no MLS credentialing in the loop.",
+  "market_map": "Today's stories: Homesage.ai launches return-first property search; Brokurz lets outside AI agents into the CRM.",
+  "where_we_play": "Briefings #25–#26 framed the compliance tool as a Jan 1, 2027 deadline play (California + Wisconsin photo-disclosure laws). Two new data points widen it: North Texas's NTREIS renamed compliance \"Data Quality\" on Nov 1 and now requires AI-altered photos to be disclosed *with the unstaged version included* — fines begin Feb 1, 2027 — and Ontario's regulator RECO issued AI guidance Nov 5 requiring disclosure when AI materially shapes a listing or ad, with the agent liable for accuracy. The tool that archives the original, stamps the edit, writes the disclosure, and records who owns each asset (broker, photographer, or MLS under NAR's new 50% provision) now has buyers in at least four jurisdictions, not two — and each new regulator that writes its own wording is another market, not another competitor. Nobody in this record sells that combined check.",
+  "one_line": "The listing-rights ledger — now a multi-jurisdiction market.",
+  "days": [
+    {
+      "date": "2026-11-11",
+      "stories": [
+        {
+          "title": "Homesage.ai launches return-first property search — find rentals by the yield, not the bedroom count",
+          "summary": "Homesage.ai launched Investment Property Search on November 10: set a target cap rate or cash-on-cash return and it returns for-sale homes that meet it, each with an estimated monthly rent. It runs on the company's own database of 160M+ US properties, with no MLS credentialing in the loop — vendor release only, no independent test.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 10, EIN Presswire (vendor release)",
+              "url": "https://einpresswire.com/article/954814214/homesage-ai-launches-ai-that-finds-and-analyzes-rental-properties"
+            }
+          ]
+        },
+        {
+          "title": "Brokurz lets outside AI agents into the CRM — Grok Bot, Dots, and Muse can read lead briefs",
+          "summary": "Brokurz AI Assistants, out November 7, lets outside assistants like Grok Bot, Dots, or Muse read lead briefs, save notes, draft texts, and create follow-ups inside the Brokurz CRM, under permissions the user sets. Connecting one does not send texts on its own — single launch-radar source, treat as a lead, not a verified launch.",
+          "tags": [
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 7, BotRadar (launch radar; catch-up — missed by #24/#25)",
+              "url": "https://botradar.ai/radar/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The listing-rights ledger — now a multi-jurisdiction market",
+      "text": "Briefings #25–#26 framed the compliance tool as a Jan 1, 2027 deadline play (California + Wisconsin photo-disclosure laws). Two new data points widen it: North Texas's NTREIS renamed compliance \"Data Quality\" on Nov 1 and now requires AI-altered photos to be disclosed *with the unstaged version included* — fines begin Feb 1, 2027 — and Ontario's regulator RECO issued AI guidance Nov 5 requiring disclosure when AI materially shapes a listing or ad, with the agent liable for accuracy. The tool that archives the original, stamps the edit, writes the disclosure, and records who owns each asset (broker, photographer, or MLS under NAR's new 50% provision) now has buyers in at least four jurisdictions, not two — and each new regulator that writes its own wording is another market, not another competitor. Nobody in this record sells that combined check."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 6",
+      "title": "Tuccori / NAR buyer settlement — STILL no outcome, 9 days post-hearing.",
+      "text": "New texture (Nov 6 filing, reported Nov 10, realestatenews.com): Judge Lindsay C. Jenkins wants to know how the home-seller settlements serve as an appropriate benchmark for whether the Tuccori deals are adequate — specifically support for assumptions about class size and the value of seller claims versus buyer claims, how each defendant's ability to pay and transaction volume shaped its deal, benchmarks for \"substantive adequacy\" from other purchaser class actions, per-claimant and per-class-member recovery estimates, and the \"net expected value of continued litigation\" apart from the home-seller settlements. Do not cite approval. $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Claims closed Oct 27."
+    },
+    {
+      "when": "Nov 9",
+      "title": "NAR vs Compass subpoena fight — cooling off.",
+      "text": "Joint stipulation filed Nov 9 (New York): Compass chief strategy officer Ashton Alexander gives a deposition of 5 hours or less, NAR agrees not to subpoena CEO Robert Reffkin or president of integrated services Cory Perkins; the judge has not yet ruled on it. A Nov 10 California order granted a similar stipulation for three Compass agents NAR sought to subpoena — their motion to quash and sanctions request are stayed while the parties keep negotiating. The Nov 20 subpoena-quash hearing's status is now in doubt. Separate Magloire securities suit: lead-plaintiff deadline Dec 8."
+    },
+    {
+      "when": "Nov 10",
+      "title": "Zillow steering case — reconsideration denied Nov 10.",
+      "text": "A Seattle federal court denied Zillow's request to reconsider its failed motion to dismiss the antitrust suit alleging an illegal tying arrangement between its Preferred (formerly Flex) program and Zillow Home Loans — the case proceeds. (Dupuis, filed January 2026.)"
+    },
+    {
+      "when": "Nov 6",
+      "title": "Moehrl (home-seller case) stays stayed.",
+      "text": "Nov 6 status report: objectors to the home-seller settlements say they may petition the Supreme Court for review; rehearing requests all rejected so far; parties asked the court to keep the stay. Few updates expected until an appeal is filed."
+    },
+    {
+      "when": "Nov 8",
+      "title": "NAR MLS copyright + data-feed policy — no adopter yet.",
+      "text": "Approved Nov 8 (finding 1 in #26): optional 50% shared copyright interest, local data-feed eligibility rules. Watch for the first MLS to adopt."
+    },
+    {
+      "when": "Jan 1",
+      "title": "AI photo disclosure — hard deadline Jan 1, 2027 (51 days).",
+      "text": "California AB 2025 (rental ads) + Wisconsin Act 69 take effect; California AB 723 (sale ads) in effect since Jan 1, 2026. New in-window: NTREIS \"Data Quality\" (Nov 1, DFW Agent Magazine Nov 2) — AI-generated or virtually altered photos are fine if disclosed and still accurate, with the unstaged version included; education period through Jan 31, 2027, fines begin Feb 1. RECO Ontario AI guidance (Nov 5, qlarifyapp.com): disclose when AI materially shapes a listing or advertisement, never publish an AI-altered image that misrepresents the property, agent fully responsible for accuracy. Metro MLS (Wisconsin) enforcing since Sept 1 — $10/day for an unlabeled altered primary photo."
+    },
+    {
+      "when": "Nov 11",
+      "title": "No SFARMLS news on vendor access",
+      "text": "Topic 14 open questions unchanged."
+    },
+    {
+      "when": "Nov 11",
+      "title": "Pointers to GenLens #27 / research #38 (not re-reported):",
+      "text": "EU Digital Fairness Act presented today, Nov 11 (COM(2026) 1100 final — chatbot relationship-simulation opt-out, automated-contracting rules, one-click terminate); Google Workspace MCP agentic-OAuth enforcement today (setting locks on existing clients Nov 12); Anthropic Usage Policy effective Nov 12; JohnHart \"JANE\" docuseries premieres Nov 12."
+    }
+  ]
+}
