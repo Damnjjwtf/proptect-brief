@@ -2,16 +2,16 @@
   "date_label": "Nov 10, 2026",
   "briefings": "Briefing #26",
   "hook": "The rulebook for who owns a listing just moved — and the listing system can now claim a share of it.",
-  "market_map": "Today: the national Realtor group lets local listing systems claim up to half the copyright in listing content; its own data chief warns agents about AI; and Agentree launches an all-in-one AI studio that clones an agent's voice.",
-  "where_we_play": "Yesterday's open gap — the compliance tool for AI-changed listing photos, deadline January 1, 2027 — still stands, and finding 1 sharpens it: the tool that saves the original, stamps the edit, and writes the disclosure should also record who owns each asset — the broker, the photographer, or the MLS (the shared listing database agents use) under the new 50% rule — because the same photo now raises two questions (was it changed? who owns it?) and the MLS's answer to the second one can change from market to market. Nobody in this record sells that combined check. The buyer is the broker who just learned their MLS may own half their listing content, and the trigger is the first MLS that adopts the rule.",
+  "market_map": "Today: the Realtor group lets local listing systems claim up to half the copyright in listing content. Its data chief warns agents about AI, and Agentree launches an AI studio that clones an agent's voice.",
+  "where_we_play": "The open gap still stands: a tool that saves the original, stamps the edit, and writes the disclosure. The copyright news sharpens it: the listing system can now claim a share, so the tool should also record who owns each photo. Nobody here sells that combined check. The buyer is the broker who just learned the listing system may own half their listing content.",
   "one_line": "The listing-rights ledger — now with a clock on it.",
   "days": [
     {
       "date": "2026-11-10",
       "stories": [
         {
-          "title": "NAR lets local listing systems claim up to half the copyright in listing content",
-          "summary": "On November 8, the national Realtor group's board approved four listing-system policy changes, reported November 9. The headline one is optional for each local MLS: it may require brokers who don't opt out to hand over up to a 50% shared copyright interest in listing photos and marketing materials — shared ownership, not ownership of half the photos, and no MLS has adopted it yet.",
+          "title": "The Realtor group lets local listing systems claim up to half the copyright in listing content",
+          "summary": "On Nov 8, the Realtor group's board approved four listing-system policy changes. The headline one is optional for each local listing system. It may make brokers who don't opt out hand over up to a 50% shared copyright stake in listing photos and marketing materials. That is shared ownership, not ownership of half the photos — and no listing system has adopted it yet.",
           "tags": [
             "pipes",
             "ai",
@@ -30,8 +30,8 @@
           ]
         },
         {
-          "title": "NAR's own data chief warns agents about AI — and the numbers show why now",
-          "summary": "At NAR NXT on November 8, NAR's data chief Mike Woodward warned agents that free AI tools take in what they're fed and invent facts — he asked Claude for records on his own home and five of seven facts came back wrong. His rule: show the original next to any AI edit, label it, and confess — and it lands as AI use among agents flips to the default, with 23% using it daily and only 12% not using it at all.",
+          "title": "The national Realtor group's data chief warns agents about AI — and the numbers show why now",
+          "summary": "At the national Realtor group's annual meeting on November 8, its data chief Mike Woodward warned agents about AI. Free AI tools take in what you feed them, and they invent facts with confidence — even as 23% of agents now use them daily. He asked Claude for records on his own home, and five of seven facts came back wrong. His rule: show the original, label the edit, and confess.",
           "tags": [
             "agent",
             "policy"
@@ -45,7 +45,7 @@
         },
         {
           "title": "Agentree launches AI Studio — the whole listing-marketing job in one browser tab, cloned voice included",
-          "summary": "Agentree launched AI Studio on November 10: headshots, virtual staging, video walkthroughs, and talking videos in the agent's own cloned voice, all in one browser tab. The free plan includes a website and 30 AI credits; Pro is $69 a month — but the release says nothing about disclosing AI-altered photos or watermarking, with disclosure laws taking effect January 1, 2027.",
+          "summary": "Agentree launched AI Studio on November 10. One browser tab does headshots, virtual staging, video walkthroughs, and talking videos in the agent's own cloned voice. The free plan includes a website and 30 AI credits; Pro is $69 a month. But the release says nothing about disclosing AI-altered photos or marking AI-made images, with disclosure laws taking effect January 1, 2027.",
           "tags": [
             "agent"
           ],
@@ -62,44 +62,44 @@
   "openings": [
     {
       "title": "The listing-rights ledger — now with a clock on it",
-      "text": "Yesterday's open gap — the compliance tool for AI-changed listing photos, deadline January 1, 2027 — still stands, and finding 1 sharpens it: the tool that saves the original, stamps the edit, and writes the disclosure should also record who owns each asset — the broker, the photographer, or the MLS (the shared listing database agents use) under the new 50% rule — because the same photo now raises two questions (was it changed? who owns it?) and the MLS's answer to the second one can change from market to market. Nobody in this record sells that combined check. The buyer is the broker who just learned their MLS may own half their listing content, and the trigger is the first MLS that adopts the rule."
+      "text": "The open gap still stands: a tool that saves the original, stamps the edit, and writes the disclosure. The copyright news sharpens it: the listing system can now claim a share, so the tool should also record who owns each photo. Nobody here sells that combined check. The buyer is the broker who just learned the listing system may own half their listing content."
     }
   ],
   "watch": [
     {
       "when": "Nov 8",
-      "title": "NAR MLS copyright + data-feed policy — NEW, approved Nov 8 (finding 1).",
-      "text": "Optional 50% copyright interest in listing content (broker opt-out required); MLSs may set local data-feed eligibility and licensing rules; mandatory tie of MLS data use to brokerage services, appraisals, and valuations. No MLS adoption reported yet — watch for the first adopter."
+      "title": "Copyright + data-feed policy — no adopter yet.",
+      "text": "Approved Nov 8: a local listing system may claim up to a 50% shared copyright interest in listing content, and set its own data-feed rules. No listing system has adopted it yet — watch for the first one."
     },
     {
       "when": "Nov 2",
-      "title": "Tuccori / NAR buyer settlement — STILL no outcome, 8 days after the hearing.",
-      "text": "The November 2 fairness hearing ended with the court taking final approval under advisement; a settlement tracker checked November 9 confirms no order since. Do not cite approval. $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Claims closed October 27."
+      "title": "Tuccori buyer settlement — STILL no outcome, 8 days after the hearing.",
+      "text": "The Nov 2 fairness hearing ended with the court still deciding; a tracker checked Nov 9 confirms no order since. Do not cite approval. $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections."
     },
     {
       "when": "Jan 1",
       "title": "AI photo disclosure — hard deadline Jan 1, 2027 (52 days).",
-      "text": "California AB 2025 (rental ads) and Wisconsin Act 69 take effect; California AB 723 (sale ads) has been in effect since January 1, 2026. Metro MLS (Wisconsin) has enforced since September 1 — $10/day for an unlabeled altered primary photo. NAR's own NXT session (finding 2) now preaches the same disclosure rule. Bills pending in New York, New Jersey, and Washington, D.C. — not law yet."
+      "text": "California's rental-ad disclosure law and Wisconsin's ad rule take effect Jan 1, 2027. The Realtor group's own annual meeting now preaches the same rule. One Wisconsin listing system has enforced it since Sept 1 — $10 a day for an unlabeled altered main photo."
     },
     {
       "when": "Nov 3–4",
       "title": "Compass fight — no new movement in-window.",
-      "text": "November 3–4 press still recaps the October 30 items (MLSListings as 7th plaintiff; Compass's planned motion to dismiss in the CRMLS case; subpoena-quash hearing November 20; separate Magloire securities suit, lead-plaintiff deadline December 8). No trial date in either SDNY case."
+      "text": "Nov 3–4 press still recaps the Oct 30 items: a seventh plaintiff joined, and Compass plans to ask the court to dismiss the case. No trial date yet in either case."
     },
     {
       "when": "Nov 8",
-      "title": "NAR NXT ended Nov 8, New Orleans.",
-      "text": "The copyright and data-feed policies are the substantive outcome for this thread; the Open Real Estate vendor pick still runs through Q1 2027."
+      "title": "The Realtor group's annual meeting ended Nov 8, New Orleans.",
+      "text": "The copyright and data-feed policies are the real outcome here. The Open Real Estate vendor pick still runs through Q1 2027."
     },
     {
       "when": "Nov 4",
-      "title": "No SFARMLS news on vendor access",
-      "text": "Topic 14 open questions unchanged. (SFAR's GrowthZone member platform was briefing #20, November 4.)"
+      "title": "No news from the San Francisco listing database on vendor access",
+      "text": "Topic 14 open questions unchanged."
     },
     {
       "when": "Nov 11",
       "title": "Pointers to GenLens #26 / research #37 (not re-reported):",
-      "text": "EU Digital Fairness Act proposal lands tomorrow, November 11 (leaked draft: 10 banned dark patterns, 6% fines, chatbot relationship-simulation opt-out); Google Workspace MCP agentic-OAuth enforcement November 11 (MCP is a standard plug that lets an AI tool pull data); Anthropic Usage Policy effective November 12; JohnHart \"JANE\" docuseries premieres November 12."
+      "text": "Pointers, not re-reported: the EU Digital Fairness Act proposal lands tomorrow, Nov 11. Google's Workspace agent-tool enforcement starts Nov 11, and Anthropic's Usage Policy takes effect Nov 12."
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
   "date_label": "Nov 11, 2026",
   "briefings": "Briefing #27",
-  "hook": "This is the investor side of the \"around the gate\" data layer from briefing #1 — public-records and modeled property data, sold as search-by-return rather than search-by-listing, with no MLS credentialing in the loop.",
-  "market_map": "Today's stories: Homesage.ai launches return-first property search; Brokurz lets outside AI agents into the CRM.",
-  "where_we_play": "Briefings #25–#26 framed the compliance tool as a Jan 1, 2027 deadline play (California + Wisconsin photo-disclosure laws). Two new data points widen it: North Texas's NTREIS renamed compliance \"Data Quality\" on Nov 1 and now requires AI-altered photos to be disclosed *with the unstaged version included* — fines begin Feb 1, 2027 — and Ontario's regulator RECO issued AI guidance Nov 5 requiring disclosure when AI materially shapes a listing or ad, with the agent liable for accuracy. The tool that archives the original, stamps the edit, writes the disclosure, and records who owns each asset (broker, photographer, or MLS under NAR's new 50% provision) now has buyers in at least four jurisdictions, not two — and each new regulator that writes its own wording is another market, not another competitor. Nobody in this record sells that combined check.",
-  "one_line": "The listing-rights ledger — now a multi-jurisdiction market.",
+  "hook": "Search rentals by the return, not the bedroom count. Outside AI assistants can now work in an agent's lead system.",
+  "market_map": "Today's stories: Homesage.ai launches return-first property search; Brokurz lets outside AI agents into the lead system.",
+  "where_we_play": "The compliance tool keeps growing. North Texas now fines agents from Feb 1, 2027 if they don't disclose AI-changed photos and show the original. Ontario now holds the agent responsible when AI shapes a listing. So the tool that saves the original, stamps the edit, and writes the disclosure has buyers in four places, not two — and nobody here sells it yet.",
+  "one_line": "The listing-rights ledger — now in four places, not two.",
   "days": [
     {
       "date": "2026-11-11",
       "stories": [
         {
           "title": "Homesage.ai launches return-first property search — find rentals by the yield, not the bedroom count",
-          "summary": "Homesage.ai launched Investment Property Search on November 10: set a target cap rate or cash-on-cash return and it returns for-sale homes that meet it, each with an estimated monthly rent. It runs on the company's own database of 160M+ US properties, with no MLS credentialing in the loop — vendor release only, no independent test.",
+          "summary": "Homesage.ai launched Investment Property Search on November 10. You search by the return you want, not by price and bedrooms. That means yearly rent as a share of the price, or cash profit as a share of the cash you put in. It returns for-sale homes that meet it, each with an estimated monthly rent.",
           "tags": [
             "ai",
             "agent"
@@ -24,8 +24,8 @@
           ]
         },
         {
-          "title": "Brokurz lets outside AI agents into the CRM — Grok Bot, Dots, and Muse can read lead briefs",
-          "summary": "Brokurz AI Assistants, out November 7, lets outside assistants like Grok Bot, Dots, or Muse read lead briefs, save notes, draft texts, and create follow-ups inside the Brokurz CRM, under permissions the user sets. Connecting one does not send texts on its own — single launch-radar source, treat as a lead, not a verified launch.",
+          "title": "Brokurz lets outside AI agents into the lead system — Grok Bot, Dots, and Muse can read lead briefs",
+          "summary": "Brokurz AI Assistants came out November 7. It lets assistants like Grok Bot, Dots, or Muse read lead briefs and draft texts inside Brokurz, the system agents use to track leads. Connecting one does not send texts on its own. Everything runs under permissions the user sets — and this comes from a single launch-radar listing, a lead, not a verified launch.",
           "tags": [
             "ai",
             "agent",
@@ -43,50 +43,50 @@
   ],
   "openings": [
     {
-      "title": "The listing-rights ledger — now a multi-jurisdiction market",
-      "text": "Briefings #25–#26 framed the compliance tool as a Jan 1, 2027 deadline play (California + Wisconsin photo-disclosure laws). Two new data points widen it: North Texas's NTREIS renamed compliance \"Data Quality\" on Nov 1 and now requires AI-altered photos to be disclosed *with the unstaged version included* — fines begin Feb 1, 2027 — and Ontario's regulator RECO issued AI guidance Nov 5 requiring disclosure when AI materially shapes a listing or ad, with the agent liable for accuracy. The tool that archives the original, stamps the edit, writes the disclosure, and records who owns each asset (broker, photographer, or MLS under NAR's new 50% provision) now has buyers in at least four jurisdictions, not two — and each new regulator that writes its own wording is another market, not another competitor. Nobody in this record sells that combined check."
+      "title": "The listing-rights ledger — now in four places, not two",
+      "text": "The compliance tool keeps growing. North Texas now fines agents from Feb 1, 2027 if they don't disclose AI-changed photos and show the original. Ontario now holds the agent responsible when AI shapes a listing. So the tool that saves the original, stamps the edit, and writes the disclosure has buyers in four places, not two — and nobody here sells it yet."
     }
   ],
   "watch": [
     {
       "when": "Nov 6",
-      "title": "Tuccori / NAR buyer settlement — STILL no outcome, 9 days post-hearing.",
-      "text": "New texture (Nov 6 filing, reported Nov 10, realestatenews.com): Judge Lindsay C. Jenkins wants to know how the home-seller settlements serve as an appropriate benchmark for whether the Tuccori deals are adequate — specifically support for assumptions about class size and the value of seller claims versus buyer claims, how each defendant's ability to pay and transaction volume shaped its deal, benchmarks for \"substantive adequacy\" from other purchaser class actions, per-claimant and per-class-member recovery estimates, and the \"net expected value of continued litigation\" apart from the home-seller settlements. Do not cite approval. $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Claims closed Oct 27."
+      "title": "Tuccori buyer settlement — STILL no outcome, 9 days post-hearing.",
+      "text": "A Nov 6 filing shows the judge wants proof the seller settlements are a yardstick for the buyer deals. She wants per-person payouts, each defendant's ability to pay, and what litigation would be worth. Still no approval: $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections."
     },
     {
       "when": "Nov 9",
-      "title": "NAR vs Compass subpoena fight — cooling off.",
-      "text": "Joint stipulation filed Nov 9 (New York): Compass chief strategy officer Ashton Alexander gives a deposition of 5 hours or less, NAR agrees not to subpoena CEO Robert Reffkin or president of integrated services Cory Perkins; the judge has not yet ruled on it. A Nov 10 California order granted a similar stipulation for three Compass agents NAR sought to subpoena — their motion to quash and sanctions request are stayed while the parties keep negotiating. The Nov 20 subpoena-quash hearing's status is now in doubt. Separate Magloire securities suit: lead-plaintiff deadline Dec 8."
+      "title": "Compass subpoena fight — cooling off.",
+      "text": "Compass and the national Realtor group filed a joint deal Nov 9. Compass strategy chief Ashton Alexander sits for a deposition of 5 hours or less, and the group won't subpoena CEO Robert Reffkin. A Nov 10 California order did the same for three Compass agents, and the Nov 20 hearing's status is now in doubt."
     },
     {
       "when": "Nov 10",
       "title": "Zillow steering case — reconsideration denied Nov 10.",
-      "text": "A Seattle federal court denied Zillow's request to reconsider its failed motion to dismiss the antitrust suit alleging an illegal tying arrangement between its Preferred (formerly Flex) program and Zillow Home Loans — the case proceeds. (Dupuis, filed January 2026.)"
+      "text": "A Seattle court said no to Zillow's bid to drop the antitrust suit. The suit, filed as Dupuis in January 2026, says Zillow tied its Preferred program to Zillow Home Loans — and the case now proceeds."
     },
     {
       "when": "Nov 6",
-      "title": "Moehrl (home-seller case) stays stayed.",
-      "text": "Nov 6 status report: objectors to the home-seller settlements say they may petition the Supreme Court for review; rehearing requests all rejected so far; parties asked the court to keep the stay. Few updates expected until an appeal is filed."
+      "title": "Moehrl home-seller case — still paused.",
+      "text": "Objectors to the home-seller settlements say they may ask the Supreme Court to review them. Rehearing requests are all rejected so far. The parties asked the court to keep the pause, and few updates are expected until an appeal is filed."
     },
     {
       "when": "Nov 8",
-      "title": "NAR MLS copyright + data-feed policy — no adopter yet.",
-      "text": "Approved Nov 8 (finding 1 in #26): optional 50% shared copyright interest, local data-feed eligibility rules. Watch for the first MLS to adopt."
+      "title": "Copyright + data-feed policy — no adopter yet.",
+      "text": "Approved Nov 8: a local listing system may claim up to a 50% shared copyright interest in listing content, and set its own data-feed rules. No listing system has adopted it yet — watch for the first one."
     },
     {
       "when": "Jan 1",
       "title": "AI photo disclosure — hard deadline Jan 1, 2027 (51 days).",
-      "text": "California AB 2025 (rental ads) + Wisconsin Act 69 take effect; California AB 723 (sale ads) in effect since Jan 1, 2026. New in-window: NTREIS \"Data Quality\" (Nov 1, DFW Agent Magazine Nov 2) — AI-generated or virtually altered photos are fine if disclosed and still accurate, with the unstaged version included; education period through Jan 31, 2027, fines begin Feb 1. RECO Ontario AI guidance (Nov 5, qlarifyapp.com): disclose when AI materially shapes a listing or advertisement, never publish an AI-altered image that misrepresents the property, agent fully responsible for accuracy. Metro MLS (Wisconsin) enforcing since Sept 1 — $10/day for an unlabeled altered primary photo."
+      "text": "Photo disclosure rules take effect Jan 1, 2027 in California and Wisconsin. North Texas fines agents from Feb 1, 2027 who don't show the original with AI-changed photos. In Ontario, the agent must say when AI shaped a listing — and answer for its accuracy."
     },
     {
       "when": "Nov 11",
-      "title": "No SFARMLS news on vendor access",
+      "title": "No news from the San Francisco listing database on vendor access",
       "text": "Topic 14 open questions unchanged."
     },
     {
       "when": "Nov 11",
       "title": "Pointers to GenLens #27 / research #38 (not re-reported):",
-      "text": "EU Digital Fairness Act presented today, Nov 11 (COM(2026) 1100 final — chatbot relationship-simulation opt-out, automated-contracting rules, one-click terminate); Google Workspace MCP agentic-OAuth enforcement today (setting locks on existing clients Nov 12); Anthropic Usage Policy effective Nov 12; JohnHart \"JANE\" docuseries premieres Nov 12."
+      "text": "Pointers, not re-reported: the EU's Digital Fairness Act was presented today. Google's Workspace agent-tool rules start today. Anthropic's Usage Policy takes effect Nov 12, and the JohnHart \"JANE\" series premieres Nov 12."
     }
   ]
 }
