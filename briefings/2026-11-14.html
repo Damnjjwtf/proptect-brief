@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-estate briefing — 2026-11-14 (Saturday, #30) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+      .full-brief {
+        margin-top: 14px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .full-brief a { color: var(--accent-dark); text-decoration: none; }
+      .full-brief a:hover { text-decoration: underline; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #</p>
+      <h1>Real-estate briefing — 2026-11-14 (Saturday, #30)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>Three findings + one small. Window: Nov 13 07:30 PT – Nov 14 07:30 PT. Plain language throughout; any industry term is explained where it first appears.</p>
+<h2>1. Compass sues 15 MLSs in federal court — the listing-rules fight is now a 15-front war</h2>
+<p><strong>Nov 12, Inman (read in full) + HousingWire + Real Estate News + Bloomberg Tax</strong> | <a href="https://www.inman.com/2026/11/12/compass-lawsuits-mlss-antitrust-litigation/" target="_blank" rel="noopener">https://www.inman.com/2026/11/12/compass-lawsuits-mlss-antitrust-litigation/</a> | <a href="https://www.housingwire.com/articles/compass-15-mls-lawsuits/" target="_blank" rel="noopener">https://www.housingwire.com/articles/compass-15-mls-lawsuits/</a> | <a href="https://www.realestatenews.com/2026/11/12/compass-escalates-battle-with-mlss-suing-15-in-federal-court" target="_blank" rel="noopener">https://www.realestatenews.com/2026/11/12/compass-escalates-battle-with-mlss-suing-15-in-federal-court</a></p>
+<ul>
+<li><strong>What it is.</strong> Compass filed 15 separate federal antitrust lawsuits on Nov 12 against 15 MLSs in eight states, accusing them of illegally fining agents — penalties it says can reach $15,000 — for publicly marketing homes outside the MLS. The targets: six in California (bridgeMLS, Bay East, Contra Costa, MLSListings, MLS-CLAW, San Diego MLS), three in North Carolina (Canopy, Hive, Doorify), plus ARMLS, REcolorado, NorthstarMLS, Houston Association of Realtors, Stellar MLS, and OneKey MLS. The suits largely mirror Compass&#x27;s Oct 16 complaint against CRMLS and seek triple damages plus court orders blocking the rules. Eight of the 15 are already suing Compass in two separate New York federal cases. <strong>SFARMLS is not among the 15.</strong></li>
+<li><strong>The second front inside the same fight.</strong> The suits sit on top of Compass&#x27;s Sept 23 demand that MLSs stop sending its agents&#x27; production and listing data to recruiting vendors (Courted, BrokerMetrics, Brokerkit) — the &quot;weaponized data&quot; argument Inman covered Nov 9. Compass says no MLS has agreed; its CRMLS suit claims it lost millions in commissions to agents recruited away using MLS-sold data. So this is two fights at once: whether listings must enter the MLS once publicly marketed, and who controls the data the MLS sells onward.</li>
+<li><strong>The numbers Compass itself put in its filing.</strong> Its complaint says that where MLSs allow it, about 48% of Compass sellers used phased (pre-MLS) marketing, and that those homes sold for 4.6% more. Both figures are Compass&#x27;s claims in its own pleading, not independent findings — but they are the numbers the other side now has to answer in court.</li>
+<li><strong>What it means for product opportunity.</strong> The rules that decide when a listing must enter the MLS — and therefore what data exists, where, and who can use it — are being litigated in 15 courts at once, with the forum fight (which court hears it) likely decided first. For Jessica: the permission question her product depends on is now case law in motion, and the answer could split by state. A product built to work with listings that live outside the MLS first (private marketing, price testing, showing feedback) is betting on the Compass side; a product built strictly on MLS feeds is betting on the cooperation rules holding. Build for both states of the world — take the listing in once, route it to MLS and non-MLS channels with the right status flags, and keep the audit trail. Watch Nov 20 (subpoena-quash hearing) for the next procedural move.</li>
+</ul>
+<h2>2. NAR&#x27;s own tech stage picked the licensee-policy assistant — BrokerBot wins the Pitch Battle</h2>
+<p><strong>Catch-up: Nov 8, NAR (primary source)</strong> | <a href="https://www.nar.realtor/news/real-estate-news/technology/brokerbot-claims-top-prize-in-nars-2026-pitch-battle" target="_blank" rel="noopener">https://www.nar.realtor/news/real-estate-news/technology/brokerbot-claims-top-prize-in-nars-2026-pitch-battle</a></p>
+<ul>
+<li><strong>What it is.</strong> At NAR NXT in New Orleans, BrokerBot took the $15,000 grand prize at NAR Tech &amp; Innovation&#x27;s 2026 Pitch Battle (six startups, eighth annual). BrokerBot builds AI assistants trained on a brokerage&#x27;s own policies, documents, and processes — agents use it for transaction questions, CRM tasks, marketing, and admin. NAR&#x27;s writeup positions it as a more secure alternative to public chatbots for sensitive client information. BrokerBot was already in NAR&#x27;s 2026 REACH accelerator, and co-founder Jerimiah Taylor was named one of NAR&#x27;s 2026 Innovators of the Year. Crowd Favorite went to KytherID, an identity-verification tool that lets buyers submit offers without initially revealing their names, sharing verified personal information only as needed — pitched as reducing discrimination, fraud, and errors.</li>
+<li><strong>What it means for product opportunity.</strong> This is the licensee-in-the-loop shape from #29 winning NAR&#x27;s own showcase: the assistant that knows the brokerage&#x27;s rules and keeps client data inside the brokerage. Any agent tool that touches transactions should now be able to answer &quot;which brokerage policy did you follow?&quot; — BrokerBot just made that the award-winning feature. KytherID is the more direct signal for Jessica: blind offers plus verified identity is a product shape NAR&#x27;s own audience voted for, and it sits squarely in the offer-outcome space — identity verification first, names revealed only as the deal progresses. Partner or reverse-engineer the pattern, not the product: the mechanic (verify identity, hide names until needed) is portable to any offer tool.</li>
+</ul>
+<h2>3. RESO puts a fraud flag in the dictionary — and the certification list still has no SFARMLS</h2>
+<p><strong>RESO Monthly, Nov 9 (read in full)</strong> | <a href="https://www.reso.org/blog/reso-monthly-11-2026/" target="_blank" rel="noopener">https://www.reso.org/blog/reso-monthly-11-2026/</a></p>
+<ul>
+<li><strong>What it is.</strong> The November RESO Monthly adds detail beyond #29&#x27;s certification-cliff item. The Data Dictionary workgroup approved an <strong>EventTypes</strong> multi-select field on the EntityEvent resource (v2.3) to signal fraudulent listings and other events, with lookups <strong>Delete Fraud</strong>, <strong>Delete Compliance</strong>, and <strong>Canceled</strong>. Data Dictionary 2.2 is approved for release at the end of Q4 2026; the Queue Resource is deprecated in v2.3 in favor of EntityEvent. Newly certified on DD 2.1: Amelia Island–Nassau County AOR, MIBOR, Momentum MLS. Newly certified on Web API Core 2.1.0: Heart of Missouri Board of REALTORS®, ValleyMLS.com. New DD 2.0 certifications in the past month: Cape Cod &amp; Islands, Hive MLS, Lakeway Area AOR. <strong>SFARMLS appears on none of the new-certification lists.</strong> Board voting runs Nov 16–30; the International MLS Forum is Nov 16–17 in Istanbul.</li>
+<li><strong>What it means for product opportunity.</strong> Fraud is becoming a structured field, not a rumor: once MLSs can flag a listing as Delete Fraud in the data itself, downstream tools can filter, warn, or block programmatically instead of discovering bad listings after the fact. For an offer product, that field is a free data-quality input — worth building the check for now, before it is widely populated. The certification clock is unchanged and still the lever for Jessica&#x27;s SFARMLS ask: all endorsements expire Jan 1, 2027 (48 days), and SFARMLS&#x27;s DD 2.1 status is still unconfirmed from public sources — the question stands, and the ask should include it.</li>
+</ul>
+<h2>4. PropertyScout buys an AI team to automate the brokerage, not license a tool</h2>
+<p><strong>Nov 11, Dealroom (single-source)</strong> | <a href="https://dealroom.co/news/172652-propertyscout-buys-superagent-s-ai-team-to-automate-thai-brokerage/" target="_blank" rel="noopener">https://dealroom.co/news/172652-propertyscout-buys-superagent-s-ai-team-to-automate-thai-brokerage/</a></p>
+<ul>
+<li><strong>What it is.</strong> Bangkok-based PropertyScout acquired the technology and engineering team of proptech startup Superagent (terms undisclosed; founder Yuriy Braterskyy joins as chief product officer). Superagent built software connecting property data, customer conversations, and brokerage workflows to automate repetitive tasks. PropertyScout&#x27;s stated ambition is an AI-native brokerage platform that automates 80% of agents&#x27; routine work — a stated ambition, not a demonstrated result. The firm cites 700+ exclusive agents and 8,000+ partner agents and expansion across Southeast Asia.</li>
+<li><strong>What it means for product opportunity.</strong> The pattern travels even if the market doesn&#x27;t: a brokerage buying an AI team outright instead of licensing another vendor&#x27;s tool. When brokerages acquire the automation, the vendor&#x27;s customer becomes a competitor. For a small builder, the takeaway is to sell the workflow a brokerage can&#x27;t easily acquihire — the part that needs outside data, cross-brokerage comparison, or a network effect — not the routine-task automation a funded brokerage can now buy as a team.</li>
+</ul>
+<h2>Whitespace</h2>
+<p><strong>The pre-MLS data layer.</strong> Compass&#x27;s filing puts numbers on a phase of the deal that currently lives nowhere structured: where MLSs allow it, ~48% of its sellers market before the MLS, and Compass claims those homes sell for 4.6% more (its own claim, unproven). Whatever the courts decide, a growing share of homes is being price-tested, shown, and negotiated before it ever enters the MLS — and the data about that phase (price-test feedback, showing counts, buyer interest) has no home. A tool that captures the pre-MLS phase and hands it to the listing agent as a priced, timestamped record is the unbuilt layer — and it is valuable on either side of the verdict, because the record is useful whether the home then goes to the MLS or stays private. The catch: the 48% and 4.6% figures are Compass&#x27;s advocacy numbers; verify them against a second brokerage&#x27;s data before building the pitch on them.</p>
+<h2>Also noted</h2>
+<ul>
+<li><strong>SERHANT. Utah (Nov 10, RISMedia)</strong> — sixth new market in 2026, 21 states; 40+ agents who closed ~$700M in the past 12 months; S.MPLE AI platform travels with every expansion. <a href="https://ace.rismedia.com/2026/11/10/serhant-expands-utah-launching-park-city-salt-lake-city/" target="_blank" rel="noopener">https://ace.rismedia.com/2026/11/10/serhant-expands-utah-launching-park-city-salt-lake-city/</a></li>
+<li><strong>RealtyMark launches Smart Agent Guide platform (Nov 14, Real Estate News)</strong> — 2,000-agent Pennsylvania brokerage; AI assistant &quot;AImee&quot; handles website chats and phone inquiries 24/7 in 25+ languages. Vendor release. <a href="https://www.realestatenews.com/2026/11/14/serhant-enters-utah-roa-moves-into-california" target="_blank" rel="noopener">https://www.realestatenews.com/2026/11/14/serhant-enters-utah-roa-moves-into-california</a></li>
+<li><strong>Agent Image SiteAI (Nov 13, via CRE Daily/Substack, single-source)</strong> — conversational AI on agent websites; visitors explore listings and neighborhoods through branded interactive pages. <a href="https://realestatesolutionist.substack.com/p/real-estates-ai-race-is-changing" target="_blank" rel="noopener">https://realestatesolutionist.substack.com/p/real-estates-ai-race-is-changing</a></li>
+<li><strong>Curious VC acquires Avenue (Nov 13)</strong> — agent growth platform (websites, CRM, lead gen) with an internal AI website builder, Dyme; new CEO Lauren Makielski; US expansion planned. <a href="https://www.curious.vc/post/welcome-avenue-to-curious-expanding-into-real-estate-technology-with-ai-powered-innovation" target="_blank" rel="noopener">https://www.curious.vc/post/welcome-avenue-to-curious-expanding-into-real-estate-technology-with-ai-powered-innovation</a></li>
+<li><strong>JohnHart &quot;JANE&quot;</strong> — still no coverage surfaced (fourth check); only the brokerage&#x27;s own blog tag page mentions &quot;Jane Hart: an AI coach.&quot;</li>
+<li><strong>IG sweep:</strong> no new launches surfaced. Agentree AI Studio was already in #26.</li>
+</ul>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>Compass v. MLS is now the main event.</strong> 15 federal suits filed Nov 12 (see finding 1); 9 MLSs already suing Compass in two S.D.N.Y. cases (CRMLS + OneKey; ARMLS et al., seven plaintiffs). Subpoena-quash hearing Nov 20; Magloire securities-suit lead-plaintiff deadline Dec 8. New York AG inquiry open since June 2026; Washington&#x27;s listing-transparency bill (SSB 6091) enacted; New York and Connecticut bills advanced (per MindCast tracker).</li>
+<li><strong>Tuccori — STILL no outcome, 12 days post-hearing.</strong> Briefs on the judge&#x27;s five adequacy topics due Dec 14 (per research #41). $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Do not cite approval.</li>
+<li><strong>Sitzer fund, catch-up (HousingWire, Oct 30):</strong> $711,251,720.86 in the settlement fund as of Sept 30, 2026; ~2.7M claims processed by administrator JND; JND under a court-ordered audit; objector appeals rejected this fall; Supreme Court review still possible; no payout date. <a href="https://www.housingwire.com/articles/nar-settlement-payout-timing/" target="_blank" rel="noopener">https://www.housingwire.com/articles/nar-settlement-payout-timing/</a></li>
+<li><strong>NAR ex-CFO sues NAR (complaint Nov 10; Inman + Real Estate News, Nov 11–13):</strong> John Pierpoint, 38 years at NAR, retired March 2025, alleges NAR withheld a $541,059 retirement payout after the $418M settlement strained its finances; the complaint says NAR carried the obligation at ~97.6 cents on the dollar before refusing to pay. NAR denies the claim and says the decision was unrelated to the settlement or its finances. A lawsuit allegation, not a finding — but it shows the financial pressure on the association that sets MLS policy.</li>
+<li><strong>Compass NYC rental-listings suit refiled (Nov 13, OpenClassActions):</strong> proposed class narrowed to Manhattan, class start Jan 1, 2026; alleges monopoly power via the Anywhere acquisition and StreetEasy delisting. No class certified; Compass seeks dismissal.</li>
+<li><strong>ARA licensee-in-the-loop campaign (from #29):</strong> no bill filed yet; model language in progress, bills possibly introduced end of year/early Jan. CA DRE guidance (Mar 17, 2026) and TREC (July 14) stand as the regulator writing.</li>
+<li><strong>NAR MLS copyright policy (approved Nov 8):</strong> no MLS adopter reported yet.</li>
+<li><strong>Double deadline Jan 1, 2027 (48 days):</strong> CA AB 2025 (rental ads) + WI Act 69 AI-photo disclosure take effect — and all RESO endorsements expire the same day.</li>
+<li><strong>No SFARMLS news on vendor credentialing</strong> — Topic 14 open questions unchanged, except the DD 2.1 sub-question is still open (SFARMLS absent from November&#x27;s new-certification lists).</li>
+</ul>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-14.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>
