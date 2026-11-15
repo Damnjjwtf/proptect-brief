@@ -1,0 +1,112 @@
+{
+  "date_label": "Nov 15, 2026",
+  "briefings": "Briefing #31",
+  "hook": "Every AI tool now does work and asks the agent to approve it. But each tool has its own approval screen — nobody has built one queue for all of them.",
+  "market_map": "Today: HomeStack plugs agent apps into ChatGPT and Claude. Two listing databases share data across state lines, a Scottsdale broker built his own AI stack, and Douglas Elliman hired AI leaders.",
+  "where_we_play": "Every AI tool now does work and asks the agent to say yes first. But each vendor builds its own yes-or-no screen, inside its own product. Nobody has built the one queue where an agent checks all of it — pushes, follow-ups, ad launches, listing edits — in one place, with the licensee's name on it. Build the queue, not another assistant — it's also the proof the campaign will want, with a named licensee, a review step, and a paper trail.",
+  "one_line": "The cross-vendor approval queue.",
+  "days": [
+    {
+      "date": "2026-11-15",
+      "stories": [
+        {
+          "title": "HomeStack plugs the agent's branded app into ChatGPT and Claude",
+          "summary": "HomeStack makes branded apps for agents, tied to the shared listing database. Its new plug lets an agent ask ChatGPT or Claude which clients were most active this week, then build a search or send a price-drop alert. The agent still approves each push. The client counts and the '40% higher engagement' figure are the company's own claims.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 11, EIN Presswire (vendor release — vendor claim)",
+              "url": "https://www.einpresswire.com/article/955914059"
+            }
+          ]
+        },
+        {
+          "title": "Two listing databases share data across state lines",
+          "summary": "Florida's Stellar MLS and Indiana's MIBOR — two shared listing databases — now share off-market listings and past home data. The data flows through the Realtor group's own data tool. In the same roundup, Houston's HAR.com will sell its tech platform outside Houston for the first time. Listing databases are quietly building pipes between each other — but none carries offer-status data yet.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 12, HousingWire MLS roundup (editor-reviewed; the piece notes it was generated with HousingWire Automation)",
+              "url": "https://www.housingwire.com/articles/mls-tech-ai-fraud-partnerships/"
+            }
+          ]
+        },
+        {
+          "title": "A Scottsdale broker built his own AI platform — and says it lifted production",
+          "summary": "Frank Vazquez, who runs Incyte Realty in Scottsdale, built his own tools instead of buying them: a platform called Console plus an AI front-desk assistant named Morgan. He says average deals per agent rose from 6.3 to nearly eight. That number is his claim, not a verified result.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "~Nov 8, HousingWire profile (broker's own claims, via a Magic Hand summary of the HousingWire piece)",
+              "url": "https://www.themagichand.io/use-cases/broker-frank-vazquez-in-house-ai-incyte-realty"
+            }
+          ]
+        },
+        {
+          "title": "Douglas Elliman goes all-in on AI — with named hires",
+          "summary": "After a flat quarter, Douglas Elliman's CEO said the firm will modernize by early 2027. Tech sits at the center of the plan. The firm hired a head of AI transformation, a director of AI enablement, and a chief operating officer. The buyer is now a named person, not a generic inbox.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 10, RISMedia",
+              "url": "https://ace.rismedia.com/2026/11/10/douglas-elliman-goes-all-in-for-ai-after-q3s-flat-earnings/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The cross-vendor approval queue",
+      "text": "Every AI tool now does work and asks the agent to say yes first. But each vendor builds its own yes-or-no screen, inside its own product. Nobody has built the one queue where an agent checks everything their tools propose in one place, with the licensee's name on it. Build the queue, not another assistant — and sell it as the piece every other AI tool plugs into."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Dec 14",
+      "title": "Tuccori: still no outcome, 13 days after the hearing",
+      "text": "Briefs on the judge's five fairness questions are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections. No new movement this week — do not cite approval."
+    },
+    {
+      "when": "Nov 14",
+      "title": "Compass v. the listing databases — Nov 14 coverage is recaps",
+      "text": "Only the Houston complaint is public so far. It makes two claims under federal antitrust law, with no monopolization claim. A hearing on blocking subpoenas is Nov 20, and a related investor-suit deadline is Dec 8."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Listing-data copyright policy — approved Nov 8",
+      "text": "The national Realtor group approved it Nov 8. No listing database has adopted it yet."
+    },
+    {
+      "when": "Nov 15",
+      "title": "ORE vendor pick runs Q1 2027",
+      "text": "Insider sentiment is skeptical. No vendor named, no leadership or staff yet."
+    },
+    {
+      "when": "Mar 17",
+      "title": "Licensed-agent-in-the-loop campaign",
+      "text": "No bill filed yet. Model language is in progress; bills may come late this year or early January. California and Texas regulator guidance still stands."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Two deadlines land Jan 1, 2027 (47 days)",
+      "text": "California's rental-ad disclosure law and Wisconsin's AI-photo rule take effect that day. All listing-data standards endorsements expire the same day. The standards group votes Nov 16–30."
+    },
+    {
+      "when": "Nov 15",
+      "title": "No SF listing-database news on vendor credentialing",
+      "text": "The open questions stand. The San Francisco listing database is absent from November's new-certification lists."
+    }
+  ]
+}
