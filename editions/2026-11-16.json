@@ -1,0 +1,117 @@
+{
+  "date_label": "Nov 16, 2026",
+  "briefings": "Briefing #32",
+  "hook": "A two-person startup stopped selling software to rental agencies and became the agency itself. And the industry's own AI fans are now asking for hard limits.",
+  "market_map": "Today: a rental agency run by software, and AI fans drawing safety lines. Also, cash offers inside a seller site, and new shared tools for listing data.",
+  "where_we_play": "Kevin Hawkins sends 23 basic safety questions to every AI vendor who wants his attention. Most never answer. Build a public sheet where vendors answer the same questions, checked and dated. It pairs with the approval queue: one tool shows what AI may touch, one record shows what the vendor promised.",
+  "one_line": "The vendor AI-security answer sheet.",
+  "days": [
+    {
+      "date": "2026-11-16",
+      "stories": [
+        {
+          "title": "A two-person startup stopped selling software to rental agencies — and became the agency",
+          "summary": "cf0, started in London by Luca Tabone and Louis, launched today as a rental agency where software does the agent's work. It lists homes, answers renters at any hour, and runs viewings. Twelve homes are live in Florida, Tennessee and Arkansas. All numbers are the founders' own claims.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 16, founder's launch post on Medium (primary source for the launch; all numbers are the founders' own claims)",
+              "url": "https://medium.com/@luca_73956/we-built-software-for-letting-agencies-then-we-became-the-agency-5f6823f9b093"
+            }
+          ]
+        },
+        {
+          "title": "The industry's own AI fans are drawing the line — and state regulators are now in the room",
+          "summary": "Inman reports that Kevin Hawkins of WAV Group teaches agents to use AI safely. He says software that acts on its own can send the email before anyone stops it. One user, Brandon Charnas, approves every email first. State licensing officials are now asking what the rules should be.",
+          "tags": [
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 16, Inman (part two of its agentic-AI safety series; read in full)",
+              "url": "https://www.inman.com/2026/11/16/agentic-ai-in-real-estate/"
+            }
+          ]
+        },
+        {
+          "title": "FSBO.com puts Opendoor cash offers inside its listing flow",
+          "summary": "FSBO.com, where owners sell without a listing agent, now lets eligible sellers start Opendoor's cash-offer process inside its listing flow. Sellers can see the cash number and keep marketing to other buyers at the same time. This is a company announcement — a vendor claim. Planned add-ons like photos and title services are plans, not shipped features.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 16, company announcement (vendor claim), via Pulse2",
+              "url": "https://pulse2.com/fsbo-com-integrates-opendoor-cash-offers-into-ai-powered-home-selling-platform/"
+            }
+          ]
+        },
+        {
+          "title": "RESO ships the shared building blocks for Data Dictionary 2.1 tools",
+          "summary": "RESO, the group that sets listing-data standards, published a shared developer package on Nov 15. It bundles the standard shape of listing data for versions 1.7, 2.0 and 2.1. That lowers the cost of building tools that must certify before endorsements expire Jan 1, 2027. It is also the off-the-shelf base a San Francisco vendor would build on.",
+          "tags": [
+            "pipes"
+          ],
+          "sources": [
+            {
+              "label": "Nov 15, RESO Tools (primary source — the standards body's own package registry)",
+              "url": "https://tools.reso.org/packages/reso-common/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The vendor AI-security answer sheet",
+      "text": "Kevin Hawkins sends 23 basic safety questions to every AI vendor. Most never answer, so no one can compare their claims. Build a public registry where vendors answer the same questions in the same form, checked and dated. It is cheap to build, and brokers and regulators writing the rules would cite it."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Dec 14",
+      "title": "Tuccori — still no outcome, 14 days post-hearing",
+      "text": "Briefs on the judge's five fairness topics are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections. No movement — do not cite approval."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Compass recruiting-data fight — the industry answers back",
+      "text": "Inman's survey found 37% of Compass agents were approached each month, versus 46% elsewhere. Most leaders who recruit use data from the shared listing database agents use. Only 6% said they would gain if that data were cut off; hearing Nov 20, investor deadline Dec 8."
+    },
+    {
+      "when": "Nov 16",
+      "title": "ARELLO takes up AI rules",
+      "text": "State licensing officials, through their group ARELLO, are asking what AI rules and enforcement should be. No rule or guidance has been issued yet. California guidance from Mar 17, 2026 and Texas guidance from July 14 still stand."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Listing-data copyright policy — approved Nov 8",
+      "text": "The national Realtor group approved this policy Nov 8. No shared listing database has adopted it yet — checked Nov 16."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting runs Nov 16–30",
+      "text": "Voting for the board of RESO, the group that sets listing-data standards, runs Nov 16–30. The International Forum in Istanbul runs Nov 16–17. A new developer package is in story four."
+    },
+    {
+      "when": "Q1 2027",
+      "title": "ORE vendor pick runs Q1 2027",
+      "text": "No vendor named, and no leadership or staff yet."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (46 days)",
+      "text": "California's rental-ad disclosure law and Wisconsin's AI-photo ad rule take effect that day. All listing-data standards endorsements expire the same day."
+    },
+    {
+      "when": "Nov 16",
+      "title": "No San Francisco listing database news on vendor credentialing",
+      "text": "Topic 14 open questions are unchanged. The San Francisco database is absent from November's new-certification lists. The new shared tooling in story four is the build-on standard either way."
+    }
+  ]
+}
