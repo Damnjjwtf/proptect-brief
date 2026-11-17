@@ -1,0 +1,107 @@
+{
+  "date_label": "Nov 17, 2026",
+  "briefings": "Briefing #33",
+  "hook": "San Diego's listing database signed a direct AI deal through a global network. That gives Jessica a new way to pitch the San Francisco database.",
+  "market_map": "Today: a San Diego AI deal through a global network, and $10M for agents that remember residents. Plus a phone video that turns into a checked 3D record of a home.",
+  "where_we_play": "Until now, a vendor knocked on one listing database's door and waited — that is the San Francisco stall. GDX flips it: a database joins a standards network once, and vendor deals happen inside it under local rules. No agent tool in this record is built ready to plug in when a database joins. That readiness is cheap to build now, and San Diego just showed the first AI signing through it.",
+  "one_line": "The GDX door.",
+  "days": [
+    {
+      "date": "2026-11-17",
+      "stories": [
+        {
+          "title": "San Diego MLS signs a direct AI deal through the Global Data Exchange",
+          "summary": "San Diego MLS, the shared listing database agents use, signed a deal with ZAMINAI on Nov 16. They will work through GDX, a network that shares listing data across borders using RESO listing-data standards. The plan is AI that explains a home's value and risk, with evidence shown. Chief Saul Klein and RESO chief Sam DeBord back it in the release — a vendor claim, not a shipped product.",
+          "tags": [
+            "pipes",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 16, company release via MarketersMedia (vendor claim — single release, though it quotes the MLS chief, RESO's chief, and the GDX president)",
+              "url": "https://news.marketersmedia.com/zaminai-and-san-diego-mls-partner-to-advance-ai-powered-property-intelligence-through-the-gdx-network/89209777"
+            }
+          ]
+        },
+        {
+          "title": "Bevado raises a $10M seed to build AI agents that remember every resident",
+          "summary": "Bevado, founded in New York in March 2025 by former Meta engineer Ruchir Baronia, raised $10 million. RET Ventures led the round, with Pear VC taking part. Its agents pull every resident chat into one shared memory, then chase repairs, tours and late rent on their own. The company says one client lifted showings by more than 300% — that number is a vendor claim.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 16, Business Wire release, independently reported by Commercial Observer, Pulse2, and Finsmes (funding verified; results are vendor claims)",
+              "url": "https://commercialobserver.com/2026/11/ai-platform-bevado-seed-round/"
+            },
+            {
+              "label": "finsmes.com",
+              "url": "https://www.finsmes.com/2026/11/bevado-raises-10m-in-seed-funding.html"
+            }
+          ]
+        },
+        {
+          "title": "Inform launches: one phone video becomes a checked 3D record of a home",
+          "summary": "Inform, founded in 2025, launched on Nov 17 with a tool that turns a phone video into a 3D record. Each fact about the home links back to the exact video frame that shows it. Anything unsure goes to a person to confirm. The app is live in the US today for iPhone and Android.",
+          "tags": [
+            "ai"
+          ],
+          "sources": [
+            {
+              "label": "Nov 17, Business Wire (vendor claim — launch release, read in full)",
+              "url": "https://www.businesswire.com/news/home/20261116383716/en/Inform-Launches-Spatial-AI-Built-to-Change-How-Properties-Are-Inspected-Valued-and-Insured"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The GDX door",
+      "text": "Until now, a vendor knocked on one listing database's door and waited. GDX flips it: a database joins a standards network once, and vendor deals happen inside it. No agent tool here is ready to plug in the moment a database joins, with credit and local rules handled. That gives Jessica a second pitch: join the network your peers are joining, not just approve us."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 16",
+      "title": "Tuccori — still no outcome, 15 days after the hearing",
+      "text": "The tracker was updated Nov 16. The final hearing was Nov 2, the ruling is still pending, and more facts are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs and 2 objections — do not cite approval."
+    },
+    {
+      "when": "Nov 20",
+      "title": "Compass and listing database fight: no movement",
+      "text": "The next date is the Nov 20 hearing on a subpoena in the national Realtor group case. The Magloire deadline is Dec 8. The 15 Compass suits are in an early fight over where they will be heard, and San Francisco is not among them."
+    },
+    {
+      "when": "Nov 17",
+      "title": "International listing forum, day 2 today in Istanbul",
+      "text": "Today's agenda has the FIABCI and GDX signing and a talk on licensing listing data worldwide. The San Diego signing in story one is the forum's first concrete output in this record."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting runs Nov 16–30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30."
+    },
+    {
+      "when": "Nov 17",
+      "title": "ARELLO and the person in charge: no new rule",
+      "text": "There is no new rule, guidance or bill in this window. The ARELLO thread from Briefing #32 still stands."
+    },
+    {
+      "when": "Nov 8",
+      "title": "National Realtor group copyright policy: no adopter yet",
+      "text": "The policy was approved Nov 8. No listing database has adopted it yet — checked Nov 17."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (45 days)",
+      "text": "California's rental-ad disclosure law and Wisconsin's AI-photo rule take effect that day. All RESO endorsements expire the same day."
+    },
+    {
+      "when": "Nov 17",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "Topic 14 open questions are unchanged, including the DD 2.1 question. Story one gives the pitch a new precedent, not a new San Francisco fact."
+    }
+  ]
+}
