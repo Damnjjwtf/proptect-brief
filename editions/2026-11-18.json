@@ -1,0 +1,108 @@
+{
+  "date_label": "Nov 18, 2026",
+  "briefings": "Briefing #34",
+  "hook": "Buildout put AI inside one system for commercial brokers. Alaska's listing database gave all its members a research tool in one deal.",
+  "market_map": "Today: Buildout's new broker system, Alaska's member deal with RealReports, and a global listing network that doubled. Plus pay-per-video listing films with no subscription.",
+  "where_we_play": "Many small listing databases still run an old version of the shared field list for listing data. About 40% could lose their certified status within six months, a vendor claim. No one sells them a short, fixed-price check of what fails and what to fix first. That check puts the seller in the room when the database later picks AI vendors.",
+  "one_line": "A Data Dictionary 2.1 readiness check for small listing databases.",
+  "days": [
+    {
+      "date": "2026-11-18",
+      "stories": [
+        {
+          "title": "Buildout launches one system for commercial brokers, with AI built in",
+          "summary": "Buildout sells software for commercial real estate, meaning offices, shops and warehouses, not homes. Its new system holds contacts, listings, deals and pay in one place, and it opens Dec 15, 2026. Its AI helper, Otto, ranks call lists and drafts outreach from that shared record. Brokers can also bring in their own AI helpers, like Claude, through MCP, a standard plug that lets an AI tool pull data.",
+          "tags": [
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 18, PR Newswire release (vendor claim — launch release)",
+              "url": "https://www.prnewswire.com/news-releases/buildout-introduces-the-first-brokerage-operating-system-connecting-commercial-real-estate-deals-from-first-call-to-commission-check-302943242.html"
+            }
+          ]
+        },
+        {
+          "title": "Alaska MLS gives RealReports to all 2,000-plus members",
+          "summary": "Alaska MLS, the state's largest shared listing database agents use, made RealReports its member platform. Members get research, lead finding and pricing reports in one workspace. The data covers 150 million-plus US homes from 135-plus sources, company figures. This is RealReports' third listing database deal in 15 days.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 18, EIN Presswire release (vendor claim — single release, quotes the MLS chief)",
+              "url": "https://www.technologypressreleases.com/article/956527147-alaska-mls-launches-realreports-to-more-than-2-000-members-statewide"
+            }
+          ]
+        },
+        {
+          "title": "Global Data Exchange more than doubles, from 15 to 31 nodes",
+          "summary": "RealtyFeed runs the Global Data Exchange, a network that lets listing services share data across borders. It said 16 new groups would join at a Nov 17 signing in Istanbul, taking the network from 15 to 31 nodes. That figure is the operator's own claim. No list of the 16 new members was published, and no Bay Area database was named.",
+          "tags": [
+            "pipes",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 17, RealtyFeed announcement via DC Metro Wire (vendor claim — single source, the network operator announcing its own expansion)",
+              "url": "https://dcmetrowire.com/news/realtyfeed-to-more-than-double-global-data-exchange-network-at-istanbul-mls-forum"
+            }
+          ]
+        },
+        {
+          "title": "PropertyAdvice.ai adds pay-per-video listing films, no subscription",
+          "summary": "PropertyAdvice.ai, based in Toronto, launched a tool that turns listing photos into polished videos. There is no login and no subscription. Agents pay per video, and the video arrives by email. Each video carries disclosure labels, which help meet listing rules as the Jan 1, 2027 AI-photo deadline nears.",
+          "tags": [
+            "ai"
+          ],
+          "sources": [
+            {
+              "label": "Nov 17, GlobeNewswire release (vendor claim — launch release)",
+              "url": "https://itbusinessnet.com/2026/11/propertyadvice-ai-introduces-cinematic-real-estate-videos-without-subscriptions-credits-or-complicated-software/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "A Data Dictionary 2.1 readiness check for small listing databases",
+      "text": "Many small listing databases still run an old version of the shared field list for listing data. About 40% could lose their certified status within six months, a vendor claim. No one sells them a short, fixed-price check of what fails and what to fix first. That check puts the seller in the room when the database later picks AI vendors."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 16",
+      "title": "Tuccori — still no outcome, 16 days after the hearing",
+      "text": "The tracker was updated Nov 16. The final hearing was Nov 2, the ruling is still pending, and more facts are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs and 2 objections."
+    },
+    {
+      "when": "Nov 17",
+      "title": "Compass fight: one small move",
+      "text": "Law360 reported Nov 17 that Compass plans to ask a judge to dismiss a suit from seven listing databases. That is headline only, from one source. The next date is a Nov 20 hearing, and the Magloire deadline is Dec 8."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting runs Nov 16–30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30."
+    },
+    {
+      "when": "Nov 8",
+      "title": "National Realtor group copyright policy: no adopter yet",
+      "text": "The policy was approved Nov 8 by the national Realtor group. No listing database has adopted it yet — checked Nov 18."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (44 days)",
+      "text": "California's rental-ad disclosure law and Wisconsin's AI-photo rule take effect that day. All RESO endorsements expire the same day."
+    },
+    {
+      "when": "Nov 18",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "Topic 14 open questions are unchanged. The global network growth adds weight to yesterday's precedent, not a new San Francisco fact."
+    }
+  ]
+}
