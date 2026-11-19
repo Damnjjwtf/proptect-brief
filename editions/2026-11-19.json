@@ -1,0 +1,121 @@
+{
+  "date_label": "Nov 19, 2026",
+  "briefings": "Briefing #35",
+  "hook": "Visitt and Propy both launched AI agents with human guardrails. Canva hired a middleman to handle listing-data licensing for it.",
+  "market_map": "Today: Visitt's building agent, Propy's AI escrow officer, Canva's licensing middleman, and a first chief tech officer at HomeServices.",
+  "where_we_play": "Three items this week point to the same gap. Small brokerages and small listing databases have no simple way to govern AI agents. A fixed-price agent passport could give each agent an identity and set what data it can use. It could also require human approval for risky steps and log every action.",
+  "one_line": "A fixed-price agent passport for small brokerages and listing databases.",
+  "days": [
+    {
+      "date": "2026-11-19",
+      "stories": [
+        {
+          "title": "Visitt launches an agent inside its building platform, plus a plug for outside AIs",
+          "summary": "Visitt runs software for commercial buildings, like work orders, repairs and tenant messages. On Nov 18 it launched an AI agent inside its platform and Visitt MCP, a standard plug that lets an AI tool pull data. The plug connects the same data to ChatGPT, Claude and Microsoft Copilot. Early users pulled insurance papers from email and turned requests into work orders, the company said.",
+          "tags": [
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 18, PR Newswire release (vendor claim — launch release)",
+              "url": "https://www.prnewswire.com/news-releases/visitt-launches-visitt-agent-and-visitt-mcp-to-expand-its-agentic-ai-capabilities-across-commercial-property-operations-302944115.html"
+            }
+          ]
+        },
+        {
+          "title": "Propy's Avery 2.0: an AI escrow officer running 100-plus small agents",
+          "summary": "Propy is a title and escrow company. Escrow is the neutral middle step that holds money and papers until a sale closes. On Nov 18 it announced Avery 2.0, an AI escrow officer running more than 100 small agents, the company's count. Humans oversee every deal, and the AI does not give or change wire instructions by phone.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 18, ACCESS Newswire release (vendor claim — launch release)",
+              "url": "https://www.wcia.com/business/press-releases/accesswire/1252187/propy-introduces-avery-2-0-an-ai-escrow-officer-coordinating-more-than-100-specialized-ai-agents/"
+            }
+          ]
+        },
+        {
+          "title": "Canva gets listing data without doing the licensing itself",
+          "summary": "Canva wants more real estate work from big brokerages in North America. It hired Constellation Data Labs instead of doing listing deals itself. Constellation runs the data pipes and the MLS licensing steps, and MLS means the shared listing database agents use. When a brokerage joins, Constellation turns on its listing feed in Canva.",
+          "tags": [
+            "pipes",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 18, Real Estate News tech roundup (trade coverage of a company announcement)",
+              "url": "https://www.realestatenews.com/2026/11/18/realpage-calls-for-ai-governance-real-offers-showcase-discount"
+            }
+          ]
+        },
+        {
+          "title": "HomeServices hires its first chief technology officer",
+          "summary": "HomeServices of America is one of the largest US brokerage owners. It created a chief technology officer role for the first time and hired Maria Latushkin, starting Nov 30. She will oversee tech across brokerage, mortgage, title and insurance. That includes Maestro, its AI platform for agents launched in March, and OnePoint, launched in April.",
+          "tags": [
+            "pipes",
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 18, Real Estate News + BusinessWire release",
+              "url": "https://www.realestatenews.com/2026/11/18/homeservices-hires-first-cto-costar-appoints-hr-leader"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "A fixed-price agent passport for small brokerages and listing databases",
+      "text": "Three items this week point to the same gap. Small brokerages and small listing databases have no simple way to govern AI agents. A fixed-price agent passport could give each agent an identity and set what data it can use. It could also require human approval for risky steps and log every action."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 16",
+      "title": "Tuccori: still no outcome, 17 days after the hearing",
+      "text": "The tracker was updated Nov 16: the final hearing was Nov 2, the ruling is still pending, and more facts are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs and 2 objections. Do not cite approval."
+    },
+    {
+      "when": "Nov 13",
+      "title": "Compass fight: the Nov 13 letter, in fuller detail",
+      "text": "Seven listing databases sued Compass, and on Nov 13 Compass asked Judge Vyskocil to dismiss the case or split each claim into its own district. No ruling yet. Next dates are a Nov 20 hearing and a Dec 8 Magloire deadline."
+    },
+    {
+      "when": "Nov 16",
+      "title": "RealPage sets out seven rules for AI agents",
+      "text": "RealPage published a framework on Nov 16, not a rule. Each agent should have its own identity, use only approved channels and only the data its job needs. High-risk steps need human approval, every action should leave a record, and there should be a way to stop the agent."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Inman safety series, part 2: keep AI on a short leash",
+      "text": "Part 2, from Nov 16, looks at licensed power users who decide up front what an AI agent may touch. State regulators are taking up the question through their licensing officials group. No rule has been issued."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting runs Nov 16–30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30."
+    },
+    {
+      "when": "Nov 8",
+      "title": "National Realtor group copyright policy: no adopter yet",
+      "text": "The policy was approved Nov 8 by the national Realtor group. No listing database has adopted it yet, checked Nov 19."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (43 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, and Wisconsin's AI-photo rule take effect that day. All RESO endorsements expire the same day."
+    },
+    {
+      "when": "Nov 19",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged. Canva's licensing middleman is a new partner shape to test, not a change in its position."
+    }
+  ]
+}
