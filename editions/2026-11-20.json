@@ -1,0 +1,120 @@
+{
+  "date_label": "Nov 20, 2026",
+  "briefings": "Briefing #36",
+  "hook": "BrokerBot won backing from California's Realtor group. Realtyna showed a plug that lets an AI pull listings, and two small tools hit the same data wall.",
+  "market_map": "Today: BrokerBot 2.0, Realtyna's listing plug and site builder, Vestora and HouseQuest for buyers, and Bevado's $10M seed for rental agents.",
+  "where_we_play": "HiQ scores homes for a buyer, but it works in only one MLS, the shared listing database agents use. Vestora wants deals with listing databases it does not have yet. Nobody sells the middle piece alone: a match layer that works on a feed an agent already has. It would show why each home scored well, in words an agent can share.",
+  "one_line": "The portable buyer-match layer.",
+  "days": [
+    {
+      "date": "2026-11-20",
+      "stories": [
+        {
+          "title": "BrokerBot 2.0 launches, with backing from California's Realtor group",
+          "summary": "BrokerBot won $15,000 at the Pitch Battle on Nov 7, run by the national Realtor group. On Nov 19 it said California's Realtor group, with about 190,000 members, put money in. The new version works ahead of the agent and uses the firm's own files and rules. The company says it is audited, insured, and never trains on client data.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 19, PR Newswire release (vendor claim — launch/funding release), covered the same day by Real Estate News",
+              "url": "https://www.realestatenews.com/2026/11/19/brokerbot-2-0-launches-housequest-adds-buyer-home-match-tool"
+            }
+          ]
+        },
+        {
+          "title": "Realtyna shows a listing plug and an AI site builder in Istanbul",
+          "summary": "Realtyna sells agent sites and IDX, the feed that puts other brokers' listings on your site. In Istanbul on Nov 16-17 it showed MCP, a plug that lets an AI tool pull data from the shared listing database. It also showed a site builder that handles the listing paperwork for the agent. No launch date, price, or named database was given.",
+          "tags": [
+            "pipes",
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 19, KeyCrew (single source; the article discloses a paid partnership with the Forum — treat product claims as vendor claims)",
+              "url": "https://keycrew.co/journal/realtyna-brings-its-ai-site-builder-and-mcp-tools-to-international-mls-forum-in-istanbul/"
+            }
+          ]
+        },
+        {
+          "title": "Vestora launches for investors, and HouseQuest HiQ matches buyers",
+          "summary": "Vestora is a workspace for investors that pulls records, files, and agent messages into one place. It says it is now seeking deals with listing databases, but it named none. HouseQuest HiQ sends buyers a free quiz of 20 to 30 questions. It scores homes, but matching works only in Arizona's listing database so far.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 19, Real Estate News tech roundup (trade coverage of company announcements)",
+              "url": "https://www.realestatenews.com/2026/11/19/brokerbot-2-0-launches-housequest-adds-buyer-home-match-tool"
+            }
+          ]
+        },
+        {
+          "title": "Catch-up: Bevado raises $10M for AI agents that run rental chats",
+          "summary": "Bevado raised a $10 million seed round on Nov 16, led by RET Ventures, with Pear VC in. Its AI brain links a manager's systems and recalls each resident chat. It runs whole jobs by voice, text, email, and chat, like booking tours and fixing repairs. Claims of 300% more showings are company claims, not checked facts.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 16, BusinessWire release (vendor claim — funding release); outside the 24-hour window, missed by earlier briefings, flagged as a catch-up",
+              "url": "https://www.businesswire.com/news/home/20261116477086/en/Bevado-Raises-%2410-Million-Seed-to-Build-AI-Agents-That-Remember-Every-Resident-and-Learn-From-Every-Conversation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The portable buyer-match layer",
+      "text": "HiQ scores homes for a buyer, but it works in only one MLS, the shared listing database agents use. Vestora wants deals with listing databases it does not have yet. Nobody sells the middle piece alone: a match layer that works on a feed an agent already has. It would show why each home scored well, in words an agent can share."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 19",
+      "title": "Compass fight: judge sets Dec 3 deadline",
+      "text": "A judge denied Compass's bid for a pre-motion talk in two suits from nine listing databases, with no ruling on the merits. Compass must file to dismiss, or to split the cases by home court, by Dec 3. The judge told both sides to stop filing an update on each new step."
+    },
+    {
+      "when": "Nov 12",
+      "title": "The other Compass track: 15 suits of its own",
+      "text": "Compass's own 15 suits against 15 listing databases move on their own track. Vendor Alley, in an opinion piece on Nov 19, summed up the other side's view. It said Compass sues to see rivals' listings while holding back its own."
+    },
+    {
+      "when": "Nov 20",
+      "title": "Realtor group subpoena hearing: no outcome yet",
+      "text": "A hearing on a subpoena fight was due Nov 20 in the older track. No outcome came up in this morning's checks. The Magloire lead-plaintiff deadline still stands on Dec 8."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Tuccori: still no outcome, 18 days after hearing",
+      "text": "The tracker, updated Nov 16, is unchanged: the final hearing was Nov 2 and the ruling is still pending. More briefs are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections, so do not cite approval."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting runs Nov 16-30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Realtor group copyright policy: no adopter yet",
+      "text": "The policy was approved Nov 8. No listing database has adopted it yet, checked Nov 20."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (42 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, and Wisconsin's AI-photo ad rule take effect that day. All endorsements from RESO, the group that sets listing-data standards, expire the same day."
+    },
+    {
+      "when": "Nov 20",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged. Today's stories add partner shapes, not a change in its own position."
+    }
+  ]
+}
