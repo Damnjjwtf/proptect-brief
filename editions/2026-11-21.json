@@ -1,0 +1,127 @@
+{
+  "date_label": "Nov 21, 2026",
+  "briefings": "Briefing #37",
+  "hook": "The national Realtor group, NAR, put out an AI rulebook for agents. Its core line is simple: you stay responsible for what the AI does.",
+  "market_map": "Today: the Realtor group's AI risks and Zillow's push for early sellers. Also, two mergers shrink the MLS map, the shared listing database agents use, and VOOV sells person-plus-AI help.",
+  "where_we_play": "MLS leaders want vendors to ask for data in place, not copy it and store it. No one sells a small version of that ask-don't-store layer yet. It would query in place, cite the source and license, and keep a log. That is the shape a careful MLS, the shared listing database agents use, can say yes to.",
+  "one_line": "Build the ask-don't-store layer for listing data.",
+  "days": [
+    {
+      "date": "2026-11-21",
+      "stories": [
+        {
+          "title": "The Realtor group publishes its AI rulebook: 11 risks for agents",
+          "summary": "The national Realtor group, NAR, shared two new guides for its 1.4 million members. One lists 11 ways AI can break the ethics code, like false claims or leaked client details. It says the agent stays responsible, and AI does not expand your license. The other guide turns the code into step-by-step checklists for deals.",
+          "tags": [
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 20, Real Estate News (trade coverage of NAR's own resources, promoted at NAR NXT)",
+              "url": "https://www.realestatenews.com/2026/11/20/new-resources-tie-nars-code-of-ethics-to-ai-use-transactions"
+            }
+          ]
+        },
+        {
+          "title": "Zillow puts its paid partner agents on pages for homes not for sale",
+          "summary": "Zillow now shows its Preferred agents on pages for homes that are not for sale. It picks agents who sold similar homes nearby, so owners can call before they list. Zillow also added a credit-based price tool, area guides, and a side-by-side home compare view.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 19, Inman Tech Roundup (trade coverage of Zillow's own announcement)",
+              "url": "https://www.inman.com/2026/11/19/tech-roundup-zillow-preferred-agents/"
+            }
+          ]
+        },
+        {
+          "title": "Two mergers in one day shrink the map of listing groups",
+          "summary": "Mid Georgia's listing group will merge into First MLS in Atlanta, which serves more than 55,000 members. That figure is the group's own claim. In Denver, two Realtor groups voted to merge into one group on Jan 1, 2027, with about 9,500 members. A vote in Edmonton was paused over tech problems.",
+          "tags": [
+            "pipes",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Updated Nov 20, Real Estate News (trade coverage of the organizations' own announcements)",
+              "url": "https://www.realestatenews.com/2026/11/19/georgia-mlss-merge-to-become-better-positioned-for-the-future"
+            }
+          ]
+        },
+        {
+          "title": "VOOV sells agents a trained person plus AI, not another app",
+          "summary": "VOOV, from Virginia Beach, pairs each client with one trained remote worker in a supervised office. That person handles content, admin, marketing, and lead follow-up, with AI tools built in. VOOV says it has 200-plus clients and cuts costs 30% to 60%. Those are company claims, not checked facts, and no price was shared.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 20, EIN Presswire release (vendor claim — launch release)",
+              "url": "https://uspolitics.einnews.com/pr_news/958072637/voov-introduces-ai-powered-real-estate-virtual-assistants-to-help-agents-and-brokerages-scale-smarter"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "Build the ask-don't-store layer for listing data",
+      "text": "MLS leaders want vendors to ask for data in place, not copy it and store it. No one sells a small version of that layer yet. It would query in place, cite the source and license, and keep a log. That is the shape a careful listing group can say yes to."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 20",
+      "title": "Realtor group AI guides: guidance, not a new rule",
+      "text": "The guides put 11 risks and the line 'you stay responsible' in writing for 1.4 million members. No new ban was added. Expect listing groups and brokerages to cite the guides in their own AI policies soon."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Catch-up: a listing chief says stop copying our data",
+      "text": "At a Nov 16 forum, Northstar's chief said vendors should use listing data in place, not store copies. He said the listing group should give vendors a service promise. It was forum talk, not a policy, but it names where access is heading."
+    },
+    {
+      "when": "Nov 20",
+      "title": "Brokerage fee suits spread: buyer sues over a $395 fee",
+      "text": "A buyer sued Howard Hanna over a flat $395 fee charged on top of commission, filed Nov 10. The suit says the fee bought no service and was hidden on the closing form. It names similar fees at Compass, $500, and other offices, $395 to $650, as claims, not findings."
+    },
+    {
+      "when": "Dec 3",
+      "title": "Compass fight: Dec 3 deadline still stands",
+      "text": "There is no new ruling in Compass's fight with nine listing groups. Compass must file to dismiss, or to split the cases, by Dec 3. Its own 15 suits move on separate tracks."
+    },
+    {
+      "when": "Nov 20",
+      "title": "Subpoena fight: Nov 20 hearing, no outcome reported",
+      "text": "A Nov 20 hearing in the older subpoena track gave no reported outcome. The last firm step was a Nov 10 court order that paused a bid to block the subpoena. The Magloire lead-plaintiff deadline stands on Dec 8."
+    },
+    {
+      "when": "Nov 2",
+      "title": "Tuccori: still no outcome, 19 days after hearing",
+      "text": "The tracker, updated Nov 16, is unchanged: the final hearing was Nov 2 and the ruling is still pending. More briefs are due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections, so do not cite approval."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Copyright policy: still no listing group has adopted it",
+      "text": "The Realtor group's copyright policy was approved Nov 8. No listing group has adopted it yet. A Nov 18 session agenda that listed the topic is not proof of adoption, so the confirmed count stays at zero."
+    },
+    {
+      "when": "Nov 16-30",
+      "title": "Listing standards board voting runs Nov 16-30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (41 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, and Wisconsin's AI-photo ad rule, Act 69, take effect that day. All endorsements from the listing standards group expire the same day."
+    },
+    {
+      "when": "Nov 21",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged. Today's guides and the ask-in-place idea give a pitch a clearer spec to answer."
+    }
+  ]
+}
