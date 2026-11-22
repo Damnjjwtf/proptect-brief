@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-estate briefing — 2026-11-22 (Sunday, #38) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+      .full-brief {
+        margin-top: 14px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .full-brief a { color: var(--accent-dark); text-decoration: none; }
+      .full-brief a:hover { text-decoration: underline; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #</p>
+      <h1>Real-estate briefing — 2026-11-22 (Sunday, #38)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>Three findings — one in-window, two flagged catch-ups the earlier editions missed. Window: Nov 21 07:30 PT – Nov 22 07:30 PT. This was a quiet window at the top of the source list: no new story dated Nov 21–22 surfaced on Inman, HousingWire, Real Estate News, or RISMedia (the Real Estate News front page still tops out at Nov 20), and the vendor wires carried no new US agent-tech launch in-window. Plain language throughout; any industry term is explained where it first appears.</p>
+<h2>1. The 10-million-sale study: pre-marketing pays, staying private costs — and it costs some sellers more than others</h2>
+<p><strong>Nov 19, HousingWire (trade coverage of an ARELLO study; catch-up — missed by briefings #36–#37)</strong> | <a href="https://www.housingwire.com/articles/private-listings-sold-less-study/" target="_blank" rel="noopener">https://www.housingwire.com/articles/private-listings-sold-less-study/</a></p>
+<ul>
+<li><strong>What it is.</strong> The Association of Real Estate License Law Officials (ARELLO — the group of state licensing officials) reviewed more than 10 million home sales from January 2024 to June 2026 and split them by how the home was marketed. &quot;Coming-soon&quot; listings — homes pre-marketed for a short window, then put on the MLS (the shared listing database agents use) for everyone to see — sold for about <strong>$9,200 more</strong> than comparable MLS listings in the mid-market, and close to <strong>$17,000 more</strong> at the top end. Listings that stayed private and never reached the MLS did the opposite: about <strong>$5,000 less</strong> in the mid-range and <strong>$3,500 less</strong> at the high end. The market is moving the same way the money points: coming-soon volume rose 13% in the year ending June 2026, while private listings fell 3%. The hard part of the study: the private-listing discount was smallest in majority-white neighborhoods (0.88% below MLS prices) and larger in majority non-white (2.21%) and majority-Hispanic (3.33%) neighborhoods. ARELLO itself stresses the gaps &quot;do not establish causation or unlawful discrimination&quot; but warrant a closer look. Context from the same piece: Compass launched &quot;See It First&quot; on Sept 22, pulling its coming-soon and private listings into one early-access showcase — the study separates the half of that strategy the data rewards (coming-soon) from the half it penalizes (stay-private).</li>
+<li><strong>What it means for product opportunity.</strong> This is the first dollar-denominated evidence in this record on the pre-market question that half the recent briefings circle (Zillow Preview in RealScout, #28; Wispr&#x27;s pre-market marketplace, Demo Day Dec 1; Zillow Preferred on off-market pages, #37). It draws the line a product can be built on: pre-marketing is worth money only when it ends in full exposure. It also hands the agent a concrete job — HousingWire&#x27;s own advice is to walk the seller through both roads in dollars and, if the seller still wants privacy, put the estimated cost in writing and let them decide with eyes open. That written, signed estimate is a product surface nobody in this record sells yet (see Whitespace).</li>
+</ul>
+<h2>2. A small website vendor ships the approval step, not just the AI draft</h2>
+<p><strong>Nov 21, RealtyTerminus changelog (the vendor&#x27;s own shipping notes — primary source for what shipped)</strong> | <a href="https://www.realtyterminus.com/whats-new" target="_blank" rel="noopener">https://www.realtyterminus.com/whats-new</a></p>
+<ul>
+<li><strong>What it is.</strong> RealtyTerminus, a website builder for agents (Canadian — it runs on CREA&#x27;s data feed, the Canadian equivalent of an MLS feed, not a US MLS), published its Nov 21 update. Two pieces. First, the agent&#x27;s admin now works as a phone app: push alerts for new leads and for AI drafts waiting for review, quiet from 9 PM to 7 AM, per-team-member alerts, a list of every signed-in device with remote sign-out, and a fresh password check for billing, domain, team, and delete actions if the last sign-in was more than 15 minutes ago. Second, its &quot;Ask AI&quot; lead-reply drafter now redrafts with reasons: the agent picks a quick reason (Shorter, Warmer, No dates yet) or writes their own, the AI rewrites, and it offers to remember the correction — for this one client, or for every client. The draft arrives inside an email so the agent can review and send from their phone without signing in, and each person sets how long their review links stay live, up to 24 hours. Nothing sends on its own; the agent approves every message.</li>
+<li><strong>What it means for product opportunity.</strong> Small vendor, but this is the licensee-in-the-loop idea (briefings #29, #35, #37) reduced to shipping detail, and the detail is the part worth reverse-engineering: redraft-with-a-reason instead of a blank regenerate button, memory the agent scopes (this client vs. all clients), review links that expire, and alerts that know when to stay quiet. BrokerBot sells governance at brokerage scale; this shows the same shape at solo-agent scale, inside a changelog instead of a pitch deck. For anything JJ and Jessica build, the approval screen — not the model — is where the trust NAR&#x27;s 11-risk guide (#37) will be won or lost. Caveat: the pattern travels, the data deal does not — this vendor&#x27;s listings come through the Canadian feed, so it says nothing about US MLS credentialing.</li>
+</ul>
+<h2>3. The appraisal standard and the listing standard are being pulled toward each other</h2>
+<p><strong>Nov 20, ValuSignal analysis (single source — flagged as such; its RESO figures match the numbers already in this record)</strong> | <a href="https://www.valusignal.com/blog/reso-data-dictionary-uad-36-listing-data" target="_blank" rel="noopener">https://www.valusignal.com/blog/reso-data-dictionary-uad-36-listing-data</a></p>
+<ul>
+<li><strong>What it is.</strong> Since Nov 2, every new appraisal delivered to Fannie Mae and Freddie Mac uses UAD 3.6 (the Uniform Appraisal Dataset — the standard form appraisers fill in), which records a home in far more structured detail than the old forms. RESO (the Real Estate Standards Organization — the body that sets the shared field names listing data travels in) is now drafting changes to its Data Dictionary so listing data lines up better with what appraisers must report. At its Oct 20 meeting, RESO&#x27;s Data Dictionary workgroup took up requests for more detailed listing data on six topics that affect valuation; RESO&#x27;s November update says about 40% of the requested items already map to existing dictionary fields, and draft proposals for the rest are still to be posted. The scale gap is the story: the appraisal standard is mandatory and already in production, while the listing standard is voluntary in what it collects — the dictionary has the field names (2,139 fields in version 2.1, approved Oct 5), but each MLS chooses which fields to collect and each agent chooses how much to fill in. Data Dictionary 2.0 adoption stood at 65.9% at RESO&#x27;s fall conference (Sam DeBord, RESO&#x27;s chief executive, per a Cotality recap quoted in the piece).</li>
+<li><strong>What it means for product opportunity.</strong> If listing records start carrying appraisal-grade detail — condition, room-level facts, energy features — the value moves to whoever collects it at listing time without adding typing. That is the same pain this record keeps finding from the agent side (retyping one listing into 4+ systems, from the Nov 12 pain-point dig). A listing-entry helper that asks for the UAD-aligned details once, in plain questions, and fills both the MLS fields and the disclosure/appraisal trail is a build that needs no new data license — it works on the agent&#x27;s own listing. Watch item: RESO has not yet posted the draft proposals or given them a date; only the accessory-dwelling-unit (ADU) fields have a version assigned (2.2, due end of Q4). Until the drafts post, this is direction, not a spec.</li>
+</ul>
+<h2>Whitespace</h2>
+<p><strong>The exposure receipt.</strong> Finding 1 names a job agents are now being told to do — show the seller, in dollars, what each marketing road costs, and get the choice in writing — and no tool in this record does it. The build is small and needs no MLS credentialing: pick the home&#x27;s price band, apply the study&#x27;s mid-market and top-end figures (coming-soon premium vs. stay-private discount, with the study&#x27;s own &quot;correlation, not proof of cause&quot; wording kept on the page), and produce a one-page receipt the seller signs — marketing path chosen, estimated cost of privacy shown, date and agent attached. It slots into the pre-market shelf idea from #28 (one agent-side view of every pre-market listing, with cooperation status attached) as the document that shelf is missing, it gives the agent a defense file if a seller later claims they were never told, and it is timed: Wispr&#x27;s Demo Day is Dec 1 (9 days), and every pre-market pitch between now and then will be stronger with the ARELLO numbers attached than with a slogan. The honest limit to print on it: the study is national averages over 10 million sales, not a promise about one house.</p>
+<h2>Also noted</h2>
+<ul>
+<li><strong>ZipISA (about Nov 20, TechBuzz newsletter — vendor claim, unverified):</strong> an AI &quot;inside sales agent&quot; that emails 250 homeowners a month in the agent&#x27;s chosen ZIP code; the company reports hand-read replies from Nov 6–19 and claims two $5M listing meetings came out of it; $149/month Pro seat in its own example math. Outbound prospecting by AI is a crowded claim — treat the results as the company&#x27;s until a second source checks them. <a href="https://www.techbuzz.ai/newsletters/ai-isa-two-5m-homeowners-wrote-back-post-e4147e1d-8630-4b6b-b5e6-05a0f92a4bfd" target="_blank" rel="noopener">https://www.techbuzz.ai/newsletters/ai-isa-two-5m-homeowners-wrote-back-post-e4147e1d-8630-4b6b-b5e6-05a0f92a4bfd</a></li>
+<li><strong>Realty Force (launch listing, not yet launched):</strong> an AI-powered platform for REO brokers and agents (REO = bank-owned foreclosure properties) listed as launching Nov 30 at $297/month. A date to check, not a product yet. <a href="https://www.betterlaunch.co/product/realty-force" target="_blank" rel="noopener">https://www.betterlaunch.co/product/realty-force</a></li>
+<li><strong>JohnHart &quot;JANE&quot;</strong> — still no coverage surfaced (twelfth check).</li>
+</ul>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>The ARELLO study (finding 1) is the evidence layer moving under the cooperation fight:</strong> it is licensing officials&#x27; own transaction data, not an association talking point, and it separates coming-soon (rewarded) from stay-private (penalized) — expect both sides of the Compass cases to cite it. It changes no rule by itself.</li>
+<li><strong>Compass / MLS fight:</strong> no new ruling in-window. The Dec. 3 deadline for Compass&#x27;s motions to dismiss or split the nine-MLS cases stands.</li>
+<li><strong>NAR–ThePLS subpoena fight:</strong> the Nov 20 hearing date produced no reported outcome for the second day running; the last verified state remains the Nov 10 California order staying the three agents&#x27; motion to quash while the parties work from their joint stipulation. Magloire lead-plaintiff deadline Dec 8 stands.</li>
+<li><strong>Tuccori — STILL no outcome, 20 days post-hearing.</strong> The tracker still reads &quot;Final Approval Pending&quot;; HousingWire&#x27;s explainer of the delay confirms the judge&#x27;s five questions (home-seller settlements as the benchmark, class size and value assumptions, per-claimant recovery, net value of continued litigation) with further briefs due Dec. 14. $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Do not cite approval.</li>
+<li><strong>NAR MLS copyright policy (approved Nov 8):</strong> no confirmed adopter yet — the count stays at zero. Proposer context only: CRMLS, which proposed the policy, already runs a similar setup of its own (192 of 600+ photographers opted in, per its general counsel at the committee meeting, reported Nov 9) — that is the proposer&#x27;s existing practice, not a new adoption of the NAR policy.</li>
+<li><strong>RESO board voting Nov 16–30</strong> — under way; no results until after Nov 30. Data Dictionary 2.2 is due end of Q4 (see finding 3).</li>
+<li><strong>Double deadline Jan 1, 2027 (40 days):</strong> CA AB 2025 (rental ads) + WI Act 69 AI-photo disclosure take effect — and all RESO endorsements expire the same day.</li>
+<li><strong>Weekly/monthly layer check (Sunday):</strong> no new CRETI monthly (October&#x27;s $1.65B / 34 rounds already in the record), no new Thesis Driven quarterly, and the latest Inman Tech Roundup (Nov 19) was already mined in briefing #37. Nothing due was missed.</li>
+<li><strong>No SFARMLS news on vendor credentialing</strong> — Topic 14 open questions unchanged. Finding 3 adds a question worth asking on that path, not an answer: if appraisal-grade fields are coming to the dictionary, where does SFARMLS sit on collecting them?</li>
+</ul>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-22.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>

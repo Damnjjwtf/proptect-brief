@@ -1,0 +1,110 @@
+{
+  "date_label": "Nov 22, 2026",
+  "briefings": "Briefing #38",
+  "hook": "A study of 10 million sales puts a price on early marketing. Homes shown early then listed for all sold for more, while homes kept private sold for less.",
+  "market_map": "Today: a big study on early marketing, a small vendor that puts approval first, and a push to align listing and appraisal data. All three point to work done at listing time.",
+  "where_we_play": "Agents are now told to show sellers, in dollars, what each marketing path costs. No tool in this record does that yet. Build a one-page receipt: pick the price band, show the study's gains and losses, and have the seller sign the choice. Print the limit on it: these are national averages, not a promise for one house.",
+  "one_line": "Build the one-page exposure receipt for sellers.",
+  "days": [
+    {
+      "date": "2026-11-22",
+      "stories": [
+        {
+          "title": "10-million-sale study: early marketing pays, staying private costs",
+          "summary": "Licensing officials reviewed more than 10 million sales from Jan 2024 to June 2026. Homes shown early, then put on the MLS, the shared listing database agents use, sold for $9,200 more mid-market and near $17,000 at the top. Homes that stayed private sold for about $5,000 less. The gap was larger in majority non-white and Hispanic areas.",
+          "tags": [
+            "policy",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 19, HousingWire (trade coverage of an ARELLO study; catch-up — missed by briefings #36–#37)",
+              "url": "https://www.housingwire.com/articles/private-listings-sold-less-study/"
+            }
+          ]
+        },
+        {
+          "title": "Small website vendor ships the approval step, not just the AI draft",
+          "summary": "RealtyTerminus, a Canadian site builder for agents, shipped a Nov 21 update. Its AI drafter now rewrites with a reason you pick, like shorter or warmer, and can learn from it. Drafts arrive by email for phone review, and nothing sends without your okay. Review links expire in up to 24 hours.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 21, RealtyTerminus changelog (the vendor's own shipping notes — primary source for what shipped)",
+              "url": "https://www.realtyterminus.com/whats-new"
+            }
+          ]
+        },
+        {
+          "title": "Appraisal and listing standards are being pulled toward each other",
+          "summary": "Since Nov 2, new appraisals for Fannie Mae and Freddie Mac use a far more detailed form. RESO, the group that sets listing-data standards, is drafting listing fields to match it. About 40% of the new items already map to fields on hand. Drafts for the rest are not yet posted.",
+          "tags": [
+            "pipes",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 20, ValuSignal analysis (single source — flagged as such; its RESO figures match the numbers already in this record)",
+              "url": "https://www.valusignal.com/blog/reso-data-dictionary-uad-36-listing-data"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "Build the one-page exposure receipt for sellers",
+      "text": "Agents are now told to show sellers, in dollars, what each marketing path costs. No tool in this record does that yet. Build a one-page receipt: pick the price band, show the study's gains and losses, and have the seller sign the choice. Print the limit on it: these are national averages, not a promise for one house."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 22",
+      "title": "ARELLO study: evidence in the cooperation fight",
+      "text": "The study uses licensing officials' own sales data, not a trade group's talking point. It rewards homes shown early and penalizes homes kept private. Expect both sides in the Compass cases to cite it, but it changes no rule alone."
+    },
+    {
+      "when": "Dec 3",
+      "title": "Compass fight: Dec 3 deadline stands",
+      "text": "There is no new ruling in Compass's fight with nine listing groups. Compass must file to dismiss or split the cases by Dec 3."
+    },
+    {
+      "when": "Nov 20",
+      "title": "Subpoena fight: Nov 20 hearing, no outcome reported",
+      "text": "The Nov 20 hearing gave no reported outcome for a second day. The last firm step is a Nov 10 order that paused a bid to block the subpoena. The Magloire lead-plaintiff deadline stands on Dec 8."
+    },
+    {
+      "when": "Nov 22",
+      "title": "Tuccori: still no outcome, 20 days after hearing",
+      "text": "The tracker still reads Final Approval Pending. More briefs are due Dec 14 after the judge asked five questions on the deal. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections, so do not cite approval."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Realtor group copyright policy: still no adopter",
+      "text": "The policy was approved Nov 8 and no group has adopted it yet. The count stays at zero. The proposer already runs a like setup, with 192 of 600-plus photographers in."
+    },
+    {
+      "when": "Nov 16-30",
+      "title": "Listing standards board voting runs Nov 16-30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30. Data Dictionary 2.2 is due at the end of Q4."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (40 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, and Wisconsin's AI-photo ad rule, Act 69, take effect that day. All endorsements from the listing standards group expire the same day."
+    },
+    {
+      "when": "Nov 19",
+      "title": "Weekly and monthly check: nothing new due was missed",
+      "text": "There is no new CRETI monthly report and no new Thesis Driven quarterly. October's CRETI total was $1.65B across 34 rounds, already in the record. The latest Inman Tech Roundup, Nov 19, was already used in Briefing 37."
+    },
+    {
+      "when": "Nov 22",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged. Finding 3 adds a question: where does the database sit on collecting appraisal-grade fields?"
+    }
+  ]
+}
