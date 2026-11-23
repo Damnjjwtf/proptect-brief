@@ -1,0 +1,82 @@
+{
+  "date_label": "Nov 23, 2026",
+  "briefings": "Briefing #39",
+  "hook": "A court ended a case that claimed Realtor groups agreed not to enforce their own anti-steering rules. The judge said a pattern alone is not proof of a deal.",
+  "market_map": "Today has one story: a Florida court case about steering and rule enforcement. It points to a simple tool that logs evidence as it happens.",
+  "where_we_play": "For Jessica: the gap is proof, not rules. Build a log for a broker's own listings: pay offered, each showing request and result, agent feedback, and any pay comment. Time-stamp it as it happens and export it as a packet. Send it to the local group and the MLS, the shared listing database agents use.",
+  "one_line": "Build the steering-evidence log.",
+  "days": [
+    {
+      "date": "2026-11-23",
+      "stories": [
+        {
+          "title": "Court throws out the case over not enforcing anti-steering rules, for good",
+          "summary": "Jorge Zea, a Florida broker, runs SnapFlatFee.com. Sellers pay one flat fee to list on the MLS, the shared listing database agents use. In August 2025 he sued NAR, the national Realtor group, and 13 Florida groups, saying they agreed not to enforce anti-steering rules. On Nov 16 a judge dismissed the case for good, saying a pattern alone does not prove a deal.",
+          "tags": [
+            "policy",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Order Nov 16, HousingWire Nov 17 (trade coverage of a federal court order; catch-up — missed by briefings #35–#38)",
+              "url": "https://www.housingwire.com/articles/judge-dismisses-zea-antitrust/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The steering-evidence log",
+      "text": "The case failed on evidence, not on the complaint itself. No tool in this record sells a log that proves what happened, as it happened. Build one from a broker's own records: pay offered, showings, feedback, and pay comments. Export it for the local group and the local listing database."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 23",
+      "title": "Zea dismissal: one legal theory is now closed",
+      "text": "A judge in south Florida closed this theory for good. The rules did not change. Not enforcing a rule, without proof of a deal, is not a conspiracy."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Tuccori: still no outcome, 21 days after hearing",
+      "text": "Trackers still read Final Approval Pending, updated Nov 16. Briefs are due Dec 14 after the judge asked for more detail. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections."
+    },
+    {
+      "when": "Dec 3",
+      "title": "Compass and MLS fight: Dec 3 deadline",
+      "text": "There is no new ruling in Compass's fight with nine listing groups. Compass must file to dismiss or split the cases by Dec 3. The Magloire lead-plaintiff deadline is Dec 8."
+    },
+    {
+      "when": "Nov 20",
+      "title": "NAR subpoena fight: Nov 20 hearing, no outcome",
+      "text": "The Nov 20 hearing gave no reported outcome for a third day. The last firm step is a Nov 10 order from California. It paused a bid to block the subpoena while both sides work from a joint deal."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Realtor group listing copyright policy: no adopter yet",
+      "text": "The policy was approved Nov 8. No group has confirmed it will use it yet. The count stays at zero."
+    },
+    {
+      "when": "Nov 16-30",
+      "title": "Listing standards board voting runs Nov 16-30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. No results will come until after Nov 30. Data Dictionary 2.2 is due at the end of Q4."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (39 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, takes effect that day. Wisconsin's AI-photo ad rule, Act 69, takes effect the same day. All listing standards endorsements expire that day too."
+    },
+    {
+      "when": "Nov 19",
+      "title": "Weekly and monthly check: nothing new due was missed",
+      "text": "There is no new CRETI monthly report and no new Thesis Driven quarterly. October's CRETI total was $1.65B across 34 rounds, already in the record. The latest Inman Tech Roundup, Nov 19, was already used in Briefing 37, and Wispr's Demo Day is Dec 1."
+    },
+    {
+      "when": "Nov 23",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged."
+    }
+  ]
+}

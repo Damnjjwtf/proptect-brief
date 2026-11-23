@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-estate briefing — 2026-11-23 (Monday, #39) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+      .full-brief {
+        margin-top: 14px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .full-brief a { color: var(--accent-dark); text-decoration: none; }
+      .full-brief a:hover { text-decoration: underline; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #</p>
+      <h1>Real-estate briefing — 2026-11-23 (Monday, #39)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>One finding — a verified catch-up the last four editions missed. Window: Nov 22 07:30 PT – Nov 23 07:30 PT. The window itself was quiet at the top of the source list: no new US agent-tech launch dated Nov 22–23 surfaced on Inman, HousingWire, Real Estate News, RISMedia, CRE Daily, or the vendor wires, and the HousingWire tech roundup circulating this morning is the same November roundup already mined in briefings #36–#37 (RealScout/Zillow Preview, BrokerBot 2.0, Lofty&#x27;s index, Zillow&#x27;s four tools — none re-reported). Plain language throughout; any industry term is explained where it first appears.</p>
+<h2>1. A court throws out the &quot;you didn&#x27;t enforce your own anti-steering rules&quot; case — for good</h2>
+<p><strong>Order Nov 16, HousingWire Nov 17 (trade coverage of a federal court order; catch-up — missed by briefings #35–#38)</strong> | <a href="https://www.housingwire.com/articles/judge-dismisses-zea-antitrust/" target="_blank" rel="noopener">https://www.housingwire.com/articles/judge-dismisses-zea-antitrust/</a></p>
+<ul>
+<li><strong>What it is.</strong> Jorge Zea, a Florida broker who runs SnapFlatFee.com (sellers pay one flat fee to get on the MLS — the shared listing database — and handle showings and negotiations themselves), sued the National Association of Realtors (NAR) and 13 Florida Realtor associations and MLSs in August 2025. His claim was unusual: he did not attack NAR&#x27;s rules, he said the groups agreed <em>not to enforce</em> them — specifically the rules against steering (a buyer&#x27;s agent pointing clients toward or away from homes based on the pay offered), against filtering listings by compensation or brokerage, the written buyer-agreement requirement, and the rule that listing pages must show the listing broker&#x27;s contact. On Nov 16, U.S. District Judge William P. Dimitrouleas (Southern District of Florida) dismissed the case <strong>with prejudice</strong> — Zea cannot refile these claims against these defendants — adopting the magistrate judge&#x27;s October recommendation. The reasoning, in plain terms: sitting in the same governance bodies and making enforcement decisions together does not by itself prove a conspiracy; the complaint named no specific communications, votes, or directives showing an agreement to look the other way; and not enforcing a rule can just as plausibly be separate, independent choices. The court did <strong>not</strong> find that steering never happens. NAR&#x27;s response restated its position: steering is banned under its policy and ethics code, and enforcement is handled by local associations and each MLS.</li>
+<li><strong>What it means for product opportunity.</strong> This closes one legal road for discount and flat-fee brokers: a court will not force enforcement on a pattern claim alone — what was missing was specific, dated evidence. That gap is a product surface (see Whitespace). It also sharpens Topic 14&#x27;s standing post-settlement question: the commission rules changed on paper in 2024, but this ruling says the enforcement layer stays local and case-by-case, so tools that work <em>inside</em> that reality (documentation, disclosure, receipts) have firmer ground than tools that assume the rules enforce themselves.</li>
+</ul>
+<h2>Whitespace</h2>
+<p><strong>The steering-evidence log.</strong> Zea&#x27;s case failed on evidence, not on the underlying complaint — and the law-firm write-ups of the ruling say the same thing in so many words: discount brokers who believe they are being steered against should document it carefully now, because documentation is what a future case or complaint would need. Nobody in this record sells that documentation as a tool. The build is small and needs no MLS license, because it runs on the broker&#x27;s own records: for each of the broker&#x27;s listings, log the compensation offered, every showing request and its outcome, agent feedback, and any buyer-side comment about pay — timestamped as it happens, not reconstructed later — and export it as a clean complaint packet sized for the two bodies NAR itself names as the enforcers: the local association and the local MLS. It pairs with yesterday&#x27;s exposure receipt (#38): both are paper-trail products for the cooperation fight, one for the seller conversation, one for the enforcement conversation. Honest limit: a log proves a pattern of events, not anyone&#x27;s motive — the same distinction the court just drew — so the tool should present dated facts and let the broker draw conclusions.</p>
+<h2>Also noted</h2>
+<ul>
+<li><strong>PropReel (Nov 22, myPR release — vendor claim, unverified):</strong> a South African all-in-one AI marketing studio for estate agents — listing videos from photos, AI avatar presenters, virtual staging, photo fixes, and portal-ready listing copy in one place, priced per credit in rand, with voiceovers in all 11 official South African languages. Non-US, so it says nothing about MLS credentialing; the transferable detail is the packaging — every marketing job in one credit wallet, priced in the agent&#x27;s own currency and languages. <a href="https://mypr.co.za/propreel-launches-south-africas-first-dedicated-all-in-one-ai-property-video-and-marketing-platform-for-estate-agents/" target="_blank" rel="noopener">https://mypr.co.za/propreel-launches-south-africas-first-dedicated-all-in-one-ai-property-video-and-marketing-platform-for-estate-agents/</a></li>
+<li><strong>The appraisal-data angle on the Compass fight (Nov 19, National Mortgage Professional — analysis, not a ruling):</strong> the mortgage trade press is now asking what happens to appraisals if more listings stay private — appraisers value homes from comparable past sales, and a thinner shared record means thinner evidence. It connects yesterday&#x27;s UAD 3.6 finding (#38) to the cooperation fight: the listing database is also the valuation database. <a href="https://nationalmortgageprofessional.com/news/compass-mls-lawsuits-raise-questions-about-mortgage-appraisal-data" target="_blank" rel="noopener">https://nationalmortgageprofessional.com/news/compass-mls-lawsuits-raise-questions-about-mortgage-appraisal-data</a></li>
+<li><strong>Realty Force (REO platform listed for a Nov 30 launch at $297/month)</strong> — 7 days out; still a date to check, not a product yet.</li>
+<li><strong>JohnHart &quot;JANE&quot;</strong> — still no coverage surfaced (thirteenth check).</li>
+</ul>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>Zea dismissal (finding 1) is the mover:</strong> one antitrust theory against organized real estate is now closed with prejudice in the Southern District of Florida. The rules themselves did not change; what the ruling settles is that non-enforcement, without specific evidence of an agreement, is not a conspiracy. Appeals are still possible in principle; no appeal has been reported.</li>
+<li><strong>Tuccori — STILL no outcome, 21 days post-hearing.</strong> The trackers checked this morning still read &quot;Final Approval Pending&quot; (openclassactions, updated Nov 16; Property Pleadings case tracker) — the judge took approval under advisement on Nov 2 and asked for more information, with further briefs due Dec 14 (21 days). $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Do not cite approval.</li>
+<li><strong>Compass / MLS fight:</strong> no new ruling in-window. Compass&#x27;s motions to dismiss or split the nine-MLS cases are due <strong>Dec 3</strong> (10 days). Magloire lead-plaintiff deadline Dec 8 stands.</li>
+<li><strong>NAR–ThePLS subpoena fight:</strong> the Nov 20 hearing date has produced no reported outcome for the third day running; the last verified state remains the Nov 10 California order staying the three agents&#x27; motion to quash while the parties work from their joint stipulation.</li>
+<li><strong>NAR MLS copyright policy (approved Nov 8):</strong> no confirmed adopter yet — the count stays at zero.</li>
+<li><strong>RESO board voting Nov 16–30</strong> — under way, ends in 7 days; no results until after Nov 30. Data Dictionary 2.2 is due end of Q4.</li>
+<li><strong>Double deadline Jan 1, 2027 (39 days):</strong> CA AB 2025 (rental ads) + WI Act 69 AI-photo disclosure take effect — and all RESO endorsements expire the same day.</li>
+<li><strong>Weekly/monthly layer (Monday check):</strong> no new CRETI monthly (October&#x27;s $1.65B / 34 rounds already in the record), no new Thesis Driven quarterly, and the latest Inman Tech Roundup (Nov 19) was already mined in briefing #37. Nothing due was missed. Wispr&#x27;s Demo Day is Dec 1 (8 days).</li>
+<li><strong>No SFARMLS news on vendor credentialing</strong> — Topic 14 open questions unchanged.</li>
+</ul>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-23.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>
