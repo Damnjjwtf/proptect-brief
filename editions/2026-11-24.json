@@ -1,0 +1,96 @@
+{
+  "date_label": "Nov 24, 2026",
+  "briefings": "Briefing #40",
+  "hook": "Two launches today make the same point in different ways. One sells only the selling part, and the other asks before it acts.",
+  "market_map": "Today has two stories. The first sells only selling for property managers, and the second asks before it acts.",
+  "where_we_play": "For Jessica: build a log that gives a receipt for every AI action. For each step the AI suggests, save what it wanted to do, what data it used, who said yes, and when. Export it as one packet per deal. A broker can then show who decided what.",
+  "one_line": "Build the approval log — a receipt for every AI action.",
+  "days": [
+    {
+      "date": "2026-11-24",
+      "stories": [
+        {
+          "title": "A sales-only system for property managers — the opposite of the all-in-one suite",
+          "summary": "RentScale and CLOZR launched Justa CRM on Nov 24, a system to track leads built only for property managers. This one does only the selling part, while other tools add accounting and daily work. It tracks sales, adds market facts to sales talks, and builds one page per prospect. It is in early access for RentScale and CLOZR customers, with wider use planned for 2027, and no price was stated.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 24, PR Newswire (vendor wire — vendor claim, read in full)",
+              "url": "https://www.prnewswire.com/news-releases/justa-crm-launches-to-transform-how-residential-property-management-companies-win-new-business-302948434.html"
+            }
+          ]
+        },
+        {
+          "title": "A mortgage assistant that works the whole deal — and asks before it changes anything",
+          "summary": "Lendesk launched Sidekick in open beta on Nov 24 at its Finmo Momentum 2026 event. Finmo is the system Canadian mortgage brokers use to take applications and send deals to lenders. Sidekick can build and edit deals, handle documents, check income, and look up rates and lender rules. By default it asks for approval before it changes a deal, and it can only see what that broker can see.",
+          "tags": [
+            "ai",
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 24, Canadian Mortgage Professional (trade coverage of a launch)",
+              "url": "https://www.mpamag.com/ca/news/general/finmos-sidekick-the-ai-assistant-that-knows-your-deals/598297"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The approval log — a receipt for every AI action",
+      "text": "Tools log what the AI said, but few log what it did. Build a record for each AI action: the plan, the data it used, who approved it, and when. Export it as one packet per deal. It needs no listing database licence, because it runs on the broker's own systems."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 16",
+      "title": "Tuccori: still no outcome, 22 days after hearing",
+      "text": "Trackers still read Final Approval Pending, updated Nov 16. The judge took the case under review on Nov 2 and asked for more detail, with more briefs due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections."
+    },
+    {
+      "when": "Nov 19–20",
+      "title": "Compass and MLS fight: no new ruling",
+      "text": "There is no new ruling in Compass's fight over the MLS, the shared listing database agents use. The last step was Nov 19-20, when a New York judge kept the schedule as it was. Compass must file to dismiss or split the nine cases by Dec 3, and the Magloire lead-plaintiff deadline is Dec 8."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Zea case: no appeal reported",
+      "text": "No appeal was reported in this window. The dismissal for good, decided Nov 16, still stands as the last word from that court."
+    },
+    {
+      "when": "Nov 8",
+      "title": "Listing copyright policy: no adopter yet",
+      "text": "The policy from NAR, the national Realtor group, was approved Nov 8. No group has confirmed it will use it yet. The count stays at zero."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "Listing standards board voting runs Nov 16-30",
+      "text": "Voting is under way for the board of RESO, the group that sets listing-data standards. It ends in 6 days, with no results until after Nov 30. Data Dictionary 2.2 is due at the end of Q4."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (38 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, takes effect that day. Wisconsin's AI-photo ad rule, Act 69, takes effect the same day. All RESO endorsements expire that day too."
+    },
+    {
+      "when": "Dec 1",
+      "title": "Calendar: Wispr Demo Day Dec 1, Realty Force Nov 30",
+      "text": "Wispr's Demo Day is Dec 1, in 7 days. Realty Force's listed launch date is Nov 30, in 6 days."
+    },
+    {
+      "when": "Nov 19",
+      "title": "Weekly and monthly check: nothing new due today",
+      "text": "Monday's check already covered this layer. There is no new CRETI monthly and no new Thesis Driven quarterly. The latest Inman Tech Roundup, Nov 19, was already used."
+    },
+    {
+      "when": "Nov 24",
+      "title": "No San Francisco listing database news on vendor checks",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged."
+    }
+  ]
+}
