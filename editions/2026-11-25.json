@@ -1,0 +1,129 @@
+{
+  "date_label": "Nov 25, 2026",
+  "briefings": "Briefing #41",
+  "hook": "Four tools talk to buyers for agents today. Two do it with no human check, and one will not send a word without a yes.",
+  "market_map": "Today has four stories. A buyer helper runs on value data, a chat helper books viewings, a shop-window tool grows, and a text helper asks first.",
+  "where_we_play": "For Jessica: build the promise log for buyer chats. Save the full chat, flag lines that sound like a promise on price or timing, and note what data the answer used. Export it as one packet per deal. A broker can then show what the AI said.",
+  "one_line": "Build the promise log — a record of what buyer AI said.",
+  "days": [
+    {
+      "date": "2026-11-25",
+      "stories": [
+        {
+          "title": "A buyer agent that runs on valuation data, not on the MLS — and keeps the agent's name on it",
+          "summary": "PropMix launched Rhea on Nov 24. It is a buyer helper that uses MCP, a standard plug that lets an AI tool pull data. It runs on home values and market trends, not on the MLS, the shared listing database agents use. Agents can offer it in their own brand, with no price stated.",
+          "tags": [
+            "pipes",
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 24, EIN Presswire (vendor wire — vendor claim, read in full)",
+              "url": "https://www.einpresswire.com/article/958767268/propmix-launches-rhea-a-homebuyer-engagement-ai-agent-powered-by-propmix-mcp-services"
+            }
+          ]
+        },
+        {
+          "title": "A CRM whose AI answers every buyer, everywhere, in the buyer's language — and books the viewing itself",
+          "summary": "Closio launched on Product Hunt on Nov 25. It is a CRM, a system to track leads, for agencies. Its AI answers buyers in seconds, in 30-plus languages, on WhatsApp and other channels. It asks about budget and timing, books the viewing, and hands off with a brief.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 25, Closio's own launch post for its Product Hunt launch (vendor claim, read in full)",
+              "url": "https://closioestate.com/blog/closio-product-hunt-launch/"
+            }
+          ]
+        },
+        {
+          "title": "A storefront tool grows a back office — with AI that drafts the listing from the photos",
+          "summary": "DataSavage released RE365 1.5 on Nov 24. A website and listings tool now runs the whole agency, with lead tracking and a shared calendar. Its AI drafts a listing from the photos. Lead replies come ready to edit before sending, and no price was stated.",
+          "tags": [
+            "pipes",
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 24, DataSavage RE365 1.5 release notes (the vendor's own shipping notes — stronger than a press release, still vendor-sourced, read in full)",
+              "url": "https://www.datasavage.io/blog/re365-now-runs-the-whole-real-estate-agency"
+            }
+          ]
+        },
+        {
+          "title": "An agent you text from the car — approval first, and honestly not connected to the MLS",
+          "summary": "DataWeave AI is a helper agents use by text. After a showing, the agent sends a voice note and DataWeave drafts the follow-up. It sends only once the agent approves. It says plainly it does not connect to the MLS today.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Updated Nov 24, DataWeave AI's own product page (vendor claim, read in full)",
+              "url": "https://dataweaveai.com/ai-for-real-estate-agents"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "\"What did your buyer agent say?\" — the promise log for buyer-facing AI",
+      "text": "Two tools today talk to buyers with no human check. One will not send an email without a yes. US rules put the agent in charge of what the AI said. Build a log that saves each chat, flags promise-like lines, and exports it as one packet."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 23–24",
+      "title": "Compass / MLS fight — the MLSs move to merge everything into one case",
+      "text": "Sixteen MLS groups filed on Nov 23 to merge all 18 Compass cases into one case in New York. They say the cases share the same facts and split fights waste money. Compass wants them kept apart, and its New York filings are due Dec 3, in 8 days."
+    },
+    {
+      "when": "Nov 20",
+      "title": "Zillow steering case",
+      "text": "Zillow replied on Nov 20, reported Nov 24. It says the claim still does not link a referral payment to a referral deal. The judge has not replied to the latest filing yet."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Tuccori — still no outcome, 23 days post-hearing",
+      "text": "Trackers still read Final Approval Pending, updated Nov 16. The judge took approval under review on Nov 2, with more briefs due Dec 14, in 19 days. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections."
+    },
+    {
+      "when": "Nov 24",
+      "title": "Howard Hanna / Gibson",
+      "text": "A Nov 24 roundup says the Gibson settlement is now final. The record shows final approval was Feb 5, 2026, affirmed Aug 19, 2026. A separate $395 fee suit is different and is still at the claims stage."
+    },
+    {
+      "when": "Nov 8",
+      "title": "NAR MLS copyright policy (approved Nov 8)",
+      "text": "The policy is from NAR, the national Realtor group. No group has confirmed it will use it yet. The count stays at zero, with no new adopter in this window."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting Nov 16–30",
+      "text": "Voting is for the board of RESO, the group that sets listing-data standards. It ends in 5 days, with no results until after Nov 30. Data Dictionary 2.2 is due at the end of Q4."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (37 days)",
+      "text": "California's rental-ad disclosure law, AB 2025, takes effect that day. Wisconsin's Act 69, an ad rule for AI photos, takes effect the same day. All RESO endorsements expire that day too."
+    },
+    {
+      "when": "Nov 30",
+      "title": "Calendar pointers",
+      "text": "Realty Force lists its launch date as Nov 30, in 5 days. Wispr's Demo Day is Dec 1, in 6 days."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Weekly/monthly layer",
+      "text": "Nothing new is due today. The latest NanaStack Weekly Stack is still #017, from Nov 16. The latest Inman Tech Roundup, Nov 19, was already used."
+    },
+    {
+      "when": "Oct 12",
+      "title": "No SFARMLS news on vendor credentialing",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged."
+    }
+  ]
+}
