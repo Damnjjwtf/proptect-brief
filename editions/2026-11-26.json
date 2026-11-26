@@ -1,0 +1,114 @@
+{
+  "date_label": "Nov 26, 2026",
+  "briefings": "Briefing #42",
+  "hook": "Fraud alerts are a real need, but a forced rule failed fast in Arizona. The rule lasted 24 days before a lawsuit ended it.",
+  "market_map": "Today has three stories. Arizona ends a fraud alert rule, Cotality puts its helper in Zenu in Australia, and a Dubai firm raises $20 million.",
+  "where_we_play": "For Jessica: build one signed record for each listing. It says how the home may be shown, what fraud alerts were offered, and who chose what. Keep it, with a time stamp, for three years or more. It needs no special licence and uses forms brokers already collect.",
+  "one_line": "Build the consent packet — one signed record per listing.",
+  "days": [
+    {
+      "date": "2026-11-26",
+      "stories": [
+        {
+          "title": "Arizona pulls its deed-fraud alert rule after agents and title firms sued — the alert system itself stays, voluntary",
+          "summary": "Arizona dropped its deed-fraud alert rule on Nov 25. The rule told agents to tell clients about ERAS, a state alert that warns owners of a sale. Agents and title firms sued, saying the state skipped the normal process. Early tests sent deal details to a person who did not own the home.",
+          "tags": [
+            "agent",
+            "policy"
+          ],
+          "sources": [
+            {
+              "label": "Nov 25, Inman (read in full)",
+              "url": "https://www.inman.com/2026/11/25/arizona-deed-fraud-alert-policy-realtors-lawsuit/"
+            }
+          ]
+        },
+        {
+          "title": "Cotality puts RiTA inside Zenu in Australia — and it replies to past clients on its own",
+          "summary": "Cotality's RiTA helper is now inside Zenu, a CRM used in Australia. A CRM is a system agents use to track leads and contacts. RiTA joins contact records with property data to rank who to call first. It can text past clients and reply on its own, with no agent check.",
+          "tags": [
+            "ai",
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 26, Australian Broker / Broker News AU (read in full; published Nov 25 23:16 UTC, which is Nov 25 PT)",
+              "url": "https://www.brokernews.com.au/news/breaking-news/cotality-links-rita-assistant-to-zenu-real-estate-database-platform-290386.aspx"
+            }
+          ]
+        },
+        {
+          "title": "A UAE down-payment platform raises $20 million — money for helping buyers cover the deposit, not for agent tools",
+          "summary": "Dubai firm Sooner raised $20 million in seed funds. The deal is $5 million in equity led by Nuwa Capital, plus $15 million in debt. Buyers pay 10% down, not the usual 20%, and split the rest over 60 months. Sooner says it has had about 9,000 applications and helped with $10 million in buys.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 26, FinTech Futures (single trade source; funding terms as reported there)",
+              "url": "https://www.fintechfutures.com/venture-capital-funding/uae-proptech-sooner-lands-20m-seed-round"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The listing-marketing consent packet — one signed record of how each listing may be shown",
+      "text": "Two states point to the same gap this week. New York and Arizona both want a signed record of a seller's choice. Build one packet per listing that shows how it may be marketed. Keep it for three years or more."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 20",
+      "title": "Catch-up — New York makes public marketing the default for listings",
+      "text": "Governor Hochul signed this law on Nov 20. Listings must be shown in public unless a seller signs a state form on the risks. Agents must keep the form for at least three years, and the law starts May 19, 2027."
+    },
+    {
+      "when": "Nov 25",
+      "title": "Arizona deed fraud policy withdrawn Nov 25",
+      "text": "See story one above. The ERAS alert system stays live and voluntary. No new agent duty stands from this policy."
+    },
+    {
+      "when": "Nov 23",
+      "title": "Compass / MLS fight",
+      "text": "No new filing came in this window. MLS means the shared listing database agents use. The Nov 23 move to merge all 18 cases into one court still stands, and Compass filings are due Dec 3."
+    },
+    {
+      "when": "Nov 2",
+      "title": "Tuccori — STILL no outcome, 24 days post-hearing",
+      "text": "Trackers still read Final Approval Pending. The judge took the case under review on Nov 2 and asked for more detail. More briefs are due Dec 14, and the fund is $120.3M with 132,000-plus claims."
+    },
+    {
+      "when": "Nov 8",
+      "title": "NAR MLS copyright policy (approved Nov 8)",
+      "text": "This policy is from NAR, the national Realtor group. It covers the MLS, the shared listing database agents use. No group has said it will use the policy yet, so the count stays at zero."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting Nov 16–30",
+      "text": "RESO sets listing-data standards for the field. Board voting ends Nov 30, in 4 days, with no results until after that date. Data Dictionary 2.2 is due at the end of Q4."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (36 days)",
+      "text": "AB 2025, California's rental-ad disclosure law, takes effect Jan 1. Wisconsin's Act 69, an ad rule for AI photos, starts the same day. All RESO endorsements end that day too, and RESO sets listing-data standards."
+    },
+    {
+      "when": "Nov 30",
+      "title": "Calendar pointers",
+      "text": "Realty Force lists its launch date as Nov 30, in 4 days. RE/MAX Leo Pro teases a launch the same day. Wispr's Demo Day is Dec 1, in 5 days."
+    },
+    {
+      "when": "Nov 16",
+      "title": "Weekly/monthly layer",
+      "text": "Nothing new is due today. The latest NanaStack Weekly Stack is still #017, from Nov 16. The latest Inman Tech Roundup, from Nov 19, was already used."
+    },
+    {
+      "when": "Nov 26",
+      "title": "No SFARMLS news on vendor credentialing",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged."
+    }
+  ]
+}
