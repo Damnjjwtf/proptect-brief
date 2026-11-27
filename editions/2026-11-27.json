@@ -1,0 +1,95 @@
+{
+  "date_label": "Nov 27, 2026",
+  "briefings": "Briefing #43",
+  "hook": "A San Diego listing database is letting an AI firm explain home values from its own data. The two are talking about sharing the money from it.",
+  "market_map": "Today has two stories. A San Diego database lets an AI firm explain home values, and a UK firm sells AI agents to answer missed enquiries.",
+  "where_we_play": "For Jessica: build an explainer for offers, not just prices. It would say why an offer is strong or weak for this seller, in plain words. It would learn from real past offers, including the ones that lost. San Diego shows a listing database will talk when the tool explains and shares value.",
+  "one_line": "Build the explainer for offers, not prices.",
+  "days": [
+    {
+      "date": "2026-11-27",
+      "stories": [
+        {
+          "title": "San Diego MLS lets an AI firm explain home values, and they talk about sharing the money",
+          "summary": "The San Diego MLS, the shared listing database agents use there, is working with ZaminAI. ZaminAI was founded by Dr Alireza Haghighi and explains why a home is worth what it is. It splits worth into market value and personal value for one buyer. The two are talking about sharing money made from the data, with no deal signed yet.",
+          "tags": [
+            "pipes",
+            "ai"
+          ],
+          "sources": [
+            {
+              "label": "Nov 26, RealtyTimes (read in full; the talk itself was given Nov 16–17)",
+              "url": "https://realtytimes.com/real-estate-news/from-listing-data-to-property-decision-intelligence"
+            }
+          ]
+        },
+        {
+          "title": "A UK platform says 4 in 10 enquiries are never answered, and sells AI agents to answer them (vendor claim)",
+          "summary": "Street Group put out a release on Nov 27 with its own figures. It says 40% of enquiries to UK agencies are never followed up. Its Street Cortex tool lets agencies build their own AI agents, like one that books viewings at night. It also claims users grow 14% faster and are 24% more likely to close a sale.",
+          "tags": [
+            "agent"
+          ],
+          "sources": [
+            {
+              "label": "Nov 27, EIN Presswire (vendor wire; figures are the company's own)",
+              "url": "https://technologypressreleases.com/article/959192599-business-reporter-40-of-property-enquiries-go-unanswered-street-group-says-ai-agents-can-close-the-gap"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "title": "The explainer for offers, not prices",
+      "text": "One gap is clear from the San Diego story. No one in this record has built an explainer for offers. It would say why an offer is strong or weak for this seller. It would learn from real offers, including the ones that lost."
+    }
+  ],
+  "watch": [
+    {
+      "when": "Nov 16",
+      "title": "Tuccori: STILL no outcome, 25 days post-hearing",
+      "text": "The usual tracker was down with a billing notice, so two other sources were checked. Both still say awaiting final approval, with more briefs due Dec 14. The fund is $120.3M, with 132,000-plus claims, 25 opt-outs, and 2 objections."
+    },
+    {
+      "when": "Dec 3",
+      "title": "Compass / MLS fight",
+      "text": "No new filing came in this window. Compass must file its motions to dismiss or split the two New York suits by Dec 3. The Nov 23 move to fold all 18 cases into one court still stands."
+    },
+    {
+      "when": "Nov 8",
+      "title": "NAR MLS copyright policy (approved Nov 8)",
+      "text": "This policy is from NAR, the national Realtor group. No group has said it will use it yet. The count stays at zero."
+    },
+    {
+      "when": "Nov 21",
+      "title": "A developer's map of the new rules (background, not news)",
+      "text": "A Nov 21 working paper pulls the November rule changes together for builders. It is one author's survey, not peer reviewed and not legal advice. Its four-risk list is a clean checklist for anyone signing a data deal."
+    },
+    {
+      "when": "Nov 16–30",
+      "title": "RESO board voting Nov 16–30",
+      "text": "RESO sets listing-data standards for the field. Board voting ends Nov 30, in 3 days, with no results until after that date. Data Dictionary 2.2 is due at the end of Q4."
+    },
+    {
+      "when": "Jan 1",
+      "title": "Double deadline Jan 1, 2027 (35 days)",
+      "text": "AB 2025, California's rental-ad disclosure law, takes effect Jan 1. Wisconsin's Act 69, an ad rule for AI photos, starts the same day. All RESO endorsements end that day too."
+    },
+    {
+      "when": "Nov 30",
+      "title": "Calendar pointers",
+      "text": "Realty Force lists its launch date as Nov 30, in 3 days. RE/MAX Leo Pro teases a launch the same day. Wispr's Demo Day is Dec 1, in 4 days."
+    },
+    {
+      "when": "Nov 19",
+      "title": "Weekly/monthly layer",
+      "text": "Nothing new is due today. The latest Inman Tech Roundup is still the Nov 19 edition, already used. The latest NanaStack Weekly Stack is still #017, from Nov 16."
+    },
+    {
+      "when": "Nov 27",
+      "title": "No SFARMLS news on vendor credentialing",
+      "text": "There is no news from SFARMLS, the San Francisco listing database, on vendor checks. Topic 14 open questions are unchanged."
+    }
+  ]
+}

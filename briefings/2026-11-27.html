@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="data:,">
+    <title>Real-estate briefing: 2026-11-27 (Friday, #43) | Proptech Scouting Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #f7f8f7;
+        --ink: #17201a;
+        --ink-2: #55615a;
+        --ink-3: #9aa59e;
+        --line: #e7ebe7;
+        --line-soft: #eef1ee;
+        --accent: #00b140;
+        --accent-dark: #00713a;
+        --accent-faint: #f3faf5;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Manrope", -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, p, ul, ol { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--accent-dark); }
+
+      .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 140px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 88px 0 0; }
+      .byline {
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--ink-2);
+        margin-bottom: 16px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .eyebrow b { color: var(--accent-dark); font-weight: 800; }
+      h1 {
+        margin-top: 28px;
+        font-size: clamp(38px, 6.6vw, 62px);
+        font-weight: 800;
+        letter-spacing: -0.038em;
+        line-height: 1.05;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      h1 .accent { color: var(--accent); }
+      h1 .keep-together { white-space: nowrap; }
+      .lede {
+        margin-top: 30px;
+        font-size: clamp(16px, 2.4vw, 18px);
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--ink-2);
+      }
+      .hook {
+        margin-top: 20px;
+        font-size: clamp(17px, 2.6vw, 19px);
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        max-width: 52ch;
+      }
+      .hook .accent { color: var(--accent); }
+      .meta-line {
+        margin-top: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .meta-line b { color: var(--ink-2); font-weight: 800; }
+      .full-brief {
+        margin-top: 14px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .full-brief a { color: var(--accent-dark); text-decoration: none; }
+      .full-brief a:hover { text-decoration: underline; }
+
+      /* ---------- Scouting Report ---------- */
+      .scouting { margin-top: 96px; }
+      .section-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        margin-bottom: 30px;
+      }
+      .scouting-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .scouting-item:first-of-type { border-top: none; padding-top: 0; }
+      .scouting-item:last-of-type { padding-bottom: 0; }
+      .scouting-label {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+        padding-top: 5px;
+        white-space: nowrap;
+      }
+      .scouting-item p {
+        font-size: 17.5px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+      }
+      .scouting-item p strong { color: var(--ink); font-weight: 700; }
+
+      /* ---------- In one line (TL;DR) ---------- */
+      .oneline {
+        margin-top: 96px;
+        background: var(--accent-faint);
+        border-radius: 14px;
+        padding: 34px 36px;
+      }
+      .oneline .section-label { margin-bottom: 14px; }
+      .oneline p {
+        font-size: clamp(18px, 2.8vw, 21px);
+        line-height: 1.55;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      /* ---------- Jump nav + filters (quiet) ---------- */
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: 88px -24px 0;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .toolbar-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        align-items: baseline;
+      }
+      .toolbar-group { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+      .toolbar-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      .jump, .filter-btn {
+        font-family: inherit;
+        font-size: 13.5px;
+        font-weight: 600;
+        border: none;
+        background: none;
+        padding: 2px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink-3);
+        transition: color 0.15s;
+      }
+      .jump:hover, .filter-btn:hover { color: var(--accent-dark); }
+      .filter-btn[aria-pressed="true"] {
+        color: var(--accent-dark);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--accent);
+      }
+
+      /* ---------- Day sections ---------- */
+      .day { margin-top: 112px; scroll-margin-top: 96px; }
+      .day-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .day-head h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .day-head .day-date {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-3);
+      }
+      .day-head .today-badge {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      /* ---------- Stories: headline + one line + source ---------- */
+      .cards { display: grid; }
+      .card {
+        padding: 38px 0;
+        border-top: 1px solid var(--line-soft);
+      }
+      .card[hidden] { display: none; }
+      .card h3 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+      .one-line {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--ink-2);
+        max-width: 58ch;
+      }
+      .src-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      .src-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13.5px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--accent-dark);
+      }
+      .src-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .src-link .arrow { font-weight: 400; font-size: 12px; }
+
+      /* ---------- Openings / Permission watch ---------- */
+      .panel { margin-top: 112px; scroll-margin-top: 96px; }
+      .panel h2 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .panel .panel-sub {
+        margin-top: 10px;
+        font-size: 15.5px;
+        font-weight: 500;
+        color: var(--ink-3);
+      }
+      .openings { margin-top: 16px; display: grid; }
+      .openings li {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 14px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .openings .n {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--accent);
+        padding-top: 3px;
+      }
+      .openings strong { color: var(--ink); font-weight: 700; }
+
+      .watch-list { margin-top: 16px; display: grid; }
+      .watch-list li {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 18px;
+        padding: 26px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink-2);
+        font-weight: 500;
+      }
+      .watch-when {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        padding-top: 4px;
+      }
+      .watch-list strong { color: var(--ink); font-weight: 700; }
+
+      footer {
+        margin-top: 112px;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+        font-size: 13.5px;
+        color: var(--ink-3);
+        line-height: 1.7;
+        font-weight: 500;
+      }
+      footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+      footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+      .empty-note {
+        display: none;
+        font-size: 14.5px;
+        color: var(--ink-3);
+        padding: 28px 0 4px;
+      }
+
+      @media (max-width: 560px) {
+        .wrap { padding: 0 20px 110px; }
+        .hero { padding: 56px 0 0; }
+        .toolbar { margin: 64px -20px 0; padding: 14px 20px; }
+        .scouting, .oneline { margin-top: 72px; }
+        .scouting-item { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+        .scouting-item p { font-size: 16.5px; }
+        .oneline { padding: 28px 24px; }
+        .day, .panel { margin-top: 84px; }
+        .card { padding: 30px 0; }
+        .card h3 { font-size: 19px; }
+        .watch-list li { grid-template-columns: 1fr; gap: 3px; padding: 22px 0; }
+        .openings li { padding: 22px 0; }
+        footer { margin-top: 84px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    
+      .brief-body h2 { margin-top: 40px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+      .brief-body h3 { margin-top: 28px; font-size: 17px; font-weight: 800; }
+      .brief-body p { margin-top: 14px; font-size: 16px; line-height: 1.65; color: var(--ink); }
+      .brief-body ul { margin-top: 12px; padding-left: 20px; list-style: disc; }
+      .brief-body li { margin-top: 12px; font-size: 16px; line-height: 1.65; }
+      .brief-body li p { margin-top: 0; }
+      .brief-body a { color: var(--accent-dark); }
+      .brief-body strong { font-weight: 800; }
+      .brief-meta { margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+      .back-link { display: inline-block; margin-top: 26px; font-size: 15px; font-weight: 700; color: var(--accent-dark); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+      .brief-footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+    </style>
+  </head>
+  <body><div class="wrap">
+    <header class="hero">
+      <p class="byline">Made by Damn JJ for Jessica Branson.</p>
+      <p class="eyebrow">Full daily brief · Briefing #</p>
+      <h1>Real-estate briefing: 2026-11-27 (Friday, #43)</h1>
+      <p class="lede">The full daily brief behind today&rsquo;s Scouting Report &mdash; every story, flag, and watch item in full.</p>
+      <a class="back-link" href="https://damn-jjs-proptech-brief.onrender.com">&larr; Back to the Scouting Report</a>
+    </header>
+    <article class="brief-body">
+<p>Two findings. Window: Nov 26 07:30 PT – Nov 27 07:30 PT, the day after Thanksgiving in the US. The top of the source list was quiet on new US launches again: no new US agent-tech launch dated Nov 26–27 surfaced on Inman, HousingWire, Real Estate News, RISMedia, Vendor Alley, or CRE Daily beyond the items below. Plain language throughout; any industry term is explained where it first appears.</p>
+<h2>1. A San Diego MLS is letting an AI firm explain home values from its own listing data, and the two are talking about sharing the money</h2>
+<p><strong>Nov 26, RealtyTimes (read in full; the talk itself was given Nov 16–17)</strong> | <a href="https://realtytimes.com/real-estate-news/from-listing-data-to-property-decision-intelligence" target="_blank" rel="noopener">https://realtytimes.com/real-estate-news/from-listing-data-to-property-decision-intelligence</a></p>
+<ul>
+<li><strong>What it is.</strong> The San Diego Multiple Listing Service (SDMLS, the listing database for the San Diego area) is working with ZaminAI, an AI company founded by Dr. Alireza Haghighi. Haghighi presented the work at the 4th International MLS Forum in Istanbul (Nov 16–17), and the write-up by Saul Klein and John Reilly was published Nov 26. The model uses structured MLS data (listing data organised into standard fields, using RESO standards, the shared field names the industry uses) to estimate what a home is worth and, more importantly, to explain why: which features push the value up or down. It also separates two kinds of value: the general market value (what the home is worth to the market as a whole) and the personal value (what it is worth to one specific buyer, given what that buyer cares about, such as schools or step-free access). A seller use is also described: given a limited repair budget, the model can suggest where the money is likely to lift the value most. The piece says the partners are discussing a revenue-sharing arrangement (the MLS getting a cut of money made from its data). That discussion is not a signed deal; the article says so itself.</li>
+<li><strong>What it means for product opportunity.</strong> This is the sanctioned path working in the open, and it is the closest cousin yet to what Jessica wants to do. An MLS said yes because the product does three things: it works on the MLS&#x27;s own structured data instead of scraping, it explains its answer instead of just giving a number, and it offers the MLS a share of the value instead of taking the data for free. Partner angle: SDMLS is not SFARMLS, but the shape of the deal (MLS as data partner, RESO standards underneath, the Global Data Exchange as the pipe between markets, a revenue share on the table) is a working template for the pitch Jessica has been holding. Reverse-engineer angle: the product gap it names is real. Most valuation tools give one number; almost none explain the number per buyer. Whoever builds the explainer still needs the MLS&#x27;s permission first, which is the whole lesson of this record: the permission is the product.</li>
+</ul>
+<h2>2. A UK platform says 4 in 10 enquiries to agents are never answered, and sells AI agents to answer them (vendor claim, UK only)</h2>
+<p><strong>Nov 27, EIN Presswire (vendor wire; figures are the company&#x27;s own)</strong> | <a href="https://technologypressreleases.com/article/959192599-business-reporter-40-of-property-enquiries-go-unanswered-street-group-says-ai-agents-can-close-the-gap" target="_blank" rel="noopener">https://technologypressreleases.com/article/959192599-business-reporter-40-of-property-enquiries-go-unanswered-street-group-says-ai-agents-can-close-the-gap</a></p>
+<ul>
+<li><strong>What it is.</strong> Street Group, a UK company, put out a wire release on Nov 27 saying 40% of enquiries to UK estate and letting agencies are never followed up. Its platform, Street.co.uk, with an AI layer called Street Cortex, lets agencies build their own AI agents: one can pick up an enquiry at night, check the registration, offer viewing times, and book the appointment; another can sort hundreds of possible tenants against available homes in a morning. The release also claims agencies using Street grow 14% faster and are 24% more likely to complete a sale. Those numbers, and the 40% figure, are the company&#x27;s own claims in its own release, not verified here. This is the UK, not the US, and there is no US product or US data link in the story.</li>
+<li><strong>What it means for product opportunity.</strong> Filed only as a shape, and a familiar one: the missed-enquiry problem (a lead comes in after hours and nobody answers) is the same problem US tools in this record keep circling, from Rhea (briefing #41) to Closio (#41). The UK version adds one detail worth noting: the agents are sold as things the agency builds and runs itself, one agent per job, rather than one big assistant. No build or partner angle for JJ and Jessica here; the US seat for after-hours enquiry handling is already crowded, and this release adds marketing numbers, not a new mechanism.</li>
+</ul>
+<h2>Whitespace</h2>
+<p><strong>The explainer for offers, not prices.</strong> Finding 1 shows an MLS paying attention when a product explains a price and splits the value two ways (market value and personal value). Nobody in this record has shipped the same explainer on the offer side: why this offer, at this price, with these terms, is strong or weak for this seller, in this neighbourhood, explained from real past offers. That is the offer-outcome idea already in Jessica&#x27;s plan (learning what wins, by neighbourhood, from real offers, including the offers that lost). The SDMLS story strengthens it in one specific way: it shows an MLS will discuss sharing data, and even revenue, when the product explains rather than just estimates, and when the MLS keeps control of its data. An offer explainer fits that shape better than a price estimator does, because only the tool that handles offers ever sees the losing offers. Honest limit: SDMLS&#x27;s arrangement is a discussion, not a signed revenue share, and San Diego&#x27;s yes says nothing about what SFARMLS will do.</p>
+<h2>Also noted</h2>
+<ul>
+<li><strong>JohnHart &quot;JANE&quot;</strong>: still no coverage surfaced (seventeenth check).</li>
+<li><strong>Checked and ruled out as not new:</strong> the HousingWire purchase of Keeping Current Matters, which a November press-release listing recirculated this week, is a June 9, 2026 deal, not a November one. Pulley ($64M, Nov 17–18), PropMix Rhea (Nov 24), and Closio&#x27;s Product Hunt launch (Nov 25) were all already filed in briefings #40–#41 and are not repeated.</li>
+</ul>
+<h2>Permission watch</h2>
+<ul>
+<li><strong>Tuccori: STILL no outcome, 25 days post-hearing.</strong> One change in the checking itself: the case tracker this briefing has used (propertypleadings.com) was down this morning with a &quot;site unavailable due to unpaid billing&quot; notice, so the status was cross-checked against two other sources instead. OpenClassActions (last updated Nov 16) still reads &quot;awaiting final approval,&quot; and HousingWire&#x27;s delay report still has the judge&#x27;s questions open, with further briefs due <strong>Dec 14</strong> (17 days). $120.3M fund, 132,000+ claims, 25 opt-outs, 2 objections. Do not cite approval. The tracker outage is a reminder that this status now rests on sources that update more slowly; if the tracker stays down, the next check needs a new primary source.</li>
+<li><strong>Compass / MLS fight:</strong> no new filing in-window. Compass&#x27;s motions to dismiss or split the two New York MLS suits are still due <strong>Dec 3</strong> (6 days). The MLSs&#x27; Nov 23 motion to fold all 18 cases into one court (briefing #41) stands.</li>
+<li><strong>NAR MLS copyright policy (approved Nov 8):</strong> no confirmed adopter yet; the count stays at zero, and no new adopter was reported in-window.</li>
+<li><strong>A developer&#x27;s map of the new rules (background, not news):</strong> a working paper on MLS data constraints (version 1.1, first version dated Nov 21, outside this window) pulls the November NAR changes together for builders and notes that, as of November 2026, it found no court decision on AI training or on scraping listing data in a suit brought by an MLS. It is one author&#x27;s survey, not peer reviewed and not legal advice, but its four-risk list (contract claim, copyright claim, computer-access claim, loss of the data feed) is a clean checklist for anyone signing a data licence, Jessica included. Source: <a href="https://research.valuation-engineer.com/practice/mls-data-constraints/" target="_blank" rel="noopener">https://research.valuation-engineer.com/practice/mls-data-constraints/</a></li>
+<li><strong>RESO board voting Nov 16–30</strong> ends in 3 days; no results until after Nov 30. Data Dictionary 2.2 is due at the end of Q4.</li>
+<li><strong>Double deadline Jan 1, 2027 (35 days):</strong> CA AB 2025 (rental ads) and WI Act 69 AI-photo disclosure take effect, and all RESO endorsements expire the same day.</li>
+<li><strong>Calendar pointers:</strong> Realty Force&#x27;s listed launch date and the RE/MAX &quot;Leo Pro&quot; teased launch are both Nov 30 (3 days). Wispr&#x27;s Demo Day is Dec 1 (4 days).</li>
+<li><strong>Weekly/monthly layer:</strong> nothing new due today. The latest Inman Tech Roundup is still the Nov 19 edition (already mined), the latest NanaStack Weekly Stack is still #017 (Nov 16), and no new CRETI monthly or Thesis Driven quarterly has appeared.</li>
+<li><strong>No SFARMLS news on vendor credentialing.</strong> Topic 14 open questions unchanged.</li>
+</ul>
+    </article>
+    <footer class="brief-footer">Compiled from Damn JJ&rsquo;s daily briefings. Vendor figures are company claims. &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/2026-11-27.html">Short edition</a> &middot; <a href="https://damnjjwtf.github.io/proptect-brief/archive/">Archive</a></footer>
+  </div></body></html>
